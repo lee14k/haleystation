@@ -38,6 +38,7 @@ export default function Home() {
         photoTwo={"/stok1.jpg"}
         photoThree={"/stok1.jpg"}
         backgroundColor="#F4F1ED"
+        optionalHead={"A Special Venue For Any Special Occasion"}
       />
       <div className={playfair.className}>
       <ThreePhotoRowTwo
@@ -45,6 +46,8 @@ export default function Home() {
         textTwo="Photos"
         textThree="Events"
         backgroundColor="#F4F1ED"
+    
+
       />
       </div>
       <ThreePhotoRowTwo
