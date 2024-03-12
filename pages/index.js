@@ -23,6 +23,21 @@ export default function Home() {
         textTwo="photos"
         textThree="events"
       />
+      <ThreePhotoRowTwo
+        textOne="weddings"
+        textTwo="photos"
+        textThree="events"
+        backgroundColor="#668260" 
+        optionalHead={"What People Are Saying... "}
+      />
+     
+      <ThreePhotoRowTwo
+        textOne="weddings"
+        textTwo="photos"
+        textThree="events"
+        backgroundColor="#E1D6C9" // Direct color value
+        optionalHead={"Haley Station Weddings & Event Venue"}
+      />
     </div>
   );
 }
