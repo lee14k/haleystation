@@ -12,11 +12,16 @@ export default function Home() {
       <h2>Wedding & Event Venue</h2>
       <p>Escanaba, MI</p>
       <button>Learn More</button>
-      <BridalSectionOne/>
+      <BridalSectionOne />
       <ThreePhotoRowTwo
-      photoOne={"/stok1.jpg"}
-      photoTwo={"/stok1.jpg"}
-      photoThree={"/stok1.jpg"}
+        photoOne={"/stok1.jpg"}
+        photoTwo={"/stok1.jpg"}
+        photoThree={"/stok1.jpg"}
+      />
+      <ThreePhotoRowTwo
+        textOne="weddings"
+        textTwo="photos"
+        textThree="events"
       />
     </div>
   );
