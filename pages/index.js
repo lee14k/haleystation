@@ -12,19 +12,24 @@ export default function Home() {
   return (
     <div>
       <div className="firsttextheader flex flex-col justify-center items-center text-white">
-        <div className="tracking-widest text-4xl	">
+        <div className="tracking-widest text-4xl my-2">
           <p className={lora.className}>WELCOME TO</p>
         </div>
-        <div className="text-8xl text-center">
-          <h1 className={playfair.className}>Haley Station</h1>
-          <h2 className={playfair.className}>Wedding & Event Venue</h2>
+        <div className="text-center my-2">
+          <div className="text-8xl mb-6">
+            <h1 className={playfair.className}>Haley Station</h1>
+          </div>
+          <div className="text-4xl mb-6">
+            <h2 className={playfair.className}>Wedding & Event Venue</h2>
+          </div>
         </div>
-        <div className="tracking-widest text-4xl	">
+        <div className="tracking-widest text-4xl text-center	">
           <p className={lora.className}>ESCANABA, MI</p>
-          <div className={lora.className}><button className="border-4 border-white bg-white text-black px-8 py-2.5 my-6">
-            Learn More
-          </button></div>
-          
+          <div className={lora.className}>
+            <button className="border-4 border-white bg-white text-black px-16 py-2.5 my-6">
+              Learn More
+            </button>
+          </div>
         </div>
       </div>
       <BridalSectionOne />
@@ -32,12 +37,16 @@ export default function Home() {
         photoOne={"/stok1.jpg"}
         photoTwo={"/stok1.jpg"}
         photoThree={"/stok1.jpg"}
+        backgroundColor="#F4F1ED"
       />
+      <div className={playfair.className}>
       <ThreePhotoRowTwo
-        textOne="weddings"
-        textTwo="photos"
-        textThree="events"
+        textOne="Weddings"
+        textTwo="Photos"
+        textThree="Events"
+        backgroundColor="#F4F1ED"
       />
+      </div>
       <ThreePhotoRowTwo
         textOne="weddings"
         textTwo="photos"
