@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import BridalSectionOne from "@/components/BridalSectionOne";
 import ThreePhotoRowTwo from "@/components/ThreePhotoRowTwo";
 import { Playfair_Display } from "next/font/google";
