@@ -13,7 +13,15 @@ const NavMobile = () => {
 
   return (
     <div ref={ref}>
-      <Hamburger toggled={isOpen} size={20} toggle={setOpen} />
+      <div className="bg-white">
+        <Hamburger
+          toggled={isOpen}
+          size={40}
+          toggle={setOpen}
+          color={"black"}
+          rounded={"true"}
+        />
+      </div>
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -21,7 +29,7 @@ const NavMobile = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed left-0 shadow-4xl right-0 top-[3.5rem] p-5 pt-0  border-b border-b-white/20"
+            className="fixed left-0 shadow-4xl right-0 top-[3.5rem]  pt-0  border-b border-b-white/20 sticky"
           >
             <ul className="grid gap-2">
               {routes.map((route, idx) => {
@@ -38,7 +46,7 @@ const NavMobile = () => {
                       delay: 0.1 + idx / 10,
                     }}
                     key={route.title}
-                    className="w-full p-[0.08rem] rounded-xl bg-gradient-to-tr from-neutral-800 via-neutral-250 to-neutral-100"
+                    className="w-full  rounded-xl bg-gradient-to-tr from-neutral-800 via-neutral-250 to-neutral-100"
                   >
                     <a
                       onClick={() => setOpen((prev) => !prev)}

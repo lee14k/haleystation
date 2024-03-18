@@ -3,6 +3,7 @@ import ThreePhotoRowTwo from "@/components/ThreePhotoRowTwo";
 import { Playfair_Display } from "next/font/google";
 import { Lora } from "next/font/google";
 import Link from "next/link";
+import Topbar from "@/components/Topbar";
 
 const lora = Lora({ subsets: ["latin"] });
 const playfair = Playfair_Display({ subsets: ["latin"] });
@@ -10,6 +11,9 @@ const playfair = Playfair_Display({ subsets: ["latin"] });
 export default function Home() {
   return (
     <div>
+      <div className="">
+        <Topbar />
+      </div>
       <div className="firsttextheader flex flex-col justify-center items-center text-white">
         <div className="tracking-widest text-4xl my-2">
           <p className={lora.className}>WELCOME TO</p>

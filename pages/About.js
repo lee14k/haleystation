@@ -10,6 +10,7 @@ import Location from "@/components/Location";
 const About = () => {
   return (
     <div>
+      <Topbar />
       <div className="grid grid-cols-2 text-yellow-950 bridalone py-12 px-4">
         <div className="flex justify-center items-center flex-col">
           <div className="text-6xl ">
