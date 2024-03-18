@@ -2,6 +2,7 @@ import BridalSectionOne from "@/components/BridalSectionOne";
 import ThreePhotoRowTwo from "@/components/ThreePhotoRowTwo";
 import { Playfair_Display } from "next/font/google";
 import { Lora } from "next/font/google";
+import Link from "next/link";
 
 const lora = Lora({ subsets: ["latin"] });
 const playfair = Playfair_Display({ subsets: ["latin"] });
@@ -24,9 +25,11 @@ export default function Home() {
         <div className="tracking-widest text-4xl text-center	">
           <p className={lora.className}>ESCANABA, MI</p>
           <div className={lora.className}>
-            <button className="border-4 border-white bg-white text-black px-16 py-2.5 my-6">
-              Learn More
-            </button>
+            <Link href="/About">
+              <button className="border-4 border-white bg-white text-black px-16 py-2.5 my-6">
+                Learn More
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -39,14 +42,12 @@ export default function Home() {
         optionalHead={"A Special Venue For Any Special Occasion"}
       />
       <div className={playfair.className}>
-      <ThreePhotoRowTwo
-        textOne="Weddings"
-        textTwo="Photos"
-        textThree="Events"
-        backgroundColor="#F4F1ED"
-    
-
-      />
+        <ThreePhotoRowTwo
+          textOne="Weddings"
+          textTwo="Photos"
+          textThree="Events"
+          backgroundColor="#F4F1ED"
+        />
       </div>
       <ThreePhotoRowTwo
         textOne="weddings"
