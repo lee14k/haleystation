@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Playfair_Display } from "next/font/google";
 import { Lora } from "next/font/google";
+import { useRouter } from "next/router";
 
 const lora = Lora({ subsets: ["latin"] });
 const playfair = Playfair_Display({ subsets: ["latin"] });
@@ -21,7 +22,17 @@ const ThreePhotoRowTwo = ({
   textColor,
   showBorder = true,
   boldFont = true, // Default value is true, making font boldness optional
+  linkUrlOne={},
+  linkUrlTwo = "",
+  linkUrlThree = "",
 }) => {
+  const router = useRouter();
+
+  const handleClick = (url) => {
+    if (url) {
+      router.push(url);
+    }
+  };
   // Helper function to render photo or text block and optional caption
   // Added isFirstContent parameter to adjust caption size for the first content
   const renderContent = (
@@ -30,22 +41,11 @@ const ThreePhotoRowTwo = ({
     text2,
     text3,
     caption,
-    isFirstContent = false,
-    linkUrlOne = null,
-    linkUrlTwo = null,
-    linkUrlThree = null
+    isFirstContent = false
   ) => {
     // Function to render a possibly linked text element
     const renderTextElement = (text, className, linkUrl) => {
-      if (linkUrl) {
-        return (
-          <Link href={linkUrl}>
-         {text}
-          </Link>
-        );
-      } else {
-        return <p className={className}>{text}</p>;
-      }
+      return <p className={className}>{text}</p>;
     };
 
     if (photo) {
@@ -65,7 +65,11 @@ const ThreePhotoRowTwo = ({
             {text2 &&
               renderTextElement(text2, `${textClassBase} text-xl`, linkUrlTwo)}
             {text3 &&
-              renderTextElement(text3, `${textClassBase} text-xl`, linkUrlThree)}
+              renderTextElement(
+                text3,
+                `${textClassBase} text-xl`,
+                linkUrlThree
+              )}
           </div>
           {caption && (
             <p
@@ -99,14 +103,15 @@ const ThreePhotoRowTwo = ({
         </div>
       </div>
       <div className="grid grid-col-1 sm:grid-cols-3 gap-14">
-        <div
-          className={`text-8xl flex flex-col justify-center items-center ${
-            boldFont ? "font-bold" : ""
-          }`}
-        >
-          {renderContent(photoOne, textOne, null, null, captionOne, true)}{" "}
-          {/* Marked as first content */}
-        </div>
+        <Link href={linkUrlOne}>
+                 <div onClick={() => handleClick(linkUrlOne)} className="cursor-pointer">
+        <div onClick={() => handleClick(linkUrlOne)} className="cursor-pointer">
+
+            {renderContent(photoOne, textOne, null, null, captionOne, true)}{" "}
+            {/* Marked as first content */}
+          </div>
+          </div>
+        </Link>
         <div
           className={`text-4xl flex flex-col justify-center items-center ${
             boldFont ? "font-bold" : ""
