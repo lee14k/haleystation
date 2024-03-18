@@ -8,7 +8,7 @@ const Events = () => {
   return (
     <div className="bridalone">
       <Topbar />
-      <div className="grid grid-cols-2 text-yellow-950 bridalone py-12 px-4">
+      <div className="grid grid-cols-2 text-yellow-950 green-box py-12 px-4">
         <div className="flex justify-center items-center flex-col">
           <div className="text-6xl ">
             <Image src="/monogram.png" width={100} height={100} />
@@ -41,8 +41,7 @@ const Events = () => {
         </div>
         <div className="flex justify-center items-center flex-col">
           <div className="text-6xl ">
-            <Image src="/monogram.png" width={100} height={100} />
-            <h1 className={playfair.className}>Events at Haley Station</h1>
+            <h1 className={playfair.className}>Weddings</h1>
           </div>
           <div className={lora.className}>
             <p className="tracking-widest">
@@ -65,8 +64,7 @@ const Events = () => {
       <div className="grid grid-cols-2 text-yellow-950 bridalone py-12 px-4">
         <div className="flex justify-center items-center flex-col">
           <div className="text-6xl ">
-            <Image src="/monogram.png" width={100} height={100} />
-            <h1 className={playfair.className}>Events at Haley Station</h1>
+            <h1 className={playfair.className}>Photoshoots</h1>
           </div>
           <div className={lora.className}>
             <p className="tracking-widest">

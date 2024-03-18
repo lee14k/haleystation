@@ -24,3 +24,7 @@
   width: 100px;
   filter: drop-shadow(5px 5px 14px #000000);
 }
+
+.green-box {
+  background-color: #668260;
+}
