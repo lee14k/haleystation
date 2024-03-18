@@ -13,10 +13,10 @@ const NavMobile = () => {
 
   return (
     <div ref={ref}>
-      <div className="bg-white">
+      <div className="bg-white mx-8 flex justify-center items-center burgercircle">
         <Hamburger
           toggled={isOpen}
-          size={40}
+          size={100}
           toggle={setOpen}
           color={"black"}
           rounded={"true"}
@@ -29,9 +29,9 @@ const NavMobile = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed left-0 shadow-4xl right-0 top-[3.5rem]  pt-0  border-b border-b-white/20 sticky"
+            className="fixed left-0  right-0 sticky"
           >
-            <ul className="grid gap-2">
+            <ul className="grid gap-2 ">
               {routes.map((route, idx) => {
                 const { Icon } = route;
 
@@ -46,12 +46,12 @@ const NavMobile = () => {
                       delay: 0.1 + idx / 10,
                     }}
                     key={route.title}
-                    className="w-full  rounded-xl bg-gradient-to-tr from-neutral-800 via-neutral-250 to-neutral-100"
+                    className="w-full py-2.5 rounded-xl bg-gradient-to-tr from-neutral-800 via-neutral-250 to-neutral-100"
                   >
                     <a
                       onClick={() => setOpen((prev) => !prev)}
                       className={
-                        "flex items-center justify-between w-full p-5 rounded-xl "
+                        "flex items-center justify-between w-full rounded-xl "
                       }
                       href={route.href}
                     >

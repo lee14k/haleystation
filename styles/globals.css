@@ -3,11 +3,24 @@
 @tailwind utilities;
 
 .firsttextheader {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/stok2.jpeg");
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("/stok2.jpeg");
   background-size: cover;
   height: 55rem;
 }
 
 .bridalone {
-  background-color: #F4F1ED;
+  background-color: #f4f1ed;
+}
+
+.burgercircle {
+  background-color: #f4f1ed;
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+  filter: drop-shadow(5px 5px 14px #000000);
 }
