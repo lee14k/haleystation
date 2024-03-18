@@ -28,7 +28,7 @@ const Events = () => {
               building while elevating the space to suit the unique needs of
               your special day.
             </p>
-            <button>Contact Us </button>
+            <button className="bridalone px-2.5 py-2.5">Contact Us </button>
           </div>
         </div>
         <div>

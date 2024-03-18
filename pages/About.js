@@ -30,18 +30,21 @@ const About = () => {
             </p>
             <h2>Showers & Parties</h2>
             <p className="tracking-widest">
-            Showers, graduation parties, company events are booked on an hourly rate with a maximumof 6 hours. Please call for 2024 hourly rate.
-
+              Showers, graduation parties, company events are booked on an
+              hourly rate with a maximumof 6 hours. Please call for 2024 hourly
+              rate.
             </p>
           </div>
-          <button className="bg-emerald-200">Book Today!</button>
+          <button className="green-box text-white px-2.5 py-2.5 text-xl">
+            Book Today!
+          </button>
         </div>
         <div>
           <Image src="/stok1.jpg" width={800} height={600} />
         </div>
       </div>
-      <Location/>
-      <FAQ/>
+      <Location />
+      <FAQ />
     </div>
   );
 };
