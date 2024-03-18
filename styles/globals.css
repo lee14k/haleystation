@@ -28,3 +28,8 @@
 .green-box {
   background-color: #668260;
 }
+
+.contact-side-one {
+  background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/hsfil.jpeg');
+  background-size: cover;
+}

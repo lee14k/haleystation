@@ -64,7 +64,12 @@ export default function Home() {
             </div>
             <div className={lora.className}>
               <p className="tracking-widest">
-              Located in Escanaba, Michigan, we’re ready to host your special event. Other copy here about why the space is special. Maybe info about the founders.  Local desitnations include beaches along Lake Michigan, just an hour drive from Marquette, this waterfall, that lighthouse, blah blah. Ready to book? Get in touch with us today or view our rates.
+                Located in Escanaba, Michigan, we’re ready to host your special
+                event. Other copy here about why the space is special. Maybe
+                info about the founders. Local desitnations include beaches
+                along Lake Michigan, just an hour drive from Marquette, this
+                waterfall, that lighthouse, blah blah. Ready to book? Get in
+                touch with us today or view our rates.
               </p>
               <button>Contact Us </button>
             </div>
@@ -72,25 +77,25 @@ export default function Home() {
           <div className="flex flex-col">
             <Image src="/stok1.jpg" width={800} height={600} />
             <caption className="w-full">Photo by John Doe</caption>
-
           </div>
-          
         </div>
       </div>
       <div className="green-box">
-      <Image src="/monogram.png" width={100} height={100} />
+        <Image src="/monogram.png" width={100} height={100} />
+        <ThreePhotoRowTwo
+          textOne="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
+          textTwo="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
+          textThree="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
+          backgroundColor="#668260"
+          optionalHead={"What People Are Saying... "}
+          textColor={"white"}
+          showBorder={false}
+        />
+      </div>
       <ThreePhotoRowTwo
-        textOne="weddings"
-        textTwo="photos"
-        textThree="events"
-        backgroundColor="#668260"
-        optionalHead={"What People Are Saying... "}
-      />
-</div>
-      <ThreePhotoRowTwo
-        textOne="weddings"
-        textTwo="photos"
-        textThree="events"
+        textOne="Come Visit Us"
+        textTwo="Hours"
+        textThree="Get Social"
         backgroundColor="#E1D6C9" // Direct color value
         optionalHead={"Haley Station Weddings & Event Venue"}
       />

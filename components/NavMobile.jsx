@@ -4,6 +4,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Squash as Hamburger } from "hamburger-react";
 import { routes } from "../routes";
+import Link from "next/link";
 
 const NavMobile = () => {
   const [isOpen, setOpen] = useState(false);
@@ -48,16 +49,15 @@ const NavMobile = () => {
                     key={route.title}
                     className="w-full py-2.5 rounded-xl bg-gradient-to-tr from-neutral-800 via-neutral-250 to-neutral-100"
                   >
-                    <a
-                      onClick={() => setOpen((prev) => !prev)}
+                    <Link
+                      href={route.href}
                       className={
                         "flex items-center justify-between w-full rounded-xl "
                       }
-                      href={route.href}
                     >
                       <span className="flex gap-1 text-lg">{route.title}</span>
                       <Icon className="text-xl" />
-                    </a>
+                    </Link>
                   </motion.li>
                 );
               })}

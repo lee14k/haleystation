@@ -27,8 +27,8 @@ const FAQ = () => {
     };
 
     return (
-        <div>
-            <div className="grid grid-cols-2 text-yellow-950 bridalone py-12 px-4">
+        <div className="">
+            <div className="grid grid-cols-2 text-yellow-950  py-12 px-4">
                 <div className="flex justify-center items-center flex-col">
                     <div className="text-6xl">
                         <h1 className={playfair.className}>FAQs</h1>
