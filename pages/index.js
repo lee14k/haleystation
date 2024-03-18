@@ -90,6 +90,7 @@ export default function Home() {
           optionalHead={"What People Are Saying... "}
           textColor={"white"}
           showBorder={false}
+          boldFont={false}
         />
       </div>
       <ThreePhotoRowTwo
