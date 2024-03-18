@@ -7,31 +7,31 @@ export const routes = [
   {
     key:0,
     title: "Home",
-    href: "#",
+    href: "/",
     Icon: BiHomeAlt2,
   },
   {
     key:1,
     title: "About",
-    href: "#",
+    href: "/About",
     Icon: FiSearch,
   },
   {
     key:2,
     title: "Events",
-    href: "#",
+    href: "/Events",
     Icon: IoPricetagsOutline,
   },
   {
     key:3,
     title: "Gallery",
-    href: "#",
+    href: "/Gallery",
     Icon: PiChatCircleBold,
   },
   {
     key:4,
     title: "Contact",
-    href: "#",
+    href: "/Contact",
     Icon: PiChatCircleBold,
   },
 ];
