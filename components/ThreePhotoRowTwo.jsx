@@ -13,27 +13,72 @@ const ThreePhotoRowTwo = ({
   textOne,
   textTwo,
   textThree,
+  captionOne,
+  captionTwo,
+  captionThree,
   backgroundColor,
   optionalHead,
   textColor,
   showBorder = true,
-  boldFont = true 
+  boldFont = true, // Default value is true, making font boldness optional
 }) => {
-  const renderContent = (photo, text1, text2, text3) => {
+  // Helper function to render photo or text block and optional caption
+  // Added isFirstContent parameter to adjust caption size for the first content
+  const renderContent = (
+    photo,
+    text1,
+    text2,
+    text3,
+    caption,
+    isFirstContent = false,
+    linkUrlOne = null,
+    linkUrlTwo = null,
+    linkUrlThree = null
+  ) => {
+    // Function to render a possibly linked text element
+    const renderTextElement = (text, className, linkUrl) => {
+      if (linkUrl) {
+        return (
+          <Link href={linkUrl}>
+         {text}
+          </Link>
+        );
+      } else {
+        return <p className={className}>{text}</p>;
+      }
+    };
+
     if (photo) {
-      return <Image src={photo} height={300} width={300} className="rounded" />;
+    } else {
+      const borderClass = showBorder
+        ? "border-2 py-12 px-28 border-yellow-900"
+        : "";
+      const textClassBase = `text-center ${boldFont ? "font-bold" : ""}`;
+
+      return (
+        <>
+          <div
+            className={`flex flex-col h-300 w-300 items-center justify-center items-center mb-10 ${borderClass}`}
+          >
+            {text1 &&
+              renderTextElement(text1, `${textClassBase} text-2xl`, linkUrlOne)}
+            {text2 &&
+              renderTextElement(text2, `${textClassBase} text-xl`, linkUrlTwo)}
+            {text3 &&
+              renderTextElement(text3, `${textClassBase} text-xl`, linkUrlThree)}
+          </div>
+          {caption && (
+            <p
+              className={`mt-2 text-center ${boldFont ? "font-bold" : ""} ${
+                isFirstContent ? "text-3xl" : "text-xl"
+              }`}
+            >
+              {caption}
+            </p>
+          )}
+        </>
+      );
     }
-    const borderClass = showBorder ? "border-2 py-12 px-28 border-yellow-900" : "";
-    const textClass = `text-center ${boldFont ? "font-bold" : ""}`;
-    return (
-      <div
-        className={`flex flex-col h-300 w-300 items-center justify-center items-center mb-10 ${borderClass}`}
-      >
-        {text1 && <p className={`${textClass} text-2xl`}>{text1}</p>}
-        {text2 && <p className={`${textClass} text-xl`}>{text2}</p>}
-        {text3 && <p className={`${textClass} text-xl`}>{text3}</p>}
-      </div>
-    );
   };
 
   return (
@@ -43,18 +88,38 @@ const ThreePhotoRowTwo = ({
     >
       <div className="lg:flex lg:flex-col justify-center items-center">
         <div className={playfair.className}>
-          <h1 style={{ color: textColor }} className={`text-6xl ${boldFont ? "font-bold" : ""} text-${textColor}`}>{optionalHead}</h1>
+          <h1
+            style={{ color: textColor }}
+            className={`text-6xl ${
+              boldFont ? "font-bold" : ""
+            } text-${textColor}`}
+          >
+            {optionalHead}
+          </h1>
         </div>
       </div>
       <div className="grid grid-col-1 sm:grid-cols-3 gap-14">
-        <div className={`text-8xl flex flex-col justify-center items-center ${boldFont ? "font-bold" : ""}`}>
-          {renderContent(photoOne, textOne)}
+        <div
+          className={`text-8xl flex flex-col justify-center items-center ${
+            boldFont ? "font-bold" : ""
+          }`}
+        >
+          {renderContent(photoOne, textOne, null, null, captionOne, true)}{" "}
+          {/* Marked as first content */}
         </div>
-        <div className={`text-4xl flex flex-col justify-center items-center ${boldFont ? "font-bold" : ""}`}>
-          {renderContent(photoTwo, textTwo)}
+        <div
+          className={`text-4xl flex flex-col justify-center items-center ${
+            boldFont ? "font-bold" : ""
+          }`}
+        >
+          {renderContent(photoTwo, textTwo, null, null, captionTwo)}
         </div>
-        <div className={`text-4xl flex flex-col justify-center items-center ${boldFont ? "font-bold" : ""}`}>
-          {renderContent(photoThree, textThree)}
+        <div
+          className={`text-4xl flex flex-col justify-center items-center ${
+            boldFont ? "font-bold" : ""
+          }`}
+        >
+          {renderContent(photoThree, textThree, null, null, captionThree)}
         </div>
       </div>
     </div>

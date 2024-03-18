@@ -45,6 +45,9 @@ export default function Home() {
         photoThree={"/stok1.jpg"}
         backgroundColor="#F4F1ED"
         optionalHead={"A Special Venue For Any Special Occasion"}
+        linkUrlOne="/About"
+        linkUrlTwo="/Events"
+        linkUrlThree="/Weddings"
       />
       <div className={playfair.className}>
         <ThreePhotoRowTwo
@@ -76,7 +79,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col">
             <Image src="/stok1.jpg" width={800} height={600} />
-            <caption className="w-full">Photo by John Doe</caption>
+            <span className="w-full">Photo by John Doe</span>
           </div>
         </div>
       </div>
@@ -91,6 +94,9 @@ export default function Home() {
           textColor={"white"}
           showBorder={false}
           boldFont={false}
+          captionOne="John Doe"
+          captionTwo="Jane Doe"
+          captionThree="John Smith"
         />
       </div>
       <ThreePhotoRowTwo
