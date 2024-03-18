@@ -32,9 +32,9 @@ const NavMobile = () => {
             transition={{ duration: 0.2 }}
             className="fixed left-0  right-0 sticky"
           >
-            <ul className="grid gap-2 ">
+            <ul className="grid gap-2 bg-gradient-to-tr from-neutral-400 via-neutral-150 to-neutral-100 rounded-xl py-2 px-2">
               {routes.map((route, idx) => {
-                const { Icon } = route;
+                const { title } = route;
 
                 return (
                   <motion.li
@@ -47,7 +47,7 @@ const NavMobile = () => {
                       delay: 0.1 + idx / 10,
                     }}
                     key={route.title}
-                    className="w-full py-2.5 rounded-xl bg-gradient-to-tr from-neutral-800 via-neutral-250 to-neutral-100"
+                    className="w-full py-2.5 rounded-xl bg-white "
                   >
                     <Link
                       href={route.href}
@@ -55,8 +55,7 @@ const NavMobile = () => {
                         "flex items-center justify-between w-full rounded-xl "
                       }
                     >
-                      <span className="flex gap-1 text-lg">{route.title}</span>
-                      <Icon className="text-xl" />
+                      <span className="flex gap-1 text-2xl">{route.title}</span>
                     </Link>
                   </motion.li>
                 );
