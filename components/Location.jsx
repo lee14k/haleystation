@@ -13,7 +13,7 @@ export default function Location() {
         </div>
         <div className="flex justify-center items-center flex-col">
           <div className="text-6xl ">
-            <h1 className={playfair.className}>Our Rates</h1>
+            <h1 className={playfair.className}>Location</h1>
           </div>
           <div className={lora.className}>
             <p className="tracking-widest">

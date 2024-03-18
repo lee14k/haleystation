@@ -1,3 +1,8 @@
+import { Playfair_Display } from "next/font/google";
+const playfair = Playfair_Display({ subsets: ["latin"] });
+import { Lora } from "next/font/google";
+const lora = Lora({ subsets: ["latin"] });
+import Image from "next/image";
 const Events = () => {
   return (
     <div>
