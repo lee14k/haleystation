@@ -1,5 +1,5 @@
 import { routes } from "../routes";
-
+import Link from "next/link";
  const NavDesktop = () => {
   return (
     <ul className="hidden lg:flex lg:items-center gap-5 text-sm">
@@ -7,13 +7,13 @@ import { routes } from "../routes";
         const { Icon, href, title } = route;
         return (
           <li>
-            <a
+            <Link
               href={href}
               className="flex items-center gap-1 hover:text-neutral-400 transition-all"
             >
               <Icon />
               {title}
-            </a>
+            </Link>
           </li>
         );
       })}

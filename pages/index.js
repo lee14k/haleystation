@@ -45,10 +45,8 @@ export default function Home() {
         photoThree={"/stok1.jpg"}
         backgroundColor="#F4F1ED"
         optionalHead={"A Special Venue For Any Special Occasion"}
-        linkUrlOne="/About"
-        linkUrlTwo="/Events"
-        linkUrlThree="/Weddings"
         showBorder={false}
+        boldFont={false}
       />
       <div className={playfair.className}>
         <ThreePhotoRowTwo
@@ -56,18 +54,21 @@ export default function Home() {
           textTwo="Photos"
           textThree="Events"
           backgroundColor="#F4F1ED"
+          linkUrlOne="/About"
+          linkUrlTwo="/Events"
+          linkUrlThree="/Weddings"
         />
       </div>
       <div>
         <div className="grid grid-cols-2 text-yellow-950 bridalone py-12 px-4">
-          <div className="flex justify-center items-center flex-col">
-            <div className="text-6xl ">
+          <div className="flex justify-center items-center flex-col mx-12">
+            <div className="text-6xl brown-text ">
               <h1 className={playfair.className}>
                 Charm Guests in the Heart of Michigan’s U.P.{" "}
               </h1>
             </div>
             <div className={lora.className}>
-              <p className="tracking-widest">
+              <p className="tracking-widest my-2 mr-24 brown-text text-xl">
                 Located in Escanaba, Michigan, we’re ready to host your special
                 event. Other copy here about why the space is special. Maybe
                 info about the founders. Local desitnations include beaches
@@ -75,7 +76,9 @@ export default function Home() {
                 waterfall, that lighthouse, blah blah. Ready to book? Get in
                 touch with us today or view our rates.
               </p>
-              <button>Contact Us </button>
+              <button className="green-box text-white px-8 py-6 text-3xl border-2 border-stone-900">
+                Contact Us{" "}
+              </button>
             </div>
           </div>
           <div className="flex flex-col">
@@ -98,6 +101,7 @@ export default function Home() {
           captionOne="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
           captionTwo="Jane Doe"
           captionThree="John Smith"
+          isTextWhite={true}
         />
       </div>
       <ThreePhotoRowTwo

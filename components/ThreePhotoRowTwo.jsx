@@ -22,6 +22,7 @@ const ThreePhotoRowTwo = ({
   textColor,
   showBorder = true,
   boldFont = true,
+  isTextWhite = false, // New prop for conditional text color
   linkUrlOne = "",
   linkUrlTwo = "",
   linkUrlThree = "",
@@ -37,23 +38,23 @@ const ThreePhotoRowTwo = ({
     const borderClass = showBorder
       ? "border-2 py-12 px-28 border-yellow-900"
       : "";
-    const textClassBase = `text-center ${boldFont ? "font-bold" : ""} ${
+    const textClassBase = `text-center  ${boldFont ? "font-bold" : ""} ${
       isFirstContent ? "text-xl" : "text-xl"
-    }`;
+    } ${isTextWhite ? "text-white" : ""}`; // Modify here to include conditional text color
 
     return (
       <>
         <div
           className={`flex flex-col h-300 w-300 items-center justify-center mb-10 ${borderClass}`}
         >
-          {photo && <Image src={photo} alt="" width={300} height={300} />}
+          {photo && <Image src={photo} alt="" width={500} height={500} />}
           {text && <p className={textClassBase}>{text}</p>}
         </div>
         {caption && (
           <p
             className={`mt-2 text-center ${boldFont ? "font-bold" : ""} ${
               isFirstContent ? "text-xl" : "text-xl"
-            }`}
+            } ${isTextWhite ? "text-white" : ""}`} // Also here
           >
             {caption}
           </p>
@@ -68,12 +69,16 @@ const ThreePhotoRowTwo = ({
       className={`flex flex-col justify-center items-evenly gap-4 pt-12`}
     >
       <div className="lg:flex lg:flex-col justify-center items-center">
-        <h1
-          style={{ color: textColor }}
-          className={`text-6xl ${boldFont ? "font-bold" : ""}`}
-        >
-          {optionalHead}
-        </h1>
+        <div className={lora.className}>
+          <h1
+            style={{ color: textColor }}
+            className={`text-6xl brown-text ${boldFont ? "font-bold" : ""} ${
+              isTextWhite ? "text-white" : ""
+            }`} // And here
+          >
+            {optionalHead}
+          </h1>
+        </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-14">
         {linkUrlOne ? (
