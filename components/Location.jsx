@@ -34,7 +34,9 @@ export default function Location() {
               rate.
             </p>
           </div>
-          <button className="bg-emerald-200">Book Today!</button>
+          <button className="bridalone brown-text px-8 py-6 text-3xl border-2 border-stone-900">
+            Book Today!
+          </button>
         </div>
       </div>
     </div>
