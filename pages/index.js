@@ -48,6 +48,7 @@ export default function Home() {
         linkUrlOne="/About"
         linkUrlTwo="/Events"
         linkUrlThree="/Weddings"
+        showBorder={false}
       />
       <div className={playfair.className}>
         <ThreePhotoRowTwo
@@ -88,13 +89,13 @@ export default function Home() {
         <ThreePhotoRowTwo
           textOne="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
           textTwo="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
-          textThree="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
+          textThree="Jane Doe"
           backgroundColor="#668260"
           optionalHead={"What People Are Saying... "}
           textColor={"white"}
           showBorder={false}
           boldFont={false}
-          captionOne="John Doe"
+          captionOne="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
           captionTwo="Jane Doe"
           captionThree="John Smith"
         />
