@@ -7,14 +7,14 @@ const lora = Lora({ subsets: ["latin"] });
 const BridalSectionOne = () => {
   return (
     <div className="grid grid-cols-2 text-yellow-950 bridalone py-12 px-4">
-      <div className="flex justify-center items-center flex-col">
+      <div className="flex justify-center items-center flex-col mx-24">
         <div className="text-6xl brown-text ">
           <h1 className={playfair.className}>
             Weddings, showers, graduations & more
           </h1>
         </div>
         <div className={lora.className}>
-          <p className="tracking-widest text-xl">
+          <p className="tracking-widest text-xl my-4">
             For any event you're organizing, choose Haley Station as the top
             destination in Escanaba. Our recently designed venue features a
             fireplace, hardwood flooring, a bar, and more amenities.
