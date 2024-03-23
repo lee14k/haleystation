@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/fonts/CustomFont.woff2') format('woff2'),
+       url('/fonts/CustomFont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 .firsttextheader {
   background-image: linear-gradient(
       to right,
@@ -30,16 +37,29 @@
 }
 
 .contact-side-one {
-  background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/hsfil.jpeg');
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("/hsfil.jpeg");
   background-size: cover;
 }
 
 .brown-text {
-  color: #623E2A;
+  color: #623e2a;
 }
 
 .ctabutton {
-  -webkit-box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 41px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 41px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 41px 0px rgba(0, 0, 0, 0.75);
+}
+
+.fancy-font {
+  font-family: "CustomFont";
+}
+
+.big-text {
+  font-size:10rem;
 }

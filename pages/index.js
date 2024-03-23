@@ -20,11 +20,11 @@ export default function Home() {
           <p className={lora.className}>WELCOME TO</p>
         </div>
         <div className="text-center my-2">
-          <div className="text-8xl mb-6">
-            <h1 className={playfair.className}>Haley Station</h1>
+          <div className="big-text mb-6">
+            <h1 className='fancy-font'>Haley Station</h1>
           </div>
           <div className="text-4xl mb-6">
-            <h2 className={playfair.className}>Wedding & Event Venue</h2>
+            <h2 className='fancy-font '>Wedding & Event Venue</h2>
           </div>
         </div>
         <div className="tracking-widest text-4xl text-center	">

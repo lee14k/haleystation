@@ -69,7 +69,7 @@ const ThreePhotoRowTwo = ({
       className={`flex flex-col justify-center items-evenly gap-4 pt-12`}
     >
       <div className="lg:flex lg:flex-col justify-center items-center">
-        <div className={lora.className}>
+        <div className="fancy-font">
           <h1
             style={{ color: textColor }}
             className={`text-6xl brown-text ${boldFont ? "font-bold" : ""} ${

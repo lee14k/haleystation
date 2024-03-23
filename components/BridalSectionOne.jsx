@@ -9,7 +9,7 @@ const BridalSectionOne = () => {
     <div className="grid grid-cols-2 text-yellow-950 bridalone py-12 px-4">
       <div className="flex justify-center items-center flex-col mx-24">
         <div className="text-6xl brown-text ">
-          <h1 className={playfair.className}>
+          <h1 className='fancy-font'>
             Weddings, showers, graduations & more
           </h1>
         </div>
