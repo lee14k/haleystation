@@ -35,7 +35,7 @@ const About = () => {
               rate.
             </p>
           </div>
-          <button className="green-box text-white px-8 py-6 text-3xl border-2 border-stone-900">            Book Today!
+          <button className="ctabutton green-box text-white px-8 py-6 text-3xl">            Book Today!
           </button>
         </div>
         <div>
