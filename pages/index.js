@@ -15,16 +15,19 @@ export default function Home() {
       <div className="">
         <Topbar />
       </div>
+
       <div className="firsttextheader flex flex-col justify-center items-center text-white">
+        <Image src="/creamhsmon.png" width={100} height={100} />
+
         <div className="tracking-widest text-4xl my-2">
           <p className={lora.className}>WELCOME TO</p>
         </div>
         <div className="text-center my-2">
           <div className="big-text mb-6">
-            <h1 className='fancy-font'>Haley Station</h1>
+            <h1 className="fancy-font">Haley Station</h1>
           </div>
           <div className="text-4xl mb-6">
-            <h2 className='fancy-font '>Wedding & Event Venue</h2>
+            <h2 className="fancy-font ">Wedding & Event Venue</h2>
           </div>
         </div>
         <div className="tracking-widest text-4xl text-center	">
