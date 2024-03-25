@@ -22,13 +22,36 @@ const ThreePhotoRowTwo = ({
   textColor,
   showBorder = true,
   boldFont = true,
-  isTextWhite = false, // New prop for conditional text color
+  isTextWhite = false,
   linkUrlOne = "",
   linkUrlTwo = "",
   linkUrlThree = "",
+  listItems = [], // New prop for optional list
 }) => {
   // Helper function to render photo or text block and optional caption
-  const renderContent = (
+
+  const renderListItems = (items) => {
+    return items.map((item, index) => {
+      if (item.type === "text") {
+        return (
+          <p key={index} className="text-center">
+            {item.content}
+          </p>
+        );
+      } else if (item.type === "image") {
+        return (
+          <div key={index} className="flex justify-center">
+            <Image
+              src={item.content.src}
+              alt={item.content.alt}
+              width={item.content.width}
+              height={item.content.height}
+            />
+          </div>
+        );
+      }
+    });
+  };  const renderContent = (
     photo,
     text,
     caption,
@@ -41,7 +64,7 @@ const ThreePhotoRowTwo = ({
     const textClassBase = `text-center  ${boldFont ? "font-bold" : ""} ${
       isFirstContent ? "text-xl" : "text-xl"
     } ${isTextWhite ? "text-white" : ""}`; // Modify here to include conditional text color
-
+ 
     return (
       <>
         <div
@@ -88,6 +111,9 @@ const ThreePhotoRowTwo = ({
         ) : (
           renderContent(photoOne, textOne, captionOne, linkUrlOne, true)
         )}
+        {listItems.length > 0 && (
+          <div className="my-8">{renderListItems(listItems)}</div>
+        )}
         {linkUrlTwo ? (
           <Link href={linkUrlTwo}>
             {renderContent(photoTwo, textTwo, captionTwo, linkUrlTwo)}
@@ -95,12 +121,18 @@ const ThreePhotoRowTwo = ({
         ) : (
           renderContent(photoTwo, textTwo, captionTwo, linkUrlTwo)
         )}
+        {listItems.length > 0 && (
+          <div className="my-8">{renderListItems(listItems)}</div>
+        )}
         {linkUrlThree ? (
           <Link href={linkUrlThree}>
             {renderContent(photoThree, textThree, captionThree, linkUrlThree)}
           </Link>
         ) : (
           renderContent(photoThree, textThree, captionThree, linkUrlThree)
+        )}
+        {listItems.length > 0 && (
+          <div className="my-8">{renderListItems(listItems)}</div>
         )}
       </div>
     </div>

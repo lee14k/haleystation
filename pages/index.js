@@ -113,6 +113,13 @@ export default function Home() {
         textThree="Get Social"
         backgroundColor="#E1D6C9" // Direct color value
         optionalHead={"Haley Station Weddings & Event Venue"}
+        listItems={[
+          { type: 'text', content: 'Explore Our Venue' },
+       
+          { type: 'text', content: 'Book Your Event Today' },
+       
+          // Add more items as needed
+        ]}
       />
     </div>
   );
