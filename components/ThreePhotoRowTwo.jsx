@@ -51,7 +51,8 @@ const ThreePhotoRowTwo = ({
         );
       }
     });
-  };  const renderContent = (
+  };
+  const renderContent = (
     photo,
     text,
     caption,
@@ -64,7 +65,7 @@ const ThreePhotoRowTwo = ({
     const textClassBase = `text-center  ${boldFont ? "font-bold" : ""} ${
       isFirstContent ? "text-xl" : "text-xl"
     } ${isTextWhite ? "text-white" : ""}`; // Modify here to include conditional text color
- 
+
     return (
       <>
         <div
@@ -114,6 +115,7 @@ const ThreePhotoRowTwo = ({
         {listItems.length > 0 && (
           <div className="my-8">{renderListItems(listItems)}</div>
         )}
+
         {linkUrlTwo ? (
           <Link href={linkUrlTwo}>
             {renderContent(photoTwo, textTwo, captionTwo, linkUrlTwo)}
@@ -124,6 +126,7 @@ const ThreePhotoRowTwo = ({
         {listItems.length > 0 && (
           <div className="my-8">{renderListItems(listItems)}</div>
         )}
+
         {linkUrlThree ? (
           <Link href={linkUrlThree}>
             {renderContent(photoThree, textThree, captionThree, linkUrlThree)}
