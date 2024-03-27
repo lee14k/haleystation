@@ -95,13 +95,13 @@ export default function Home() {
         <ThreePhotoRowTwo
           textOne="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
           textTwo="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
-          textThree="Jane Doe"
+          textThree="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
           backgroundColor="#668260"
           optionalHead={"What People Are Saying... "}
           textColor={"white"}
           showBorder={false}
           boldFont={false}
-          captionOne="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable"
+          captionOne="pop"
           captionTwo="Jane Doe"
           captionThree="John Smith"
           isTextWhite={true}
@@ -112,13 +112,12 @@ export default function Home() {
         textTwo="Hours"
         textThree="Get Social"
         backgroundColor="#E1D6C9" // Direct color value
-        optionalHead={"Haley Station Weddings & Event Venue"}
+        optionalHead="Haley Station Weddings & Event Venue"
         listItems={[
-          { type: 'text', content: 'Explore Our Venue' },
-       
-          { type: 'text', content: 'Book Your Event Today' },
-       
-          // Add more items as needed
+          "Beautiful outdoor settings",
+          "Elegant banquet halls",
+          "Custom catering services",
+          "Professional event planning",
         ]}
       />
     </div>

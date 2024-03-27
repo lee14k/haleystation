@@ -7,6 +7,22 @@ import { useRouter } from "next/router";
 const lora = Lora({ subsets: ["latin"] });
 const playfair = Playfair_Display({ subsets: ["latin"] });
 
+// Define the List component outside the renderContent function
+const List = ({ list }) => {
+  if (!Array.isArray(list) || list.length === 0) {
+    // If 'list' is not an array or it's empty, don't render anything
+    return null;
+  }
+
+  return (
+    <ul className="list-disc list-inside">
+      {list.map((item, index) => (
+        <li key={index}>{item}</li>
+      ))}
+    </ul>
+  );
+};
+
 const ThreePhotoRowTwo = ({
   photoOne,
   photoTwo,
@@ -26,64 +42,36 @@ const ThreePhotoRowTwo = ({
   linkUrlOne = "",
   linkUrlTwo = "",
   linkUrlThree = "",
-  listItems = [], // New prop for optional list
+  listItems = [], // This is now used only in the first box
 }) => {
-  // Helper function to render photo or text block and optional caption
-
-  const renderListItems = (items) => {
-    return items.map((item, index) => {
-      if (item.type === "text") {
-        return (
-          <p key={index} className="text-center">
-            {item.content}
-          </p>
-        );
-      } else if (item.type === "image") {
-        return (
-          <div key={index} className="flex justify-center">
-            <Image
-              src={item.content.src}
-              alt={item.content.alt}
-              width={item.content.width}
-              height={item.content.height}
-            />
-          </div>
-        );
-      }
-    });
-  };
+  // Helper function to render photo or text block, optional caption, and potentially a list
   const renderContent = (
     photo,
     text,
     caption,
     linkUrl,
-    isFirstContent = true
+    list = [], // Default to an empty array if no list is passed
+    isFirstContent = false
   ) => {
-    const borderClass = showBorder
-      ? "border-2 py-12 px-28 border-yellow-900"
-      : "";
-    const textClassBase = `text-center  ${boldFont ? "font-bold" : ""} ${
+    const borderClass = showBorder ? "border-2 py-12 px-28 border-yellow-900" : "";
+    const textClassBase = `text-center ${boldFont ? "font-bold" : ""} ${
       isFirstContent ? "text-xl" : "text-xl"
-    } ${isTextWhite ? "text-white" : ""}`; // Modify here to include conditional text color
+    } ${isTextWhite ? "text-white" : ""}`;
 
     return (
-      <>
-        <div
-          className={`flex flex-col h-300 w-300 items-center justify-center mb-10 ${borderClass}`}
-        >
-          {photo && <Image src={photo} alt="" width={500} height={500} />}
-          {text && <p className={textClassBase}>{text}</p>}
-        </div>
+      <div className={`flex flex-col h-300 w-300 items-center justify-center mb-10 ${borderClass}`}>
+        {photo && <Image src={photo} alt="" width={500} height={500} />}
+        {text && <p className={textClassBase}>{text}</p>}
         {caption && (
-          <p
-            className={`mt-2 text-center ${boldFont ? "font-bold" : ""} ${
-              isFirstContent ? "text-xl" : "text-xl"
-            } ${isTextWhite ? "text-white" : ""}`} // Also here
-          >
+          <p className={`mt-2 text-center ${boldFont ? "font-bold" : ""} ${
+            isFirstContent ? "text-xl" : "text-xl"
+          } ${isTextWhite ? "text-white" : ""}`}>
             {caption}
           </p>
         )}
-      </>
+        {/* Conditionally render the list here, within the bordered area, only if list is provided */}
+        {isFirstContent && <List list={list} />}
+      </div>
     );
   };
 
@@ -98,45 +86,17 @@ const ThreePhotoRowTwo = ({
             style={{ color: textColor }}
             className={`text-6xl brown-text ${boldFont ? "font-bold" : ""} ${
               isTextWhite ? "text-white" : ""
-            }`} // And here
+            }`}
           >
             {optionalHead}
           </h1>
         </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-14">
-        {linkUrlOne ? (
-          <Link href={linkUrlOne}>
-            {renderContent(photoOne, textOne, captionOne, linkUrlOne, true)}
-          </Link>
-        ) : (
-          renderContent(photoOne, textOne, captionOne, linkUrlOne, true)
-        )}
-        {listItems.length > 0 && (
-          <div className="my-8">{renderListItems(listItems)}</div>
-        )}
-
-        {linkUrlTwo ? (
-          <Link href={linkUrlTwo}>
-            {renderContent(photoTwo, textTwo, captionTwo, linkUrlTwo)}
-          </Link>
-        ) : (
-          renderContent(photoTwo, textTwo, captionTwo, linkUrlTwo)
-        )}
-        {listItems.length > 0 && (
-          <div className="my-8">{renderListItems(listItems)}</div>
-        )}
-
-        {linkUrlThree ? (
-          <Link href={linkUrlThree}>
-            {renderContent(photoThree, textThree, captionThree, linkUrlThree)}
-          </Link>
-        ) : (
-          renderContent(photoThree, textThree, captionThree, linkUrlThree)
-        )}
-        {listItems.length > 0 && (
-          <div className="my-8">{renderListItems(listItems)}</div>
-        )}
+        {/* Only pass the listItems to the first renderContent call */}
+        {renderContent(photoOne, textOne, captionOne, linkUrlOne, listItems, true)}
+        {renderContent(photoTwo, textTwo, captionTwo, linkUrlTwo)}
+        {renderContent(photoThree, textThree, captionThree, linkUrlThree)}
       </div>
     </div>
   );
