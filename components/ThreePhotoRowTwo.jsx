@@ -53,19 +53,12 @@ const ThreePhotoRowTwo = ({
     list = [], // Default to an empty array if no list is passed
     isFirstContent = false
   ) => {
-    const borderClass = showBorder ? "border-2 py-12 px-28 border-yellow-900" : "";
-    const textClassBase = `text-center ${boldFont ? "font-bold" : ""} ${
-      isFirstContent ? "text-xl" : "text-xl"
-    } ${isTextWhite ? "text-white" : ""}`;
-
-    return (
-      <div className={`flex flex-col h-300 w-300 items-center justify-center mb-10 ${borderClass}`}>
+    const content = (
+      <div className={`flex flex-col h-300 w-300 items-center justify-center mb-10 ${showBorder ? "border-2 py-12 px-28 border-yellow-900" : ""}`}>
         {photo && <Image src={photo} alt="" width={500} height={500} />}
-        {text && <p className={textClassBase}>{text}</p>}
+        {text && <p className={`text-center ${boldFont ? "font-bold" : ""} ${isFirstContent ? "text-xl" : "text-xl"} ${isTextWhite ? "text-white" : ""}`}>{text}</p>}
         {caption && (
-          <p className={`mt-2 text-center ${boldFont ? "font-bold" : ""} ${
-            isFirstContent ? "text-xl" : "text-xl"
-          } ${isTextWhite ? "text-white" : ""}`}>
+          <p className={`mt-2 text-center ${boldFont ? "font-bold" : ""} ${isFirstContent ? "text-xl" : "text-xl"} ${isTextWhite ? "text-white" : ""}`}>
             {caption}
           </p>
         )}
@@ -73,6 +66,8 @@ const ThreePhotoRowTwo = ({
         {isFirstContent && <List list={list} />}
       </div>
     );
+
+    return linkUrl ? <Link href={linkUrl}>{content}</Link> : content;
   };
 
   return (
