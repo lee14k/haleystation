@@ -7,6 +7,7 @@ const playfair = Playfair_Display({ subsets: ["latin"] });
 import FAQ from "@/components/FAQ";
 import Locationcomponent from "@/components/Locationcomponent";
 import FeaturesSpace from "@/components/FeaturesSpace";
+import Footer from "@/components/Footer";
 import Link from "next/link";
 const About = () => {
   return (
@@ -31,6 +32,7 @@ const About = () => {
       </div>
       <Locationcomponent />
       <FAQ />
+      <Footer />
     </div>
   );
 };

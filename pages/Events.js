@@ -93,6 +93,7 @@ const Events = () => {
           <Image src="/stok1.jpg" width={800} height={600} />
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

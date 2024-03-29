@@ -5,6 +5,7 @@ import Image from "next/image";
 const lora = Lora({ subsets: ["latin"] });
 const playfair = Playfair_Display({ subsets: ["latin"] });
 import Link from "next/link";
+import Footer from "@/components/Footer";
 const Location = () => {
   return (
     <div>
@@ -82,6 +83,7 @@ const Location = () => {
           <div className="outside"></div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
