@@ -9,6 +9,12 @@
   font-weight: normal;
   font-style: normal;
 }
+
+.outside {
+  background-image:url('/ouths.jpg');
+  background-position:center;
+  background-size:cover;
+}
 .firsttextheader {
   background-image: linear-gradient(
       to right,
