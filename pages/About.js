@@ -7,7 +7,7 @@ const playfair = Playfair_Display({ subsets: ["latin"] });
 import FAQ from "@/components/FAQ";
 import Location from "@/components/Locationcomponent";
 import FeaturesSpace from "@/components/FeaturesSpace";
-
+import Link from "next/link";
 const About = () => {
   return (
     <div>
@@ -18,10 +18,12 @@ const About = () => {
           <div className="text-6xl ">
             <h1 className={playfair.className}>Our Rates</h1>
           </div>
-          <button className="ctabutton green-box text-white px-8 py-6 text-3xl">
-            {" "}
-            Learn More
-          </button>
+          <Link href="/Rates">
+            <button className="ctabutton green-box text-white px-8 py-6 text-3xl">
+              {" "}
+              Learn More
+            </button>
+          </Link>
         </div>
         <div>
           <Image src="/stok1.jpg" width={800} height={600} />

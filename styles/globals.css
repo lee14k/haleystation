@@ -63,7 +63,19 @@
 .big-text {
   font-size: 10rem;
 }
+.spacebg {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url("/hsone.jpg");
+  background-size: cover;
+  height: 25rem;
+}
 
+.footerwrap {
+  background-color: #E1D6C9;
+}
 @media (max-width: 768px) {
   body {
     width: 150%;

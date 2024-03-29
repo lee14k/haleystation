@@ -13,14 +13,11 @@ const Rates = () => {
     <div>
       <Topbar />
       <div className="green-box ">
-        <div className="grid grid-cols-2 text-yellow-950  py-12 px-4">
-          <div>
-            <Image src="/stok1.jpg" width={800} height={600} />
+        <div className="">
+          <div className=" spacebg text-6xl text-white flex justify-center items-center">
+            <h1 className="text-6xl text-white">Rates</h1>
           </div>
           <div className="flex justify-center items-center flex-col">
-            <div className="text-6xl text-white">
-              <h1>Rates</h1>
-            </div>
             <div>
               <h2>Features</h2>
               <p className="tracking-widest text-white">

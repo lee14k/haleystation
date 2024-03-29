@@ -13,14 +13,12 @@ const Space = () => {
     <div>
       <Topbar />
       <div className="green-box ">
-        <div className="grid grid-cols-2 text-yellow-950  py-12 px-4">
-          <div>
-            <Image src="/stok1.jpg" width={800} height={600} />
-          </div>
+        <div className="spacebg text-6xl text-white flex justify-center items-center">
+          <h1>The Space</h1>
+        </div>
+        <div className="flex text-yellow-950  py-12 px-4">
           <div className="flex justify-center items-center flex-col">
-            <div className="text-6xl text-white">
-              <h1>The Space</h1>
-            </div>
+            <div className=""></div>
             <div>
               <h2>Features</h2>
               <p className="tracking-widest text-white">

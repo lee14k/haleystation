@@ -5,7 +5,7 @@ import { Lora } from "next/font/google";
 import Link from "next/link";
 import Topbar from "@/components/Topbar";
 import Image from "next/image";
-
+import Footer from "@/components/Footer";
 const lora = Lora({ subsets: ["latin"] });
 const playfair = Playfair_Display({ subsets: ["latin"] });
 
@@ -93,8 +93,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="green-box">
-        <Image src="/monogram.png" width={100} height={100} />
+      <div className="green-box justify-center items-center flex flex-col">
         <ThreePhotoRowTwo
           textOne="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
           textTwo="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
@@ -110,19 +109,8 @@ export default function Home() {
           isTextWhite={true}
         />
       </div>
-      <ThreePhotoRowTwo
-        textOne="Come Visit Us"
-        textTwo="Hours"
-        textThree="Get Social"
-        backgroundColor="#E1D6C9" // Direct color value
-        optionalHead="Haley Station Weddings & Event Venue"
-        listItems={[
-          "Beautiful outdoor settings",
-          "Elegant banquet halls",
-          "Custom catering services",
-          "Professional event planning",
-        ]}
-      />
+    
+      <Footer/>
     </div>
   );
 }
