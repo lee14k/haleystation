@@ -37,7 +37,9 @@ export default function Footer() {
           <h2 className="text-3xl fancy-font">Get Social</h2>
           <ul className="flex">
             <li className="flex">
+              <Link href="">
               <BiLogoFacebookCircle className="h-10 w-10" />
+              </Link>
             </li>
             <li className="flex">
               {" "}

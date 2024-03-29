@@ -32,10 +32,10 @@ export default function ContactForm() {
                   />
                 </dt>
                 <dd>
-                  545 Mavis Island
+                319 Stephenson Ave
                   <br />
-                  Chicago, IL 99191
-                </dd>
+                  Escanaba,
+              MI 49829                </dd>
               </div>
               <div className="flex gap-x-4">
                 <dt className="flex-none">
@@ -50,7 +50,7 @@ export default function ContactForm() {
                     className="hover:text-gray-900"
                     href="tel:+1 (555) 234-5678"
                   >
-                    +1 (555) 234-5678
+                    (906) 261-9159
                   </a>
                 </dd>
               </div>
