@@ -38,17 +38,16 @@ export default function Home() {
         </div>
         <div className="tracking-widest text-4xl text-center	">
           <p className={lora.className}>ESCANABA, MI</p>
-          <div className={lora.className}>
-            <Link href="/Contact">
-              <button className="border-4 border-white bg-white text-black px-16 py-2.5 my-6">
-                Book a Consultation
-              </button>
-            </Link>
-          </div>
+          <div className={lora.className}></div>
         </div>
       </div>
       <BridalSectionOne />
-      <div className="wedbox">
+      <div className="bridalone ">
+        <div className="flex justify-center items-center pt-12">
+          <h1 className="fancy-font text-8xl">
+            A Special Venue for Any Special Occasion
+          </h1>
+        </div>
         <HomeThreePic images={homeImages} />
       </div>
 
