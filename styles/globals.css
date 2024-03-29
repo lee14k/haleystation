@@ -11,9 +11,9 @@
 }
 
 .outside {
-  background-image:url('/ouths.jpg');
-  background-position:center;
-  background-size:cover;
+  background-image: url("/ouths.jpg");
+  background-position: center;
+  background-size: cover;
 }
 .firsttextheader {
   background-image: linear-gradient(
@@ -67,7 +67,7 @@
 }
 
 .big-text {
-  font-size: 10rem;
+  font-size: 8rem;
 }
 .spacebg {
   background-image: linear-gradient(
@@ -86,7 +86,8 @@
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Creates 4 equal columns */
-  grid-gap: 20px; /* space between images */
+  grid-gap: 50px; /* space between images */
+  background-color: #f4f1ed;
 }
 
 /* You can modify these classes if you need some specific styles for specific items. */
@@ -103,20 +104,23 @@
   color: white; /* Assuming you want white text over images, adjust as needed */
 }
 
-
 .gallery__item {
   position: relative;
   /* Other styles... */
 }
 
 .gallery__item::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.7)
+  );
   /* Adjust the gradient as needed */
   z-index: 1; /* Ensure the gradient is above the image but below the text */
 }

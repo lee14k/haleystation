@@ -19,12 +19,7 @@ const BridalSectionOne = () => {
             Accommodating up to 60 guests, your event can be both sophisticated
             and cozy.
           </p>
-          <p className="tracking-widest text-xl">
-            We used to be a roller rink, and before that, something else. Built
-            in 1400 BCE., we’ve preserved the vintage charm of the building
-            while elevating the space to suit the unique needs of your special
-            day.
-          </p>
+    
         </div>
       </div>
       <div>

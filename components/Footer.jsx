@@ -7,12 +7,12 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <div className="flex flex-col items-center justify-center py-4 footerwrap py-24">
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center py-12">
         <h1 className="text-6xl fancy-font">Haley Station</h1>
       </div>
       <div className="grid lg:grid-cols-3 gap-24">
         <div>
-          <h2 className="text-3xl fancy-font"> Visit Us</h2>
+          <h2 className="text-4xl fancy-font"> Visit Us</h2>
           <ul className="flex flex-col gap-2">
             <li className="flex gap-2">
               <PhoneIcon className="h-6 w-6" /> (906) 261-9159
@@ -27,14 +27,14 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h2 className="text-3xl fancy-font">Hours</h2>
+          <h2 className="text-4xl fancy-font">Hours</h2>
           <ul>
             <li>By Appointment Only</li>
           </ul>
         </div>
 
         <div>
-          <h2 className="text-3xl fancy-font">Get Social</h2>
+          <h2 className="text-4xl fancy-font">Get Social</h2>
           <ul className="flex">
             <li className="flex">
               <Link href="https://www.facebook.com/profile.php?id=100090651140892">
