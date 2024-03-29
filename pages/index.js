@@ -42,6 +42,7 @@ export default function Home() {
         </div>
       </div>
       <BridalSectionOne />
+      <div className="wedbox">
       <ThreePhotoRowTwo
         photoOne={"/stok1.jpg"}
         photoTwo={"/stok1.jpg"}
@@ -50,20 +51,23 @@ export default function Home() {
         optionalHead={"A Special Venue For Any Special Occasion"}
         showBorder={false}
         boldFont={false}
+        
       />
+      </div>
       <div className={playfair.className}>
         <ThreePhotoRowTwo
           textOne="Weddings"
           textTwo="Photos"
           textThree="Events"
           backgroundColor="#F4F1ED"
-          linkUrlOne="/About"
-          linkUrlTwo="/Events"
+          linkUrlOne="/Events"
+          linkUrlTwo="/Gallery"
           linkUrlThree="/Weddings"
+          className="wedbox"
         />
       </div>
       <div>
-        <div className="grid grid-cols-2 text-yellow-950 bridalone py-12 px-4">
+        <div className="grid lg:grid-cols-2 text-yellow-950 bridalone py-12 px-4">
           <div className="flex justify-center items-center flex-col mx-12">
             <div className="text-6xl brown-text ">
               <h1 className={playfair.className}>

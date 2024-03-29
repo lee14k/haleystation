@@ -6,12 +6,10 @@ const lora = Lora({ subsets: ["latin"] });
 
 const BridalSectionOne = () => {
   return (
-    <div className="grid grid-cols-2 text-yellow-950 bridalone py-12 px-4">
+    <div className="grid lg:grid-cols-2 text-yellow-950 bridalone py-12 px-4">
       <div className="flex justify-center items-center flex-col mx-24">
         <div className="text-6xl brown-text ">
-          <h1 className='fancy-font'>
-            Weddings, showers, graduations & more
-          </h1>
+          <h1 className="fancy-font">Weddings, showers, graduations & more</h1>
         </div>
         <div className={lora.className}>
           <p className="tracking-widest text-xl my-4">

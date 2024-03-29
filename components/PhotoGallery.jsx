@@ -19,7 +19,6 @@ export default function PhotoGallery() {
     <div>
       <div className="flex justify-center items-center flex-col">
         <h1 className="text-6xl">Gallery</h1>
-     
       </div>
       <div className="lg:grid lg:grid-cols-3 lg:grid-rows-2">
         {images.map((image, index) => (
@@ -43,7 +42,10 @@ export default function PhotoGallery() {
           </div>
         ))}
       </div>
-      <p className="text-xl mx-24">Did you celebrate at Haley Station? Tag us on Facebook and Instagram @HaleyStationVenue-- we’d love to see photos of your special day! </p>
+      <p className="text-xl mx-24">
+        Did you celebrate at Haley Station? Tag us on Facebook and Instagram
+        @HaleyStationVenue-- we’d love to see photos of your special day!{" "}
+      </p>
     </div>
   );
 }

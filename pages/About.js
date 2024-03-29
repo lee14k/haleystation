@@ -6,11 +6,13 @@ const lora = Lora({ subsets: ["latin"] });
 const playfair = Playfair_Display({ subsets: ["latin"] });
 import FAQ from "@/components/FAQ";
 import Location from "@/components/Location";
+import FeaturesSpace from "@/components/FeaturesSpace";
 
 const About = () => {
   return (
     <div>
       <Topbar />
+      <FeaturesSpace/>
       <div className="grid grid-cols-2 text-yellow-950 bridalone py-12 px-4">
         <div className="flex justify-center items-center flex-col">
           <div className="text-6xl ">

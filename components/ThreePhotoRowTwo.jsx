@@ -54,11 +54,35 @@ const ThreePhotoRowTwo = ({
     isFirstContent = false
   ) => {
     const content = (
-      <div className={`flex flex-col h-300 w-300 items-center justify-center mb-10 ${showBorder ? "border-2 py-12 px-28 border-yellow-900" : ""}`}>
-        {photo && <Image src={photo} alt="" width={500} height={500} />}
-        {text && <p className={`text-center ${boldFont ? "font-bold" : ""} ${isFirstContent ? "text-xl" : "text-xl"} ${isTextWhite ? "text-white" : ""}`}>{text}</p>}
+      <div
+        className={`flex flex-col h-300 w-300 items-center justify-center mb-10 ${
+          showBorder ? "border-2 py-12 px-28 border-yellow-900 " : ""
+        }`}
+      >
+        {photo && (
+          <Image
+            src={photo}
+            alt=""
+            width={500}
+            height={500}
+            class="threeimage"
+          />
+        )}
+        {text && (
+          <p
+            className={`text-center ${boldFont ? "font-bold" : ""} ${
+              isFirstContent ? "text-xl" : "text-xl"
+            } ${isTextWhite ? "text-white" : ""}`}
+          >
+            {text}
+          </p>
+        )}
         {caption && (
-          <p className={`mt-2 text-center ${boldFont ? "font-bold" : ""} ${isFirstContent ? "text-xl" : "text-xl"} ${isTextWhite ? "text-white" : ""}`}>
+          <p
+            className={`mt-2 text-center ${boldFont ? "font-bold" : ""} ${
+              isFirstContent ? "text-xl" : "text-xl"
+            } ${isTextWhite ? "text-white" : ""}`}
+          >
             {caption}
           </p>
         )}
@@ -89,7 +113,14 @@ const ThreePhotoRowTwo = ({
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-14">
         {/* Only pass the listItems to the first renderContent call */}
-        {renderContent(photoOne, textOne, captionOne, linkUrlOne, listItems, true)}
+        {renderContent(
+          photoOne,
+          textOne,
+          captionOne,
+          linkUrlOne,
+          listItems,
+          true
+        )}
         {renderContent(photoTwo, textTwo, captionTwo, linkUrlTwo)}
         {renderContent(photoThree, textThree, captionThree, linkUrlThree)}
       </div>
