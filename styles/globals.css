@@ -15,7 +15,7 @@
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("/stok2.jpeg");
+    url("/hsone.jpg");
   background-size: cover;
   height: 55rem;
 }
@@ -29,7 +29,7 @@
   border-radius: 50px;
   height: 100px;
   width: 100px;
-  filter: drop-shadow(5px 5px 14px #000000);
+  filter: drop-shadow(5px 2px 5px #000000);
 }
 
 .green-box {

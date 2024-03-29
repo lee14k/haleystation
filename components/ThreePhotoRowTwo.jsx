@@ -65,7 +65,7 @@ const ThreePhotoRowTwo = ({
             alt=""
             width={500}
             height={500}
-            class="threeimage"
+            className="threeimage"
           />
         )}
         {text && (

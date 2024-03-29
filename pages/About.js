@@ -12,32 +12,15 @@ const About = () => {
   return (
     <div>
       <Topbar />
-      <FeaturesSpace/>
+      <FeaturesSpace />
       <div className="grid grid-cols-2 text-yellow-950 bridalone py-12 px-4">
-        <div className="flex justify-center items-center flex-col">
+        <div className="flex justify-center items-center flex-col gap-10">
           <div className="text-6xl ">
             <h1 className={playfair.className}>Our Rates</h1>
           </div>
-          <div className={lora.className}>
-            <p className="tracking-widest">
-              Please call us for 2024 rates. If the venue knows their rates,
-              let’s type them here. Are there standard packages/add ons?
-            </p>
-            <h2>Weddings</h2>
-            <p className="tracking-widest">
-              We used to be a roller rink, and before that, something else.
-              Built in 1400 BCE., we’ve preserved the vintage charm of the
-              building while elevating the space to suit the unique needs of
-              your special day.
-            </p>
-            <h2>Showers & Parties</h2>
-            <p className="tracking-widest">
-              Showers, graduation parties, company events are booked on an
-              hourly rate with a maximumof 6 hours. Please call for 2024 hourly
-              rate.
-            </p>
-          </div>
-          <button className="ctabutton green-box text-white px-8 py-6 text-3xl">            Book Today!
+          <button className="ctabutton green-box text-white px-8 py-6 text-3xl">
+            {" "}
+            Learn More
           </button>
         </div>
         <div>

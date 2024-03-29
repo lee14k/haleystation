@@ -3,6 +3,7 @@ const playfair = Playfair_Display({ subsets: ["latin"] });
 import { Lora } from "next/font/google";
 const lora = Lora({ subsets: ["latin"] });
 import Image from "next/image";
+import Link from "next/link";
 
 export default function FeaturesSpace() {
   return (
@@ -11,33 +12,28 @@ export default function FeaturesSpace() {
         <div>
           <Image src="/stok1.jpg" width={800} height={600} />
         </div>
-        <div className="flex justify-center items-center flex-col">
+        <div className="flex justify-center items-center flex-col gap-10">
           <div className="text-6xl text-white">
             <h1 className={playfair.className}>The Space</h1>
           </div>
           <div className={lora.className}>
-            <h2>Features</h2>
             <p className="tracking-widest text-white">
-              Please call us for 2024 rates. If the venue knows their rates,
-              let’s type them here. Are there standard packages/add ons?
+              Haley Station is one of the few venues in the Delta County area to
+              host beautiful indoor ceremonies in our spacious venue, filled
+              with natural light from our many beautiful large windows. The
+              space also features the main open area, a beautiful built-in bar,
+              a romantic brick fireplace for aesthetic use only, and an outdoor
+              courtyard with festoon lighting. As a year-round venue, our
+              clients have the peace of mind of knowing that inclement weather
+              will not impact their special day.
             </p>
-            <ul>
-              <li>
-                A white interior with picture frame wall moldings and tons of
-                natural light
-              </li>
-              <li>Large modern black windows with black grids</li>
-              <li>Expansive front windows</li>
-              <li>Dark moody tall tray ceiling</li>
-              <li>11 foot ceilings with accent moldings</li>
-              <li>Elegant dimmable chandeliers</li>
-              <li>Modern black ceiling fans</li>
-              <li>Custom statement doors, black with brass hardware</li>
-            </ul>
           </div>
-          <button className="ctabutton bridalone brown-text px-8 py-6 text-3xl">
-            Book Today!
-          </button>
+          <Link href="/Space">
+            {" "}
+            <button className="ctabutton bridalone brown-text px-8 py-6 text-3xl">
+              Learn More
+            </button>
+          </Link>
         </div>
       </div>
     </div>

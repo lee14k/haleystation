@@ -43,16 +43,15 @@ export default function Home() {
       </div>
       <BridalSectionOne />
       <div className="wedbox">
-      <ThreePhotoRowTwo
-        photoOne={"/stok1.jpg"}
-        photoTwo={"/stok1.jpg"}
-        photoThree={"/stok1.jpg"}
-        backgroundColor="#F4F1ED"
-        optionalHead={"A Special Venue For Any Special Occasion"}
-        showBorder={false}
-        boldFont={false}
-        
-      />
+        <ThreePhotoRowTwo
+          photoOne={"/hsone.jpg"}
+          photoTwo={"/hsone.jpg"}
+          photoThree={"/hsone.jpg"}
+          backgroundColor="#F4F1ED"
+          optionalHead={"A Special Venue For Any Special Occasion"}
+          showBorder={false}
+          boldFont={false}
+        />
       </div>
       <div className={playfair.className}>
         <ThreePhotoRowTwo
@@ -89,7 +88,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col">
-            <Image src="/stok1.jpg" width={800} height={600} />
+            <Image src="/hsthree.jpg" width={800} height={600} />
             <span className="w-full">Photo by John Doe</span>
           </div>
         </div>
