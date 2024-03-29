@@ -10,10 +10,10 @@ const Location = () => {
     <div>
       <Topbar />
       <div className="green-box ">
+        <div className=" spacebg text-6xl text-white flex justify-center items-center">
+          <h1 className="text-8xl text-white fancy-font">Location</h1>
+        </div>
         <div className="grid grid-cols-2 text-yellow-950  py-12 px-4">
-          <div>
-            <Image src="/stok1.jpg" width={800} height={600} />
-          </div>
           <div className="flex justify-center items-center flex-col">
             <div className="text-6xl text-white">
               <h1>Rates</h1>
@@ -43,23 +43,24 @@ const Location = () => {
                   Delta County Airport is just a 10-minute drive away, offering
                   easy access for those flying in for your event.{" "}
                 </p>
-                <h2>Nearby hotels</h2> 
-                <p>The House of Ludington | 223 Ludington
-                St, Escanaba, MI 49829 | A historic hotel located within walking
-                distance of downtown attractions. Comfort Suites Escanaba | 3600
-                Ludington St, Escanaba, MI 49829 | A short drive from downtown,
-                offering guests comfortable accommodations. Visitors often enjoy
-                staying at the Terrace Bay Hotel, located directly on Lake
-                Michigan, about 15 minutes away from downtown. The hotel offers
-                stunning waterfront views, dining, and a unique Upper Peninsula
-                experience.</p> 
-                
-                Nearby, guests can explore Hiawatha National Forest
-                or take a short drive to the charming town of Marquette for
-                additional dining, shopping, and outdoor activities. Escanaba's
-                blend of natural beauty, historical charm, and modern
-                conveniences makes it an ideal location for events that seek a
-                memorable and relaxed setting.
+                <h2>Nearby hotels</h2>
+                <p>
+                  The House of Ludington | 223 Ludington St, Escanaba, MI 49829
+                  | A historic hotel located within walking distance of downtown
+                  attractions. Comfort Suites Escanaba | 3600 Ludington St,
+                  Escanaba, MI 49829 | A short drive from downtown, offering
+                  guests comfortable accommodations. Visitors often enjoy
+                  staying at the Terrace Bay Hotel, located directly on Lake
+                  Michigan, about 15 minutes away from downtown. The hotel
+                  offers stunning waterfront views, dining, and a unique Upper
+                  Peninsula experience.
+                </p>
+                Nearby, guests can explore Hiawatha National Forest or take a
+                short drive to the charming town of Marquette for additional
+                dining, shopping, and outdoor activities. Escanaba's blend of
+                natural beauty, historical charm, and modern conveniences makes
+                it an ideal location for events that seek a memorable and
+                relaxed setting.
               </p>
             </div>
             <Link href="/Space">
