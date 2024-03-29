@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Location() {
   return (
     <div className="green-box ">
-      <div className="grid grid-cols-2 text-yellow-950  py-12 px-4">
+      <div className="grid lg:grid-cols-2 text-yellow-950  py-12 px-4">
         <div>
           <Image src="/stok1.jpg" width={800} height={600} />
         </div>
