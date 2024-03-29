@@ -5,7 +5,7 @@ import Image from "next/image";
 const lora = Lora({ subsets: ["latin"] });
 const playfair = Playfair_Display({ subsets: ["latin"] });
 import FAQ from "@/components/FAQ";
-import Location from "@/components/Location";
+import Location from "@/components/Locationcomponent";
 import FeaturesSpace from "@/components/FeaturesSpace";
 
 const About = () => {
