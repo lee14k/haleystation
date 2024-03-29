@@ -70,4 +70,4 @@ const Rates = () => {
   );
 };
 
-export default Space;
+export default Rates;

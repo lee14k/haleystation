@@ -5,33 +5,34 @@ import { IoPricetagsOutline } from "react-icons/io5";
 
 export const routes = [
   {
-    key:0,
+    key: 0,
     title: "Home",
     href: "/",
     Icon: BiHomeAlt2,
   },
   {
-    key:1,
+    key: 1,
     title: "About",
     href: "/About",
     Icon: FiSearch,
   },
   {
-    key:2,
+    key: 2,
     title: "Events",
     href: "/Events",
     Icon: IoPricetagsOutline,
   },
   {
-    key:3,
+    key: 3,
     title: "Gallery",
     href: "/Gallery",
     Icon: PiChatCircleBold,
   },
   {
-    key:4,
+    key: 4,
     title: "Contact",
     href: "/Contact",
     Icon: PiChatCircleBold,
   },
+ 
 ];
