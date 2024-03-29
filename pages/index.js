@@ -6,10 +6,17 @@ import Link from "next/link";
 import Topbar from "@/components/Topbar";
 import Image from "next/image";
 import Footer from "@/components/Footer";
+import HomeThreePic from "@/components/HomeThreePic";
 const lora = Lora({ subsets: ["latin"] });
 const playfair = Playfair_Display({ subsets: ["latin"] });
 
 export default function Home() {
+  const homeImages = [
+    { link: "/hsone.jpg", header: "Our Space", page: "/Space" },
+    { link: "/hsone.jpg", header: "Events", page: "/Events" },
+    { link: "/hsone.jpg", header: "Gallery", page: "/Gallery" },
+
+  ];
   return (
     <div>
       <div className="">
@@ -43,28 +50,9 @@ export default function Home() {
       </div>
       <BridalSectionOne />
       <div className="wedbox">
-        <ThreePhotoRowTwo
-          photoOne={"/hsone.jpg"}
-          photoTwo={"/hsone.jpg"}
-          photoThree={"/hsone.jpg"}
-          backgroundColor="#F4F1ED"
-          optionalHead={"A Special Venue For Any Special Occasion"}
-          showBorder={false}
-          boldFont={false}
-        />
+        <HomeThreePic images={homeImages} />
       </div>
-      <div className={playfair.className}>
-        <ThreePhotoRowTwo
-          textOne="Weddings"
-          textTwo="Photos"
-          textThree="Events"
-          backgroundColor="#F4F1ED"
-          linkUrlOne="/Events"
-          linkUrlTwo="/Gallery"
-          linkUrlThree="/Weddings"
-          className="wedbox"
-        />
-      </div>
+  
       <div>
         <div className="grid lg:grid-cols-2 text-yellow-950 bridalone py-12 px-4">
           <div className="flex justify-center items-center flex-col mx-12">

@@ -6,7 +6,7 @@ import { BiLogoInstagram } from "react-icons/bi";
 
 export default function Footer() {
   return (
-    <div className="flex flex-col items-center justify-center py-4 footerwrap py-16">
+    <div className="flex flex-col items-center justify-center py-4 footerwrap py-24">
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-6xl fancy-font">Haley Station</h1>
       </div>
@@ -36,19 +36,18 @@ export default function Footer() {
         <div>
           <h2 className="text-3xl fancy-font">Get Social</h2>
           <ul className="flex">
-          <li className="flex">
-            <BiLogoFacebookCircle className="h-10 w-10" />
-          </li>
-          <li className="flex">
-            {" "}
-            <BiLogoInstagram className="h-10 w-10" />
-          </li>
+            <li className="flex">
+              <BiLogoFacebookCircle className="h-10 w-10" />
+            </li>
+            <li className="flex">
+              {" "}
+              <BiLogoInstagram className="h-10 w-10" />
+            </li>
           </ul>
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center">
-      </div>
+      <div className="flex flex-col items-center justify-center"></div>
     </div>
   );
 }
