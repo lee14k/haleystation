@@ -4,9 +4,6 @@ import { Lora } from "next/font/google";
 import Image from "next/image";
 const lora = Lora({ subsets: ["latin"] });
 const playfair = Playfair_Display({ subsets: ["latin"] });
-import FAQ from "@/components/FAQ";
-import Location from "@/components/Locationcomponent";
-import FeaturesSpace from "@/components/FeaturesSpace";
 import Link from "next/link";
 const Location = () => {
   return (
