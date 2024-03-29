@@ -4,6 +4,7 @@ import { Lora } from "next/font/google";
 const lora = Lora({ subsets: ["latin"] });
 import Image from "next/image";
 import Topbar from "@/components/Topbar";
+import Footer from "@/components/Footer";
 const Events = () => {
   return (
     <div className="bridalone">

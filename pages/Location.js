@@ -21,38 +21,46 @@ const Location = () => {
             <div>
               <h2>Features</h2>
               <p className="tracking-widest text-white">
-                - For weddings, the main room is intended as a ceremony space
-                that can smoothly transition to the dinner reception and dancing
-                and entertainment space. The guests can enjoy a smooth
-                transition to our back lounge area and through to the adjacent
-                outdoor courtyard space through the back door for cocktail hour
-                and later during the reception. - The outdoor courtyard features
-                thoughtful year-round landscaping, charming festoon string
-                lights, and outdoor space heaters if necessary. - As a
-                year-round venue, clients always have the peace of mind of
-                knowing that inclement weather will not impact their special day
-                as an outdoor location would – there is no need for a rain plan
-                at Haley Station. - “Start with a beautiful canvas. When you
-                begin the design process with a naturally well-appointed space,
-                it will require less fuss (and less funds) to make it gorgeous.”
-                Capacity - Haley Station is ideal for intimate weddings of 125
-                and less; hosting both ceremony & reception - 125 sit
-                comfortably dinner-style and ceremony-style in the main open
-                area - 225 max capacity, cocktail-style
+                Nestled in the picturesque Upper Peninsula of Michigan, Escanaba
+                emerges as a hidden gem for events and gatherings. This quaint
+                city, with its serene Lake Michigan shoreline, offers a backdrop
+                that blends natural beauty with small-town charm. Downtown
+                Escanaba, often referred to as the "Heart of the Upper
+                Peninsula," features a collection of well-preserved historic
+                buildings and local boutiques that line Ludington Street,
+                providing a quaint and inviting atmosphere for visitors and
+                locals alike. With ample free public parking throughout
+                downtown, Escanaba presents an appealing urban experience devoid
+                of the parking frustrations commonly found in larger cities.
+                Guests can enjoy the ease of access to event locations without
+                the usual city congestion.
+                <h2>Directions</h2>
+                <p>
+                  Traveling on US-2/US-41, take the exit toward Ludington Street
+                  in downtown Escanaba. Continue on Ludington Street to explore
+                  the heart of Escanaba. Event venues and local attractions are
+                  conveniently situated along this historic stretch. Travel:
+                  Delta County Airport is just a 10-minute drive away, offering
+                  easy access for those flying in for your event.{" "}
+                </p>
+                <h2>Nearby hotels</h2> 
+                <p>The House of Ludington | 223 Ludington
+                St, Escanaba, MI 49829 | A historic hotel located within walking
+                distance of downtown attractions. Comfort Suites Escanaba | 3600
+                Ludington St, Escanaba, MI 49829 | A short drive from downtown,
+                offering guests comfortable accommodations. Visitors often enjoy
+                staying at the Terrace Bay Hotel, located directly on Lake
+                Michigan, about 15 minutes away from downtown. The hotel offers
+                stunning waterfront views, dining, and a unique Upper Peninsula
+                experience.</p> 
+                
+                Nearby, guests can explore Hiawatha National Forest
+                or take a short drive to the charming town of Marquette for
+                additional dining, shopping, and outdoor activities. Escanaba's
+                blend of natural beauty, historical charm, and modern
+                conveniences makes it an ideal location for events that seek a
+                memorable and relaxed setting.
               </p>
-              <ul>
-                <li>
-                  A white interior with picture frame wall moldings and tons of
-                  natural light
-                </li>
-                <li>Large modern black windows with black grids</li>
-                <li>Expansive front windows</li>
-                <li>Dark moody tall tray ceiling</li>
-                <li>11 foot ceilings with accent moldings</li>
-                <li>Elegant dimmable chandeliers</li>
-                <li>Modern black ceiling fans</li>
-                <li>Custom statement doors, black with brass hardware</li>
-              </ul>
             </div>
             <Link href="/Space">
               {" "}
