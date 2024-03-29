@@ -5,7 +5,7 @@ import Image from "next/image";
 const lora = Lora({ subsets: ["latin"] });
 const playfair = Playfair_Display({ subsets: ["latin"] });
 import FAQ from "@/components/FAQ";
-import Location from "@/components/Locationcomponent";
+import Locationcomponent from "@/components/Locationcomponent";
 import FeaturesSpace from "@/components/FeaturesSpace";
 import Link from "next/link";
 const About = () => {
@@ -29,7 +29,7 @@ const About = () => {
           <Image src="/stok1.jpg" width={800} height={600} />
         </div>
       </div>
-      <Location />
+      <Locationcomponent />
       <FAQ />
     </div>
   );
