@@ -3,7 +3,7 @@ import { MapPinIcon } from "@heroicons/react/24/outline";
 import { FiFacebook } from "react-icons/fi";
 import { BiLogoFacebookCircle } from "react-icons/bi";
 import { BiLogoInstagram } from "react-icons/bi";
-
+import Link from "next/link";
 export default function Footer() {
   return (
     <div className="flex flex-col items-center justify-center py-4 footerwrap py-24">
@@ -37,13 +37,14 @@ export default function Footer() {
           <h2 className="text-3xl fancy-font">Get Social</h2>
           <ul className="flex">
             <li className="flex">
-              <Link href="">
-              <BiLogoFacebookCircle className="h-10 w-10" />
+              <Link href="https://www.facebook.com/profile.php?id=100090651140892">
+                <BiLogoFacebookCircle className="h-10 w-10" />
               </Link>
             </li>
             <li className="flex">
-              {" "}
-              <BiLogoInstagram className="h-10 w-10" />
+              <Link href="https://www.instagram.com/haley_station?igsh=MTlqM2p4YmRxaGdmbg==">
+                <BiLogoInstagram className="h-10 w-10" />
+              </Link>
             </li>
           </ul>
         </div>
