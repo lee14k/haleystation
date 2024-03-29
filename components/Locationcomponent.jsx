@@ -3,6 +3,7 @@ const playfair = Playfair_Display({ subsets: ["latin"] });
 import { Lora } from "next/font/google";
 const lora = Lora({ subsets: ["latin"] });
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Location() {
   return (
@@ -16,7 +17,7 @@ export default function Location() {
             <h1 className={playfair.className}>Location</h1>
           </div>
           <div className={lora.className}>
-            <p className="tracking-widest text-white">
+            <p className="tracking-widest text-white text-2xl">
               Nestled in the picturesque Upper Peninsula of Michigan, Escanaba
               emerges as a hidden gem for events and gatherings. This quaint
               city, with its serene Lake Michigan shoreline, offers a backdrop
@@ -27,9 +28,11 @@ export default function Location() {
               inviting atmosphere for visitors and locals alike.
             </p>
           </div>
+          <Link href="/Location">
           <button className="ctabutton bridalone brown-text px-8 py-6 text-3xl">
-            Book Today!
+            Learn More
           </button>
+          </Link>
         </div>
       </div>
     </div>

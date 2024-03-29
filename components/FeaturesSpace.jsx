@@ -17,7 +17,7 @@ export default function FeaturesSpace() {
             <h1 className={playfair.className}>The Space</h1>
           </div>
           <div className={lora.className}>
-            <p className="tracking-widest text-white">
+            <p className="tracking-widest text-white text-2xl">
               Haley Station is one of the few venues in the Delta County area to
               host beautiful indoor ceremonies in our spacious venue, filled
               with natural light from our many beautiful large windows. The

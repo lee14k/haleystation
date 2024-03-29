@@ -15,7 +15,6 @@ export default function Home() {
     { link: "/hsone.jpg", header: "Our Space", page: "/Space" },
     { link: "/hsone.jpg", header: "Events", page: "/Events" },
     { link: "/hsone.jpg", header: "Gallery", page: "/Gallery" },
-
   ];
   return (
     <div>
@@ -52,7 +51,7 @@ export default function Home() {
       <div className="wedbox">
         <HomeThreePic images={homeImages} />
       </div>
-  
+
       <div>
         <div className="grid lg:grid-cols-2 text-yellow-950 bridalone py-12 px-4">
           <div className="flex justify-center items-center flex-col mx-12">
@@ -91,7 +90,7 @@ export default function Home() {
           textColor={"white"}
           showBorder={false}
           boldFont={false}
-          captionOne="pop"
+          captionOne="John Doe"
           captionTwo="Jane Doe"
           captionThree="John Smith"
           isTextWhite={true}
