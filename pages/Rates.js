@@ -8,6 +8,7 @@ import FAQ from "@/components/FAQ";
 import Location from "@/components/Locationcomponent";
 import FeaturesSpace from "@/components/FeaturesSpace";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 const Rates = () => {
   return (
     <div>
@@ -15,31 +16,67 @@ const Rates = () => {
       <div className="green-box ">
         <div className="">
           <div className=" spacebg text-6xl text-white flex justify-center items-center">
-            <h1 className="text-6xl text-white">Rates</h1>
+            <h1 className="text-8xl text-white fancy-font">Rates</h1>
           </div>
           <div className="flex justify-center items-center flex-col">
             <div>
               <h2>Features</h2>
-              <p className="tracking-widest text-white">
-                - For weddings, the main room is intended as a ceremony space
-                that can smoothly transition to the dinner reception and dancing
-                and entertainment space. The guests can enjoy a smooth
-                transition to our back lounge area and through to the adjacent
-                outdoor courtyard space through the back door for cocktail hour
-                and later during the reception. - The outdoor courtyard features
-                thoughtful year-round landscaping, charming festoon string
-                lights, and outdoor space heaters if necessary. - As a
-                year-round venue, clients always have the peace of mind of
-                knowing that inclement weather will not impact their special day
-                as an outdoor location would – there is no need for a rain plan
-                at Haley Station. - “Start with a beautiful canvas. When you
-                begin the design process with a naturally well-appointed space,
-                it will require less fuss (and less funds) to make it gorgeous.”
-                Capacity - Haley Station is ideal for intimate weddings of 125
-                and less; hosting both ceremony & reception - 125 sit
-                comfortably dinner-style and ceremony-style in the main open
-                area - 225 max capacity, cocktail-style
-              </p>
+              <div className="tracking-widest text-white">
+               <h2>Wedding Packages $1,795 (Friday-Saturday) ($1,295 any other day of the week)</h2> 
+                Our one-of-a-kind venue was designed to be a
+                flexible and transformable space for guest counts of up to 125
+                seated, 225 cocktail setting. INCLUDES:
+                <ul>
+                    <li>(12) 60-inch round wood
+                tables</li>
+                <li>(4) 72-inch round wood tables</li>
+                <li>(12) 60-inch round wood
+                tables</li>
+                <li>125 white padded chairs (125 black chiavarri chairs are an available upgrade)</li>
+                <li>(2) outdoor
+                patio space heaters</li>
+                <li>(1) In-house specialty lounge set</li>
+                <li>(3) In-house specialty bistro sets </li>
+                <li>(6) Cocktail tables</li>
+                <li>(4) farm benches</li>
+                <li>(2) accent tables for
+                cake/desserts/welcome/sweetheart</li>
+                    </ul> 
+                Over $3000 in added value of
+                specialty rental furniture! 
+                15 hours of venue space use (9am-midnight) 
+                Use of outdoor patio space 
+                Complete set up of Tables
+                Floor Length Round White Table Linens 
+                Full bar with serviced
+                bartender with purchase of alcohol package. 
+                Use of in-house décor
+                In-house coordination with vendors for setup and timeliness of events 
+               
+
+                <h2>Capacity</h2>
+
+-        Haley Station is ideal for intimate weddings of 125 and less; hosting both ceremony & reception
+
+-        125 sit comfortably dinner-style and ceremony-style in the main open area
+
+
+-        225 max capacity, cocktail-style
+
+
+
+6 Hour Packages - $595 (Includes set up and clean up) Additional Hours available $100/per hour
+Ideal for small events, showers, anniversary parties, get-togethers, graduation parties, cocktail events, etc. 
+
+
+
+INCLUDES round wood tables, white padded chairs, black chiavarri chairs are an available upgrade, (2) outdoor patio space heaters
+
+INCLUDES our beautiful in-house specialty furniture; (1) lounge set, (3) bistro sets, (6) cocktail tables
+
+
+Hourly Rate $100.00, Minimum of 3 hours
+              </div>
               <ul>
                 <li>
                   A white interior with picture frame wall moldings and tons of

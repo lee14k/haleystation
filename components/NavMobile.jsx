@@ -52,7 +52,7 @@ const NavMobile = () => {
                     <Link
                       href={route.href}
                       className={
-                        "flex items-center justify-between w-full rounded-xl "
+                        "flex items-center justify-center w-full rounded-xl "
                       }
                     >
                       <span className="flex gap-1 text-2xl">{route.title}</span>

@@ -93,7 +93,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="green-box justify-center items-center flex flex-col">
+      <div className="green-box justify-center items-center flex flex-col py-16">
         <ThreePhotoRowTwo
           textOne="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
           textTwo="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
@@ -109,8 +109,8 @@ export default function Home() {
           isTextWhite={true}
         />
       </div>
-    
-      <Footer/>
+
+      <Footer />
     </div>
   );
 }
