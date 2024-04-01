@@ -3,6 +3,7 @@ import Topbar from "../components/Topbar";
 import { Playfair_Display } from "next/font/google";
 import { Lora } from "next/font/google";
 import Image from "next/image";
+import {ChevronDownIcon } from "@heroicons/react/24/outline";
 
 const lora = Lora({ subsets: ["latin"] });
 const playfair = Playfair_Display({ subsets: ["latin"] });
@@ -16,9 +17,9 @@ const FAQ = () => {
     },
     {
       question:
-        "Do you have bartenders on staff, or do I need to provide my own? Can I provide my own alcohol?",
+        "Do you have bartenders on staff, or do I need to provide my own?",
       answer:
-        "We have professional bartenders on staff. You are welcome to provide your own alcohol, but it must be served by our bartenders.",
+        "We have professional bartenders on staff. ",
     },
     {
       question: "Where can my guests park? Where can they stay in town?",
@@ -35,6 +36,10 @@ const FAQ = () => {
       answer:
         "Absolutely! We encourage you to schedule a tour to see the venue and discuss your event in detail.",
     },
+    {
+      question: "Can I provide my own alcohol?",
+      answer: "No, all alcohol must be provided in house, no carry-ins"
+    }
   ];
 
   // State to keep track of which answers are visible
@@ -60,9 +65,9 @@ const FAQ = () => {
             <div key={item.question} className="my-4">
               <button
                 onClick={() => toggleAnswerVisibility(index)}
-                className="text-left w-full text-xl"
+                className="text-left w-full text-xl flex gap-2"
               >
-                {item.question}
+                {item.question} <ChevronDownIcon className="w-6 h-6"/>
               </button>
               {visibleAnswers[index] && (
                 <div className="text-xl mt-2">{item.answer}</div>
