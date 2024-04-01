@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function FeaturesSpace() {
   return (
     <div className="green-box ">
-      <div className="grid lg:grid-cols-2 text-yellow-950  py-12 px-4">
+      <div className="grid lg:grid-cols-2 text-yellow-950 gap-6 py-12 px-4">
         <div>
           <Image src="/stok1.jpg" width={800} height={600} />
         </div>

@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Location() {
   return (
     <div className="green-box ">
-      <div className="grid lg:grid-cols-2 text-yellow-950  py-12 px-4">
+      <div className="grid lg:grid-cols-2 text-yellow-950  py-12 px-4 gap-6">
         <div>
           <Image src="/stok1.jpg" width={800} height={600} />
         </div>
@@ -29,9 +29,9 @@ export default function Location() {
             </p>
           </div>
           <Link href="/Location">
-          <button className="ctabutton bridalone brown-text px-8 py-6 text-3xl">
-            Learn More
-          </button>
+            <button className="ctabutton bridalone brown-text px-8 py-6 text-3xl">
+              Learn More
+            </button>
           </Link>
         </div>
       </div>
