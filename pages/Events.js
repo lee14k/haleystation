@@ -116,11 +116,11 @@ const Events = () => {
       </div>
       <div className="grid grid-cols-2 text-yellow-950 green-box py-12 px-4">
         <div className="flex justify-center items-center flex-col">
-          <div className="text-6xl ">
+          <div className="text-6xl text-white">
             <h1 className={playfair.className}>Photoshoots</h1>
           </div>
           <div className={lora.className}>
-            <p className="tracking-widest text-2xl">
+            <p className="tracking-widest text-2xl text-white">
               For any event you're organizing, choose Haley Station as the top
               destination in Escanaba. Our recently designed venue features a
               fireplace, hardwood flooring, a bar, and more amenities.
