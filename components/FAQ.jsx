@@ -56,7 +56,7 @@ const FAQ = () => {
 
   return (
     <div className="">
-      <div className="grid lg:grid-cols-2 text-yellow-950  py-12 px-4">
+      <div className="grid lg:grid-cols-2 text-yellow-950 py-12 px-4">
         <div className="flex justify-center items-center flex-col">
           <div className="text-6xl">
             <h1 className={playfair.className}>FAQs</h1>
@@ -65,17 +65,17 @@ const FAQ = () => {
             <div key={item.question} className="my-4">
               <button
                 onClick={() => toggleAnswerVisibility(index)}
-                className="text-left w-full text-xl flex gap-2"
+                className="text-left w-full text-2xl flex gap-2"
               >
                 {item.question} <ChevronDownIcon className="w-6 h-6"/>
               </button>
               {visibleAnswers[index] && (
-                <div className="text-xl mt-2">{item.answer}</div>
+                <div className="text-left w-full text-2xl">{item.answer}</div>
               )}
             </div>
           ))}
         </div>
-        <div>
+        <div className="ml-4">
           <Image src="/stok1.jpg" width={800} height={600} />
         </div>
       </div>

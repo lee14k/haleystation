@@ -13,13 +13,13 @@ const Space = () => {
   return (
     <div>
       <Topbar />
-      <div className="green-box">
-        <div className="spacebg text-6xl text-white flex justify-center items-center">
-          <h1 className="text-8xl fancy-font">The Space</h1>
+      <div className="">
+        <div className="spacebg text-6xl flex justify-center items-center">
+          <h1 className="text-8xl fancy-font text-white">The Space</h1>
         </div>
-        <div className="flex text-yellow-950  py-12 px-4">
-          <div className="flex justify-center items-center flex-col">
-            <div className="text-white grid lg:grid-cols-2">
+        <div className="flex text-yellow-950 ">
+          <div className="flex justify-center items-center flex-col ">
+            <div className="text-white grid lg:grid-cols-2 green-box  py-12 px-4 ">
               <div className="">
                 {" "}
                 <h2 className="text-4xl fancy-font">Features</h2>
@@ -61,7 +61,7 @@ const Space = () => {
               </div>
             </div>
 
-            <div className="text-white grid lg:grid-cols-2 my-12">
+            <div className="grid lg:grid-cols-2 py-12 bridalone">
               <div>
                 {" "}
                 <Image src="/stok1.jpg" width={800} height={600} />
