@@ -10,13 +10,13 @@ const Events = () => {
   return (
     <div className="bridalone">
       <Topbar />
-      <div className="grid grid-cols-2 text-yellow-950 green-box py-12 px-4">
+      <div className="grid lg:grid-cols-2 text-yellow-950 green-box py-12 px-4">
         <div className="flex justify-center items-center flex-col">
           <div className="text-6xl text-white ">
             <h1 className={playfair.className}>Events at Haley Station</h1>
           </div>
           <div className={lora.className}>
-            <p className="tracking-widest text-white text-2xl">
+            <p className=" text-white text-2xl">
               No matter what you’re celebrating, let Haley Station be the venue
               for your special day. Here are some of the events we’re happy to
               help you host: Weddings and Wedding Receptions - More Info about
@@ -31,7 +31,7 @@ const Events = () => {
           <Image src="/stok1.jpg" width={800} height={600} />
         </div>
       </div>
-      <div className="grid grid-cols-2 text-yellow-950 bridalone py-12 px-4">
+      <div className="grid lg:grid-cols-2 text-yellow-950 bridalone py-12 px-4">
         <div>
           <Image src="/stok1.jpg" width={800} height={600} />
         </div>
@@ -40,7 +40,7 @@ const Events = () => {
             <h1 className={playfair.className}>Weddings</h1>
           </div>
           <div className={lora.className}>
-            <p className="tracking-widest text-2xl">
+            <p className=" text-2xl">
               We would be honored to help make your special day perfect. Our
               venue is perfect for weddings and wedding receptions. We can
               accommodate up to 225 guests, and our venue features a fireplace,
@@ -52,13 +52,13 @@ const Events = () => {
         </div>
       </div>
       <div>
-        <div className="grid grid-cols-2 text-yellow-950 green-box py-12 px-4">
+        <div className="grid lg:grid-cols-2 text-yellow-950 green-box py-12 px-4">
           <div className="flex justify-center items-center flex-col">
             <div className="text-6xl text-white ">
               <h1 className={playfair.className}>Showers & Sprinkles</h1>
             </div>
             <div className={lora.className}>
-              <p className="tracking-widest text-white text-2xl">
+              <p className=" text-white text-2xl">
                 From bridal showers to baby showers and baby sprinkles, we can
                 help provide a beautiful venue for your intimate gathering. Our
                 space is perfect for hosting your friends and family as you
@@ -75,7 +75,7 @@ const Events = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 text-yellow-950 bridalone py-12 px-4">
+      <div className="grid lg:grid-cols-2 text-yellow-950 bridalone py-12 px-4">
         <div>
           <Image src="/stok1.jpg" width={800} height={600} />
         </div>
@@ -84,7 +84,7 @@ const Events = () => {
             <h1 className={playfair.className}>Corporate Gatherings</h1>
           </div>
           <div className={lora.className}>
-            <p className="tracking-widest text-2xl">
+            <p className=" text-2xl">
               If you've been looking for a private party or corporate event
               venue in Delta County and surrounding areas of the Upper Peninsula
               of Michigan, you've come to the right place. One Eleven East hosts
@@ -114,13 +114,13 @@ const Events = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 text-yellow-950 green-box py-12 px-4">
+      <div className="grid lg:grid-cols-2 text-yellow-950 green-box py-12 px-4">
         <div className="flex justify-center items-center flex-col">
           <div className="text-6xl text-white">
             <h1 className={playfair.className}>Photoshoots</h1>
           </div>
           <div className={lora.className}>
-            <p className="tracking-widest text-2xl text-white">
+            <p className="text-2xl text-white">
               For any event you're organizing, choose Haley Station as the top
               destination in Escanaba. Our recently designed venue features a
               fireplace, hardwood flooring, a bar, and more amenities.

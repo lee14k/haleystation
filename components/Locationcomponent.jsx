@@ -17,7 +17,7 @@ export default function Location() {
             <h1 className={playfair.className}>Location</h1>
           </div>
           <div className={lora.className}>
-            <p className="tracking-widest text-white text-2xl">
+            <p className="text-white text-2xl">
               Nestled in the picturesque Upper Peninsula of Michigan, Escanaba
               emerges as a hidden gem for events and gatherings. This quaint
               city, with its serene Lake Michigan shoreline, offers a backdrop

@@ -18,8 +18,8 @@ const Rates = () => {
           <div className=" spacebg text-6xl text-white flex justify-center items-center">
             <h1 className="text-8xl text-white fancy-font">Rates</h1>
           </div>
-          <div className="flex justify-center items-center flex-col">
-            <div>
+          <div className="">
+            <div className="grid lg:grid-cols-2 gap-24">
               <div className="tracking-widest text-white">
                 <h2 className="text-2xl ">
                   Wedding Packages $1,795 (Friday-Saturday) ($1,295 any other
@@ -60,6 +60,9 @@ const Rates = () => {
                 space heaters INCLUDES our beautiful in-house specialty
                 furniture; (1) lounge set, (3) bistro sets, (6) cocktail tables
                 Hourly Rate $100.00, Minimum of 3 hours
+              </div>
+              <div>
+                <Image src="/stok1.jpg" width={800} height={600} />
               </div>
             </div>
           </div>

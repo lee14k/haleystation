@@ -68,7 +68,7 @@ export default function Home() {
                 waterfall, that lighthouse, blah blah. Ready to book? Get in
                 touch with us today or view our rates.
               </p>
-              <button className="ctabutton green-box text-white px-8 py-6 text-3xl">
+              <button className="ctabutton green-box text-white px-8 py-6 text-3xl my-4">
                 Contact Us{" "}
               </button>
             </div>

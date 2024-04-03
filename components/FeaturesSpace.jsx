@@ -8,16 +8,16 @@ import Link from "next/link";
 export default function FeaturesSpace() {
   return (
     <div className="green-box ">
-      <div className="grid lg:grid-cols-2 text-yellow-950 gap-6 py-12 px-4">
+      <div className="grid lg:grid-cols-2 gap-6 py-12 px-4">
         <div>
           <Image src="/stok1.jpg" width={800} height={600} />
         </div>
         <div className="flex justify-center items-center flex-col gap-10">
-          <div className="text-6xl text-white">
+          <div className="text-6xl text-white font-thin">
             <h1 className={playfair.className}>The Space</h1>
           </div>
           <div className={lora.className}>
-            <p className="tracking-widest text-white text-2xl">
+            <p className="text-white font-thin text-2xl">
               Haley Station is one of the few venues in the Delta County area to
               host beautiful indoor ceremonies in our spacious venue, filled
               with natural light from our many beautiful large windows. The
