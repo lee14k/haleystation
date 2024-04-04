@@ -10,25 +10,12 @@ const Events = () => {
   return (
     <div className="bridalone">
       <Topbar />
-      <div className="grid lg:grid-cols-2 text-yellow-950 green-box py-12 px-4">
-        <div className="flex justify-center items-center flex-col">
-          <div className="text-6xl text-white ">
-            <h1 className={playfair.className}>Events at Haley Station</h1>
+      <div >
+        <div className=" spacebg text-6xl text-white flex justify-center items-center">
+          <div>
+            <h1 className="text-8xl text-white fancy-font">Events</h1>
           </div>
-          <div className={lora.className}>
-            <p className=" text-white text-2xl">
-              No matter what you’re celebrating, let Haley Station be the venue
-              for your special day. Here are some of the events we’re happy to
-              help you host: Weddings and Wedding Receptions - More Info about
-              Weddings at Haley Station Bridal and Baby Showers Graduation
-              Parties Birthday Parties Company Parties and Trainings Banquets
-              and Benefits Have an event not listed here? Get in contact with us
-              today to find out how we can host at Haley Station.
-            </p>
-          </div>
-        </div>
-        <div>
-          <Image src="/stok1.jpg" width={800} height={600} />
+          <div className={lora.className}></div>
         </div>
       </div>
       <div className="grid lg:grid-cols-2 text-yellow-950 bridalone py-12 px-4">
@@ -67,7 +54,6 @@ const Events = () => {
                 come. Contact us today to learn more about hosting your baby
                 shower at Haley Station.
               </p>
-              <button className="bridalone px-2.5 py-2.5">Contact Us </button>
             </div>
           </div>
           <div>
