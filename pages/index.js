@@ -36,7 +36,7 @@ export default function Home() {
             <h2 className="fancy-font ">Wedding & Event Venue</h2>
           </div>
         </div>
-        <div className="tracking-widest text-4xl text-center	">
+        <div className="tracking-widest text-4xl text-center mx-16	">
           <p className={lora.className}>ESCANABA, MI</p>
           <div className={lora.className}></div>
         </div>
@@ -44,7 +44,7 @@ export default function Home() {
       <BridalSectionOne />
       <div className="bridalone ">
         <div className="flex justify-center items-center pt-12">
-          <h1 className="fancy-font text-8xl">
+          <h1 className="fancy-font text-8xl text-center">
             A Special Venue for Any Special Occasion
           </h1>
         </div>
@@ -75,7 +75,6 @@ export default function Home() {
           </div>
           <div className="flex flex-col">
             <Image src="/hsthree.jpg" width={800} height={600} />
-            <span className="w-full">Photo by John Doe</span>
           </div>
         </div>
       </div>
@@ -85,7 +84,7 @@ export default function Home() {
           textTwo="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
           textThree="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
           backgroundColor="#668260"
-          optionalHead={"What People Are Saying... "}
+          optionalHead={"What People Are Saying"}
           textColor={"white"}
           showBorder={false}
           boldFont={false}

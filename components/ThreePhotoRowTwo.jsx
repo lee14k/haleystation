@@ -71,7 +71,7 @@ const ThreePhotoRowTwo = ({
         {text && (
           <p
             className={`text-center ${boldFont ? "font-bold" : ""} ${
-              isFirstContent ? "text-xl" : "text-xl"
+              isFirstContent ? "text-2xl" : "text-2xl"
             } ${isTextWhite ? "text-white" : ""}`}
           >
             {text}
@@ -80,7 +80,7 @@ const ThreePhotoRowTwo = ({
         {caption && (
           <p
             className={`mt-2 text-center ${boldFont ? "font-bold" : ""} ${
-              isFirstContent ? "text-xl" : "text-xl"
+              isFirstContent ? "text-2xl" : "text-2xl"
             } ${isTextWhite ? "text-white" : ""}`}
           >
             {caption}

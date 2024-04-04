@@ -13,6 +13,12 @@ const About = () => {
   return (
     <div>
       <Topbar />
+      <div className=" spacebg text-6xl text-white flex justify-center items-center">
+        <div>
+          <h1 className="text-8xl text-white fancy-font">About</h1>
+        </div>
+        <div className={lora.className}></div>
+      </div>
       <FeaturesSpace />
       <div className="grid grid-cols-2 text-yellow-950 bridalone py-12 px-4">
         <div className="flex justify-center items-center flex-col gap-10">

@@ -77,7 +77,7 @@ export default function ContactForm() {
         <form
           action="#"
           method="POST"
-          className=" sm:pb-32 lg:px-8 border-8 border-solid border-natural-500 pt-12 "
+          className=" sm:pb-32 lg:px-8  pt-12 "
         >
           <Image src="/hs.png" height={200} width={200} />
 
