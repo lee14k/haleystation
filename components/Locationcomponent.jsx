@@ -7,17 +7,17 @@ import Link from "next/link";
 
 export default function Location() {
   return (
-    <div className="green-box ">
+    <div className="pink-box ">
       <div className="grid lg:grid-cols-2 text-yellow-950  py-12 px-4 gap-6">
         <div>
           <Image src="/stok1.jpg" width={800} height={600} />
         </div>
         <div className="flex justify-center items-center flex-col gap-10">
-          <div className="text-6xl text-white">
+          <div className="text-6xl">
             <h1 className={playfair.className}>Location</h1>
           </div>
           <div className={lora.className}>
-            <p className="text-white text-2xl">
+            <p className="text-2xl">
               Nestled in the picturesque Upper Peninsula of Michigan, Escanaba
               emerges as a hidden gem for events and gatherings. This quaint
               city, with its serene Lake Michigan shoreline, offers a backdrop

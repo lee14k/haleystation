@@ -68,7 +68,7 @@ export default function Home() {
                 waterfall, that lighthouse, blah blah. Ready to book? Get in
                 touch with us today or view our rates.
               </p>
-              <button className="ctabutton green-box text-white px-8 py-6 text-3xl my-4">
+              <button className="ctabutton pink-box px-8 py-6 text-3xl my-4">
                 Contact Us{" "}
               </button>
             </div>
@@ -78,20 +78,18 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="green-box justify-center items-center flex flex-col py-24">
+      <div className="pink-box justify-center items-center flex flex-col py-24">
         <ThreePhotoRowTwo
           textOne="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
           textTwo="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
           textThree="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
-          backgroundColor="#668260"
+          backgroundColor="#f8d6d6"
           optionalHead={"What People Are Saying"}
-          textColor={"white"}
           showBorder={false}
           boldFont={false}
           captionOne="John Doe"
           captionTwo="Jane Doe"
           captionThree="John Smith"
-          isTextWhite={true}
         />
       </div>
 
