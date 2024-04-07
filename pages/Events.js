@@ -10,7 +10,7 @@ const Events = () => {
   return (
     <div className="bridalone">
       <Topbar />
-      <div >
+      <div>
         <div className=" spacebg text-6xl text-white flex justify-center items-center">
           <div>
             <h1 className="text-8xl text-white fancy-font">Events</h1>
@@ -39,13 +39,13 @@ const Events = () => {
         </div>
       </div>
       <div>
-        <div className="grid lg:grid-cols-2 text-yellow-950 green-box py-12 px-4">
+        <div className="grid lg:grid-cols-2 text-yellow-950 pink-box py-12 px-4">
           <div className="flex justify-center items-center flex-col">
-            <div className="text-6xl text-white ">
+            <div className="text-6xl  ">
               <h1 className={playfair.className}>Showers & Sprinkles</h1>
             </div>
             <div className={lora.className}>
-              <p className=" text-white text-2xl">
+              <p className="text-2xl">
                 From bridal showers to baby showers and baby sprinkles, we can
                 help provide a beautiful venue for your intimate gathering. Our
                 space is perfect for hosting your friends and family as you
@@ -100,13 +100,13 @@ const Events = () => {
           </div>
         </div>
       </div>
-      <div className="grid lg:grid-cols-2 text-yellow-950 green-box py-12 px-4">
+      <div className="grid lg:grid-cols-2 text-yellow-950 pink-box py-12 px-4">
         <div className="flex justify-center items-center flex-col">
-          <div className="text-6xl text-white">
+          <div className="text-6xl ">
             <h1 className={playfair.className}>Photoshoots</h1>
           </div>
           <div className={lora.className}>
-            <p className="text-2xl text-white">
+            <p className="text-2xl">
               For any event you're organizing, choose Haley Station as the top
               destination in Escanaba. Our recently designed venue features a
               fireplace, hardwood flooring, a bar, and more amenities.

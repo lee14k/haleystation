@@ -26,7 +26,7 @@ const About = () => {
             <h1 className={playfair.className}>Our Rates</h1>
           </div>
           <Link href="/Rates">
-            <button className="ctabutton green-box text-white px-8 py-6 text-3xl">
+            <button className="ctabutton pink-box  px-8 py-6 text-3xl">
               {" "}
               Learn More
             </button>

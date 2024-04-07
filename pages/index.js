@@ -83,7 +83,7 @@ export default function Home() {
           textOne="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
           textTwo="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
           textThree="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
-          backgroundColor="#f8d6d6"
+          backgroundColor="#dfcdca"
           optionalHead={"What People Are Saying"}
           showBorder={false}
           boldFont={false}
