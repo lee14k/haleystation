@@ -12,7 +12,7 @@ const Location = () => {
       <Topbar />
       <div className="pink-box ">
         <div className=" spacebg text-6xl flex justify-center items-center">
-          <h1 className="text-8xl  fancy-font">Location</h1>
+          <h1 className="text-8xl text-white fancy-font">Location</h1>
         </div>
         <div className="grid grid-cols-2 text-yellow-950  py-12 px-4">
           <div className="flex justify-center items-center flex-col gap-10">

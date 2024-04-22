@@ -16,7 +16,7 @@ const Rates = () => {
       <div className="pink-box ">
         <div className="">
           <div className=" spacebg text-6xl flex justify-center items-center">
-            <h1 className="text-8xl fancy-font">Rates</h1>
+            <h1 className="text-8xl fancy-font text-white">Rates</h1>
           </div>
           <div className="">
             <div className="grid lg:grid-cols-2 gap-24">
