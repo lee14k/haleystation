@@ -10,7 +10,7 @@ const Location = () => {
   return (
     <div>
       <Topbar />
-      <div className="green-box ">
+      <div className="pink-box ">
         <div className=" spacebg text-6xl text-white flex justify-center items-center">
           <h1 className="text-8xl text-white fancy-font">Location</h1>
         </div>
