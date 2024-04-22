@@ -15,12 +15,12 @@ const Rates = () => {
       <Topbar />
       <div className="pink-box ">
         <div className="">
-          <div className=" spacebg text-6xl text-white flex justify-center items-center">
-            <h1 className="text-8xl text-white fancy-font">Rates</h1>
+          <div className=" spacebg text-6xl flex justify-center items-center">
+            <h1 className="text-8xl fancy-font">Rates</h1>
           </div>
           <div className="">
             <div className="grid lg:grid-cols-2 gap-24">
-              <div className="tracking-widest text-white">
+              <div className="tracking-widest ">
                 <h2 className="text-2xl ">
                   Wedding Packages $1,795 (Friday-Saturday) ($1,295 any other
                   day of the week)
