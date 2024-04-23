@@ -64,12 +64,9 @@ export default function Home() {
             </div>
             <div className={lora.className}>
               <p className="tracking-widest my-2 mr-24 brown-text text-xl">
-                Located in Escanaba, Michigan, we’re ready to host your special
-                event. Other copy here about why the space is special. Maybe
-                info about the founders. Local desitnations include beaches
-                along Lake Michigan, just an hour drive from Marquette, this
-                waterfall, that lighthouse, blah blah. Ready to book? Get in
-                touch with us today or view our rates.
+              Nestled in the heart of Escanaba, Michigan, our venue offers the ideal setting for your special event. Whether you're planning a wedding, corporate retreat, or a family reunion, we provide a space that combines comfort with a touch of elegance.
+
+              Our venue boasts a rich history and a warm, welcoming atmosphere that makes every occasion memorable. Forged by a passion for bringing people together, our space reflects a commitment to community and celebration.
               </p>
               <button className="ctabutton pink-box px-8 py-6 text-3xl my-4">
                 Contact Us{" "}
