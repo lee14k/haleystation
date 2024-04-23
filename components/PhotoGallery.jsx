@@ -3,21 +3,21 @@ export default function PhotoGallery() {
     "/newhsphoto1.jpg",
     "/newhsphotot2.jpg",
     "/newhsphoto3.jpg",
-
   ];
   const photoRow = [
     "/newhsphoto4.jpg",
     "/newhsphoto5.jpg",
     "/newhsphoto6.jpg",
-    "/stok1.jpg",
-    "/stok1.jpg",
-    "/stok1.jpg",
+    "/hsone.jpg",
+    "/hstwo.jpg",
+    "/buffet.jpg",
   ];
+
   return (
     <div>
-      <div className="lg:grid lg:grid-cols-3 lg:grid-rows-1">
+      <div className="grid grid-cols-3 grid-rows-1">
         {images.map((image, index) => (
-          <div key={index} className="w-full h-full">
+          <div key={index} className="w-full ">
             <img
               src={image}
               alt={`Gallery ${index + 1}`}
@@ -26,9 +26,9 @@ export default function PhotoGallery() {
           </div>
         ))}
       </div>
-      <div className="lg:flex my-10">
+      <div className="flex my-10">
         {photoRow.map((image, index) => (
-          <div key={index} className="w-full h-full">
+          <div key={index} className="w-full h-72 overflow-hidden">
             <img
               src={image}
               alt={`Gallery ${index + 1}`}
@@ -39,7 +39,7 @@ export default function PhotoGallery() {
       </div>
       <p className="text-xl mx-24">
         Did you celebrate at Haley Station? Tag us on Facebook and Instagram
-        @HaleyStationVenue-- we’d love to see photos of your special day!{" "}
+        @HaleyStationVenue-- we’d love to see photos of your special day!
       </p>
     </div>
   );

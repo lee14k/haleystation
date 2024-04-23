@@ -31,7 +31,7 @@ export default function Navbar() {
     setActiveDropdown(activeDropdown === itemName ? null : itemName);
   };
   return (
-    <Disclosure as="nav" className="pt-12 bg-white fancy-font ">
+    <Disclosure as="nav" className="pt-12 bg-white fancy-font text-3xl ">
       
       {({ open }) => (
         <>
