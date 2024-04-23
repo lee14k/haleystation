@@ -9,10 +9,11 @@ import Locationcomponent from "@/components/Locationcomponent";
 import FeaturesSpace from "@/components/FeaturesSpace";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Navbar from "@/components/Navbar";
 const About = () => {
   return (
     <div>
-      <Topbar />
+      <Navbar />
       <div className=" spacebg text-6xl text-white flex justify-center items-center">
         <div>
           <h1 className="text-8xl text-white fancy-font">About</h1>

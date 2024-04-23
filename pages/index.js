@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import HomeThreePic from "@/components/HomeThreePic";
 const lora = Lora({ subsets: ["latin"] });
 const playfair = Playfair_Display({ subsets: ["latin"] });
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   const homeImages = [
@@ -19,7 +20,7 @@ export default function Home() {
   return (
     <div>
       <div className="">
-        <Topbar />
+        <Navbar/>
       </div>
 
       <div className="firsttextheader flex flex-col justify-center items-center text-white">

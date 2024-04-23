@@ -6,10 +6,12 @@ import Image from "next/image";
 import Topbar from "@/components/Topbar";
 import Footer from "@/components/Footer";
 import { StarIcon } from "@heroicons/react/24/outline";
+import Navbar from "@/components/Navbar";
+
 const Events = () => {
   return (
     <div className="bridalone">
-      <Topbar />
+      <Navbar />
       <div>
         <div className=" spacebg text-6xl text-white flex justify-center items-center">
           <div>
@@ -18,11 +20,11 @@ const Events = () => {
           <div className={lora.className}></div>
         </div>
       </div>
-      <div className="grid lg:grid-cols-2 text-yellow-950 bridalone py-12 px-4">
+      <div className="grid lg:grid-cols-2 text-yellow-950 pink-box py-12 ">
         <div>
           <Image src="/stok1.jpg" width={800} height={600} />
         </div>
-        <div className="flex justify-center items-center flex-col">
+        <div className="flex justify-center items-center flex-col px-10">
           <div className="text-6xl ">
             <h1 className={playfair.className}>Weddings</h1>
           </div>
@@ -39,13 +41,13 @@ const Events = () => {
         </div>
       </div>
       <div>
-        <div className="grid lg:grid-cols-2 text-yellow-950 pink-box py-12 px-4">
+        <div className="grid lg:grid-cols-2 text-yellow-950 bridal-one py-12 px-4">
           <div className="flex justify-center items-center flex-col">
             <div className="text-6xl  ">
               <h1 className={playfair.className}>Showers & Sprinkles</h1>
             </div>
             <div className={lora.className}>
-              <p className="text-2xl">
+              <p className="text-2xl px-10">
                 From bridal showers to baby showers and baby sprinkles, we can
                 help provide a beautiful venue for your intimate gathering. Our
                 space is perfect for hosting your friends and family as you
@@ -61,7 +63,7 @@ const Events = () => {
           </div>
         </div>
       </div>
-      <div className="grid lg:grid-cols-2 text-yellow-950 bridalone py-12 px-4">
+      <div className="grid lg:grid-cols-2 text-yellow-950 pink-box py-12 px-4">
         <div>
           <Image src="/stok1.jpg" width={800} height={600} />
         </div>
@@ -70,7 +72,7 @@ const Events = () => {
             <h1 className={playfair.className}>Corporate Gatherings</h1>
           </div>
           <div className={lora.className}>
-            <p className=" text-2xl">
+            <p className="px-10 text-2xl">
               If you've been looking for a private party or corporate event
               venue in Delta County and surrounding areas of the Upper Peninsula
               of Michigan, you've come to the right place. One Eleven East hosts
@@ -100,13 +102,13 @@ const Events = () => {
           </div>
         </div>
       </div>
-      <div className="grid lg:grid-cols-2 text-yellow-950 pink-box py-12 px-4">
+      <div className="grid lg:grid-cols-2 text-yellow-950 bridal-one py-12 px-4">
         <div className="flex justify-center items-center flex-col">
           <div className="text-6xl ">
             <h1 className={playfair.className}>Photoshoots</h1>
           </div>
           <div className={lora.className}>
-            <p className="text-2xl">
+            <p className="text-2xl px-10">
               For any event you're organizing, choose Haley Station as the top
               destination in Escanaba. Our recently designed venue features a
               fireplace, hardwood flooring, a bar, and more amenities.

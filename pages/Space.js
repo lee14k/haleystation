@@ -10,11 +10,12 @@ import FeaturesSpace from "@/components/FeaturesSpace";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import { StarIcon } from "@heroicons/react/24/outline";
+import Navbar from "@/components/Navbar";
 
 const Space = () => {
   return (
     <div>
-      <Topbar />
+      <Navbar />
       <div className="">
         <div className="spacebg text-6xl flex justify-center items-center">
           <h1 className="text-8xl fancy-font text-white">The Space</h1>

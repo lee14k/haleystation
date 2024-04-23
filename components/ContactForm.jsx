@@ -6,7 +6,7 @@ import {
 import Image from "next/image";
 export default function ContactForm() {
   return (
-    <div className="relative isolate pink-box fancy-font">
+    <div className="relative isolate bridal-one fancy-font">
       <div className="mx-auto grid grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
@@ -32,8 +32,7 @@ export default function ContactForm() {
                   />
                 </dt>
                 <dd>
-                319 Stephenson Ave
-                  <br />
+                1837 3rd Avenue North                <br />
                   Escanaba,
               MI 49829                </dd>
               </div>
@@ -67,7 +66,8 @@ export default function ContactForm() {
                     className="hover:text-gray-900"
                     href="mailto:hello@example.com"
                   >
-                    hello@example.com
+                    haleystationevents@gmail.com
+
                   </a>
                 </dd>
               </div>
@@ -77,12 +77,11 @@ export default function ContactForm() {
         <form
           action="#"
           method="POST"
-          className=" sm:pb-32 lg:px-8  pt-12 "
+          className=" pt-12 "
         >
-          <Image src="/hs.png" height={200} width={200} />
 
-          <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+          <div className="px-16">
+            <div className="flex flex-col gap-x-8 gap-y-6">
               <div>
                 <label
                   htmlFor="first-name"

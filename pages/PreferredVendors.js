@@ -6,10 +6,12 @@ const lora = Lora({ subsets: ["latin"] });
 const playfair = Playfair_Display({ subsets: ["latin"] });
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+
 export default function PreferredVendors() {
   return (
     <div>
-      <Topbar />
+      <Navbar />
       <div className="pink-box ">
         <div className="">
           <div className=" spacebg text-6xl flex justify-center items-center">

@@ -9,10 +9,12 @@ import Location from "@/components/Locationcomponent";
 import FeaturesSpace from "@/components/FeaturesSpace";
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+
 const Rates = () => {
   return (
     <div>
-      <Topbar />
+      <Navbar />
       <div className="pink-box ">
         <div className="">
           <div className=" spacebg text-6xl flex justify-center items-center">
