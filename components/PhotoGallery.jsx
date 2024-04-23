@@ -1,26 +1,21 @@
 export default function PhotoGallery() {
   const images = [
-    "/stok1.jpg",
-    "/stok1.jpg",
-    "/stok1.jpg",
-    "/stok1.jpg",
-    "/stok1.jpg",
-    "/stok1.jpg",
+    "/newhsphoto1.jpg",
+    "/newhsphotot2.jpg",
+    "/newhsphoto3.jpg",
+
   ];
   const photoRow = [
-    "/stok1.jpg",
-    "/stok1.jpg",
-    "/stok1.jpg",
+    "/newhsphoto4.jpg",
+    "/newhsphoto5.jpg",
+    "/newhsphoto6.jpg",
     "/stok1.jpg",
     "/stok1.jpg",
     "/stok1.jpg",
   ];
   return (
     <div>
-      <div className="flex justify-center items-center flex-col">
-        <h1 className="text-6xl">Gallery</h1>
-      </div>
-      <div className="lg:grid lg:grid-cols-3 lg:grid-rows-2">
+      <div className="lg:grid lg:grid-cols-3 lg:grid-rows-1">
         {images.map((image, index) => (
           <div key={index} className="w-full h-full">
             <img
@@ -32,7 +27,7 @@ export default function PhotoGallery() {
         ))}
       </div>
       <div className="lg:flex my-10">
-        {images.map((image, index) => (
+        {photoRow.map((image, index) => (
           <div key={index} className="w-full h-full">
             <img
               src={image}

@@ -23,7 +23,7 @@ export default function Home() {
       </div>
 
       <div className="firsttextheader flex flex-col justify-center items-center text-white">
-        <Image src="/creamhsmon.png" width={200} height={200} />
+        <Image src="/newhs.png" width={200} height={200} />
 
         <div className="tracking-widest text-4xl mt-6">
           <p className={lora.className}>WELCOME TO</p>
@@ -53,9 +53,12 @@ export default function Home() {
 
       <div>
         <div className="grid lg:grid-cols-2 text-yellow-950 bridalone py-12 px-4">
+        <div className="flex flex-col">
+            <Image src="/hsthree.jpg" width={800} height={600} />
+          </div>
           <div className="flex justify-center items-center flex-col mx-12">
             <div className="text-6xl brown-text ">
-              <h1 className={playfair.className}>
+              <h1 className="fancy-font">
                 Charm Guests in the Heart of Michigan’s U.P.{" "}
               </h1>
             </div>
@@ -73,13 +76,11 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="flex flex-col">
-            <Image src="/hsthree.jpg" width={800} height={600} />
-          </div>
+        
         </div>
       </div>
       <div className="pink-box justify-center items-center flex flex-col py-24">
-        <ThreePhotoRowTwo
+      {/*<ThreePhotoRowTwo
           textOne="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
           textTwo="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
           textThree="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
@@ -90,7 +91,7 @@ export default function Home() {
           captionOne="John Doe"
           captionTwo="Jane Doe"
           captionThree="John Smith"
-        />
+  />*/}  
       </div>
 
       <Footer />

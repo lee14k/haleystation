@@ -21,7 +21,7 @@ const Rates = () => {
           <div className="">
             <div className="grid lg:grid-cols-2 gap-24">
               <div className="tracking-widest ">
-                <h2 className="text-2xl ">
+                <h2 className="text-4xl ">
                   Wedding Packages $1,795 (Friday-Saturday) ($1,295 any other
                   day of the week)
                 </h2>

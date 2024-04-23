@@ -9,7 +9,13 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: "PlayFair";
+  src: url("/fonts/PlayfairDisplay.tff") format("tff"),
+    url("/fonts/PlayfairDisplay.tff") format("tff");
+  font-weight: normal;
+  font-style: normal;
+}
 .outside {
   background-image: url("/ouths.jpg");
   background-position: center;
@@ -63,7 +69,7 @@
 }
 
 .fancy-font {
-  font-family: "CustomFont";
+  font-family: "PlayFair";
 }
 
 .big-text {

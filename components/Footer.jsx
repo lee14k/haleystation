@@ -18,7 +18,7 @@ export default function Footer() {
               <PhoneIcon className="h-6 w-6" /> (906) 261-9159
             </li>
             <li className="flex gap-2">
-              <MapPinIcon className="h-6 w-6" /> 319 Stephenson Ave, Escanaba,
+              <MapPinIcon className="h-6 w-6" /> 1837 3rd Avenue North, Escanaba,
               MI 49829
             </li>
             <li className="flex gap-2">
