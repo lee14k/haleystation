@@ -10,7 +10,7 @@ import Navbar from "@/components/Navbar";
 import NewLocationComponent from "@/components/NewLocationComponent";
 const Location = () => {
   return (
-    <div>
+    <div >
       <Navbar />
      <NewLocationComponent/>
       <Footer/>
