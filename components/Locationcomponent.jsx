@@ -10,7 +10,7 @@ export default function Location() {
     <div className="pink-box ">
       <div className="grid lg:grid-cols-2 text-yellow-950  py-12 px-4 gap-6">
         <div>
-          <Image src="/stok1.jpg" width={800} height={600} />
+          <Image src="/newhsphotot2.jpg" width={800} height={600} />
         </div>
         <div className="flex justify-center items-center flex-col gap-10">
           <div className="text-6xl">

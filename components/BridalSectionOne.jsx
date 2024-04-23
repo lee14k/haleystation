@@ -16,7 +16,7 @@ const BridalSectionOne = () => {
             For any event you're organizing, choose Haley Station as the top
             destination in Escanaba. Our recently designed venue features a
             fireplace, hardwood flooring, a bar, and more amenities.
-            Accommodating up to 60 guests, your event can be both sophisticated
+            Accommodating up to 225 guests, your event can be both sophisticated
             and cozy.
           </p>
     

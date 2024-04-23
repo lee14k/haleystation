@@ -76,20 +76,7 @@ export default function Home() {
         
         </div>
       </div>
-      <div className="pink-box justify-center items-center flex flex-col py-24">
-      {/*<ThreePhotoRowTwo
-          textOne="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
-          textTwo="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
-          textThree="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
-          backgroundColor="#dfcdca"
-          optionalHead={"What People Are Saying"}
-          showBorder={false}
-          boldFont={false}
-          captionOne="John Doe"
-          captionTwo="Jane Doe"
-          captionThree="John Smith"
-  />*/}  
-      </div>
+   
 
       <Footer />
     </div>

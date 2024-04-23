@@ -33,7 +33,7 @@ const About = () => {
           </Link>
         </div>
         <div>
-          <Image src="/stok1.jpg" width={800} height={600} />
+          <Image src="/newhsphoto4.jpg" width={800} height={600} />
         </div>
       </div>
       <Locationcomponent />

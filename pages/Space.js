@@ -23,19 +23,18 @@ const Space = () => {
           <div className="flex justify-center items-center flex-col ">
             <div className="pink-box  py-12 px-4 ">
             <h2 className="text-6xl fancy-font">Features</h2>
-                <ul className="">
+                <ul className="text-2xl">
                   <li>
-                    A white interior with picture frame wall moldings and tons of natural light
-                  </li>
+                    A white interior with lots of natural light</li>
                   <li>Large modern black windows with black grids</li>
                   <li>Expansive front windows</li>
                   <li>Dark moody tall tray ceiling</li>
-                  <li>11 foot ceilings with accent moldings</li>
+                  <li>11 foot ceilings</li>
                   <li>Elegant dimmable chandeliers</li>
                   <li>Modern black ceiling fans</li>
                   <li>Custom statement doors, black with brass hardware</li>
                 </ul>
-              <div className="">
+              <div className="text-2xl">
                 {" "}
               
                 <p className="my-10">
@@ -58,15 +57,15 @@ const Space = () => {
                   for a rain plan at Haley Station.
                 </p>
               </div>
-              <div>
-                <Image src="/stok1.jpg" width={800} height={600} />
+              <div className="grid">
+                <Image src="/hsmock.jpg" width={1500} height={600} />
               </div>
             </div>
 
             <div className="grid lg:grid-cols-2 py-12 bridalone">
               <div>
                 {" "}
-                <Image src="/stok1.jpg" width={800} height={600} />
+                <Image src="/hstwo.jpg" width={800} height={600} />
               </div>
               <div className="flex flex-col justify-center items-center">
                 {" "}

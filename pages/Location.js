@@ -24,16 +24,9 @@ const Location = () => {
                 Nestled in the picturesque Upper Peninsula of Michigan, Escanaba
                 emerges as a hidden gem for events and gatherings. This quaint
                 city, with its serene Lake Michigan shoreline, offers a backdrop
-                that blends natural beauty with small-town charm. Downtown
-                Escanaba, often referred to as the "Heart of the Upper
-                Peninsula," features a collection of well-preserved historic
-                buildings and local boutiques that line Ludington Street,
-                providing a quaint and inviting atmosphere for visitors and
-                locals alike. With ample free public parking throughout
-                downtown, Escanaba presents an appealing urban experience devoid
-                of the parking frustrations commonly found in larger cities.
-                Guests can enjoy the ease of access to event locations without
-                the usual city congestion.
+                that blends natural beauty with small-town charm.
+                With ample free public parking throughout
+                downtown, Escanaba presents a small-town experience full of charm and natural beauty
                 <h2 className="text-6xl fancy-font py-6">Nearby hotels</h2>
                 <p className="tracking-widest  text-xl">
                   <ul className="flex flex-col gap-4">
@@ -68,20 +61,11 @@ const Location = () => {
                 County Airport is just a 10-minute drive away, offering easy
                 access for those flying in for your event.{" "}
               </p>
-              <h2 className="text-6xl fancy-font">Attractions</h2>
-              <p className="tracking-widest text-xl">
-                {" "}
-                Nearby, guests can explore Hiawatha National Forest or take a
-                short drive to the charming town of Marquette for additional
-                dining, shopping, and outdoor activities. Escanaba's blend of
-                natural beauty, historical charm, and modern conveniences makes
-                it an ideal location for events that seek a memorable and
-                relaxed setting.
-              </p>
             </div>
           </div>
-          <div className="flex justify-center items-center">
-            <Image src="/newhsphoto1.jpg" width={800} height={600} />
+          <div className="grid grid-rows-2 justify-center items-center">
+            <Image src="/hslighthouse.jpg" width={800} height={600} />
+            <Image src="/sunsrise.jpg" width={800} height={600} />
 
           </div>
         </div>

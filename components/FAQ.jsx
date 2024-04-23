@@ -24,7 +24,7 @@ const FAQ = () => {
     {
       question: "Where can my guests park? Where can they stay in town?",
       answer:
-        "There is ample parking at our venue. We can recommend several nearby hotels for your guests.",
+        "There is ample parking at our venue, located just a block away at 319 Stephenson Ave. We can recommend several nearby hotels for your guests.",
     },
     {
       question: "What is there to do in town if my guests arrive a day early?",
@@ -39,7 +39,7 @@ const FAQ = () => {
     {
       question: "Can I provide my own alcohol?",
       answer: "No, all alcohol must be provided in house, no carry-ins"
-    }
+    },
   ];
 
   // State to keep track of which answers are visible

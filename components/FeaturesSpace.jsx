@@ -10,7 +10,7 @@ export default function FeaturesSpace() {
     <div className="pink-box ">
       <div className="grid lg:grid-cols-2 gap-6 py-12 px-4">
         <div>
-          <Image src="/stok1.jpg" width={800} height={600} />
+          <Image src="/newhsphoto1.jpg" width={900} height={300} />
         </div>
         <div className="flex justify-center items-center flex-col gap-10">
           <div className="text-6xl font-thin">

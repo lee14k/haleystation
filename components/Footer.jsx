@@ -6,7 +6,7 @@ import { BiLogoInstagram } from "react-icons/bi";
 import Link from "next/link";
 export default function Footer() {
   return (
-    <div className="flex flex-col items-center justify-center py-4 footerwrap py-24">
+    <div className="flex flex-col items-center justify-center py-4 pink-box py-24">
       <div className="flex flex-col items-center justify-center py-12">
         <h1 className="text-6xl fancy-font">Haley Station</h1>
       </div>
