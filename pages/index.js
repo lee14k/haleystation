@@ -55,7 +55,7 @@ export default function Home() {
       <div>
         <div className="grid lg:grid-cols-2 text-yellow-950 bridalone py-12 px-4">
         <div className="flex flex-col">
-            <Image src="/hsthree.jpg" width={800} height={600} />
+            <Image src="/archhs.jpeg" width={800} height={600} />
           </div>
           <div className="flex justify-center items-center flex-col mx-12">
             <div className="text-6xl brown-text ">
