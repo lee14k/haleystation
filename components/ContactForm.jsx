@@ -6,11 +6,11 @@ import {
 import Image from "next/image";
 export default function ContactForm() {
   return (
-    <div className="relative isolate bridal-one fancy-font">
+    <div className="relative isolate bridal-one fancy-font pb-12">
       <div className="mx-auto grid grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-            <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-900/10 lg:w-1/2 contact-side-one">
+            <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-900/10 lg:w-1/2 contact-side-one ">
               <rect
                 width="100%"
                 height="100%"
@@ -18,23 +18,23 @@ export default function ContactForm() {
                 fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)"
               />
             </div>
-            <h2 className="text-3xl font-bold tracking-tight text-white">
+            <h2 className="text-5xl font-bold tracking-tight text-white">
               Get in touch
             </h2>
 
             <dl className="mt-10 space-y-4 text-base leading-7 text-white">
               <div className="flex gap-x-4">
                 <dt className="flex-none">
-                  <span className="sr-only">Address</span>
+                  <span className="sr-only text-2xl">Address</span>
                   <BuildingOffice2Icon
                     className="h-7 w-6 text-white"
                     aria-hidden="true"
                   />
                 </dt>
-                <dd>
-                1837 3rd Avenue North                <br />
-                  Escanaba,
-              MI 49829                </dd>
+                <dd className="text-2xl">
+                  1837 3rd Avenue North <br />
+                  Escanaba, MI 49829{" "}
+                </dd>
               </div>
               <div className="flex gap-x-4">
                 <dt className="flex-none">
@@ -44,7 +44,7 @@ export default function ContactForm() {
                     aria-hidden="true"
                   />
                 </dt>
-                <dd>
+                <dd className="text-2xl">
                   <a
                     className="hover:text-gray-900"
                     href="tel:+1 (555) 234-5678"
@@ -61,25 +61,19 @@ export default function ContactForm() {
                     aria-hidden="true"
                   />
                 </dt>
-                <dd>
+                <dd className="text-2xl">
                   <a
                     className="hover:text-gray-900"
                     href="mailto:hello@example.com"
                   >
                     haleystationevents@gmail.com
-
                   </a>
                 </dd>
               </div>
             </dl>
           </div>
         </div>
-        <form
-          action="#"
-          method="POST"
-          className=" pt-12 "
-        >
-
+        <form action="#" method="POST" className=" pt-12 ">
           <div className="px-16">
             <div className="flex flex-col gap-x-8 gap-y-6">
               <div>
