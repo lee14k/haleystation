@@ -9,6 +9,8 @@ import Location from "@/components/Locationcomponent";
 import FeaturesSpace from "@/components/FeaturesSpace";
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import { StarIcon } from "@heroicons/react/24/outline";
+
 const Space = () => {
   return (
     <div>
@@ -19,23 +21,51 @@ const Space = () => {
         </div>
         <div className="flex text-yellow-950 ">
           <div className="flex justify-center items-center flex-col ">
-            <div className="text-white grid lg:grid-cols-2 green-box  py-12 px-4 ">
+            <div className="pink-box  py-12 px-4 ">
+              <h2 className="text-6xl fancy-font">Features</h2>
+              <ul className="flex">
+                <li className="flex">
+                  <StarIcon className="h-6 w-6" />A white interior with picture
+                  frame wall moldings and tons of natural light
+                </li>
+                <li className="flex">
+                  {" "}
+                  <StarIcon className="h-6 w-6" />
+                  Large modern black windows with black grids
+                </li>
+                <li className="flex">
+                  {" "}
+                  <StarIcon className="h-6 w-6" />
+                  Expansive front windows
+                </li>
+                <li>
+                  {" "}
+                  <StarIcon className="h-6 w-6" />
+                  Dark moody tall tray ceiling
+                </li>
+                <li>
+                  {" "}
+                  <StarIcon className="h-6 w-6" />
+                  11 foot ceilings with accent moldings
+                </li>
+                <li>
+                  {" "}
+                  <StarIcon className="h-6 w-6" />
+                  Elegant dimmable chandeliers
+                </li>
+                <li>
+                  {" "}
+                  <StarIcon className="h-6 w-6" />
+                  Modern black ceiling fans
+                </li>
+                <li>
+                  {" "}
+                  <StarIcon className="h-6 w-6" />
+                  Custom statement doors, black with brass hardware
+                </li>
+              </ul>
               <div className="">
                 {" "}
-                <h2 className="text-4xl fancy-font">Features</h2>
-                <ul>
-                  <li>
-                    A white interior with picture frame wall moldings and tons
-                    of natural light
-                  </li>
-                  <li>Large modern black windows with black grids</li>
-                  <li>Expansive front windows</li>
-                  <li>Dark moody tall tray ceiling</li>
-                  <li>11 foot ceilings with accent moldings</li>
-                  <li>Elegant dimmable chandeliers</li>
-                  <li>Modern black ceiling fans</li>
-                  <li>Custom statement doors, black with brass hardware</li>
-                </ul>
                 <p className="my-10">
                   For weddings, the main room is intended as a ceremony space
                   that can smoothly transition to the dinner reception and

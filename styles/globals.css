@@ -17,9 +17,10 @@
   font-style: normal;
 }
 .outside {
-  background-image: url("/ouths.jpg");
+  background-image: url("/hslighthouse.jpg");
   background-position: center;
   background-size: cover;
+  height:75%;
 }
 .firsttextheader {
   background-image: linear-gradient(

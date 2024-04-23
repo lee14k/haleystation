@@ -29,7 +29,7 @@ const Rates = () => {
                 transformable space for guest counts of up to 125 seated, 225
                 cocktail setting.
                 <ul>
-                  <li> INCLUDES:</li>
+                  <li className="text-xl"> INCLUDES:</li>
                   <li>(12) 60-inch round wood tables</li>
                   <li>(4) 72-inch round wood tables</li>
                   <li>(12) 60-inch round wood tables</li>

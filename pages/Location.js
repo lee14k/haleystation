@@ -80,7 +80,10 @@ const Location = () => {
               </p>
             </div>
           </div>
-          <div className="outside"></div>
+          <div className="flex justify-center items-center">
+            <Image src="/newhsphoto1.jpg" width={800} height={600} />
+
+          </div>
         </div>
       </div>
       <Footer/>
