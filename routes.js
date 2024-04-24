@@ -4,7 +4,7 @@ export const routes = [
     title: "About",
     href: "/about",
     submenu: [
-      { title: "About", href: "/about"},
+      { title: "About", href: "/about" },
       { title: "Space", href: "/Space" },
       { title: "Location", href: "/Rates" },
       { title: "Rates", href: "/Location" },

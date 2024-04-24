@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <div>
       <div className="">
-        <Navbar/>
+        <Navbar />
       </div>
 
       <div className="firsttextheader flex flex-col justify-center items-center text-white">
@@ -54,7 +54,7 @@ export default function Home() {
 
       <div>
         <div className="grid lg:grid-cols-2 text-yellow-950 bridalone py-12 px-4">
-        <div className="flex flex-col">
+          <div className="flex flex-col">
             <Image src="/archhs.jpeg" width={800} height={600} />
           </div>
           <div className="flex justify-center items-center flex-col mx-12">
@@ -64,20 +64,25 @@ export default function Home() {
               </h1>
             </div>
             <div className={lora.className}>
-              <p className="tracking-widest my-2 mr-24 brown-text text-xl">
-              Nestled in the heart of Escanaba, Michigan, our venue offers the ideal setting for your special event. Whether you're planning a wedding, corporate retreat, or a family reunion, we provide a space that combines comfort with a touch of elegance.
-
-              Our venue boasts a rich history and a warm, welcoming atmosphere that makes every occasion memorable. Forged by a passion for bringing people together, our space reflects a commitment to community and celebration.
+              <p className="tracking-widest my-2 mr-24 brown-text text-xl other-font">
+                Nestled in the heart of Escanaba, Michigan, our venue offers the
+                ideal setting for your special event. Whether you're planning a
+                wedding, corporate retreat, or a family reunion, we provide a
+                space that combines comfort with a touch of elegance. Our venue
+                boasts a rich history and a warm, welcoming atmosphere that
+                makes every occasion memorable. Forged by a passion for bringing
+                people together, our space reflects a commitment to community
+                and celebration.
               </p>
-              <button className="ctabutton pink-box px-8 py-6 text-3xl my-4">
-                Contact Us{" "}
-              </button>
+              <Link href="/Contact">
+                <button className="ctabutton pink-box px-8 py-6 text-3xl my-4">
+                  Contact Us{" "}
+                </button>
+              </Link>
             </div>
           </div>
-        
         </div>
       </div>
-   
 
       <Footer />
     </div>

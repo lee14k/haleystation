@@ -79,7 +79,7 @@ const Events = () => {
               all types of private events, from baby showers to business
               meetings. Our historic event space is a great backdrop for
               whatever you have planned. We often host:
-              <ul>
+              <ul className="list-disc ">
                 <li className="flex gap-4">
                   <StarIcon className="h-6 w-6" />
                   Corporate events

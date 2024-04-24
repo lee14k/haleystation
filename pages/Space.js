@@ -22,50 +22,41 @@ const Space = () => {
         </div>
         <div className=" text-yellow-950 ">
           <div className="pink-box">
-          <h2 className="text-6xl fancy-font flex justify-center items-center">Features</h2>
+            <h2 className="text-6xl fancy-font flex justify-center items-center">
+              Features
+            </h2>
 
             <div className="pink-box  grid lg:grid-cols-2 py-12 px-4 ">
-                <ul className="text-2xl list-disc	ml-10">
-                  <li>
-                    A white interior with lots of natural light</li>
-                  <li>Large modern black windows with black grids</li>
-                  <li>Expansive front windows</li>
-                  <li>Dark moody tall tray ceiling</li>
-                  <li>11 foot ceilings</li>
-                  <li>Elegant dimmable chandeliers</li>
-                  <li>Modern black ceiling fans</li>
-                  <li>Custom statement doors, black with brass hardware</li>
-                </ul>
-             
+              <ul className="text-2xl list-disc	ml-10">
+                <li>A white interior with lots of natural light</li>
+                <li>Large modern black windows with black grids</li>
+                <li>Expansive front windows</li>
+                <li>Dark moody tall tray ceiling</li>
+                <li>11 foot ceilings</li>
+                <li>Elegant dimmable chandeliers</li>
+                <li>Modern black ceiling fans</li>
+                <li>Custom statement doors, black with brass hardware</li>
+              </ul>
+
               <div className="">
-              <Image src="/hstwo.jpg" width={800} height={600} />
-
-              
-            
+                <Image src="/hstwo.jpg" width={800} height={600} />
               </div>
-            
-             
 
-                <p>
-            
-                </p>
+              <p></p>
             </div>
             <p className="my-10 text-2xl">
-                  For weddings, the main room is intended as a ceremony space
-                  that can smoothly transition to the dinner reception and
-                  dancing and entertainment space. The guests can enjoy a smooth
-                  transition to our back lounge area and through to the adjacent
-                  outdoor courtyard space through the back door for cocktail
-                  hour and later during the reception.
-                  
-                  The outdoor courtyard features thoughtful year-round
-                  landscaping, charming festoon string lights, and outdoor space
-                  heaters if necessary.
-                  As a year-round venue, clients always have the peace of mind
-                  of knowing that inclement weather will not impact their
-                  special day as an outdoor location would – there is no need
-                  for a rain plan at Haley Station.
-                </p>
+              For weddings, the main room is intended as a ceremony space that
+              can smoothly transition to the dinner reception and dancing and
+              entertainment space. The guests can enjoy a smooth transition to
+              our back lounge area and through to the adjacent outdoor courtyard
+              space through the back door for cocktail hour and later during the
+              reception. The outdoor courtyard features thoughtful year-round
+              landscaping, charming festoon string lights, and outdoor space
+              heaters if necessary. As a year-round venue, clients always have
+              the peace of mind of knowing that inclement weather will not
+              impact their special day as an outdoor location would – there is
+              no need for a rain plan at Haley Station.
+            </p>
             <div className="grid lg:grid-cols-2 py-12 bridalone px-8">
               <div>
                 {" "}

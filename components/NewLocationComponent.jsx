@@ -32,7 +32,12 @@ const NewLocationComponent = () => {
           </div>
           <div className={lora.className}>
             <p className=" text-2xl">
-            Nestled in the picturesque Upper Peninsula of Michigan, Escanaba emerges as a hidden gem for events and gatherings. This quaint city, with its serene Lake Michigan shoreline, offers a backdrop that blends natural beauty with small-town charm. With ample free public parking throughout downtown, Escanaba presents a small-town experience full of charm and natural beauty
+              Nestled in the picturesque Upper Peninsula of Michigan, Escanaba
+              emerges as a hidden gem for events and gatherings. This quaint
+              city, with its serene Lake Michigan shoreline, offers a backdrop
+              that blends natural beauty with small-town charm. With ample free
+              public parking throughout downtown, Escanaba presents a small-town
+              experience full of charm and natural beauty
             </p>
           </div>
         </div>
@@ -41,13 +46,28 @@ const NewLocationComponent = () => {
         <div className="grid lg:grid-cols-2 text-yellow-950 pink-box  py-12 px-4">
           <div className="flex justify-center items-center flex-col">
             <div className="text-6xl  ">
-              <h1 className={playfair.className}>Nearby hotels
-</h1>
+              <h1 className={playfair.className}>Nearby hotels</h1>
             </div>
             <div className={lora.className}>
-              <p className="text-2xl px-10">
-              The House of Ludington | 223 Ludington St, Escanaba, MI 49829 | A historic hotel located within walking distance of downtown attractions Comfort Suites Escanaba | 3600 Ludington St, Escanaba, MI 49829 | A short drive from downtown, offering guests comfortable accommodations. Visitors often enjoy staying at the Terrace Bay Hotel, located directly on Lake Michigan, about 15 minutes away from downtown. The hotel offers stunning waterfront views, dining, and a unique Upper Peninsula experience.
-              </p>
+              <ul className="flex flex-col gap-10 text-2xl">
+                <li>
+                  The House of Ludington | 223 Ludington St, Escanaba, MI 49829
+                  | A historic hotel located within walking distance of downtown
+                  attractions
+                </li>
+                <li>
+                  Comfort Suites Escanaba | 3600 Ludington St, Escanaba, MI
+                  49829 | A short drive from downtown, offering guests
+                  comfortable accommodations.{" "}
+                </li>
+                <li>
+                  Visitors often enjoy staying at the Terrace Bay Hotel, located
+                  directly on Lake Michigan, about 15 minutes away from
+                  downtown. The hotel offers stunning waterfront views, dining,
+                  and a unique Upper Peninsula experience.
+                </li>
+              </ul>
+              <p className="text-2xl px-10"></p>
             </div>
           </div>
           <div>
@@ -65,12 +85,16 @@ const NewLocationComponent = () => {
           </div>
           <div className={lora.className}>
             <p className="px-10 text-2xl">
-            Traveling on US-2/US-41, take the exit toward Ludington Street in downtown Escanaba. Continue on Ludington Street to explore the heart of Escanaba. Event venues and local attractions are conveniently situated along this historic stretch. Travel: Delta County Airport is just a 10-minute drive away, offering easy access for those flying in for your event.
+              Traveling on US-2/US-41, take the exit toward Ludington Street in
+              downtown Escanaba. Continue on Ludington Street to explore the
+              heart of Escanaba. Event venues and local attractions are
+              conveniently situated along this historic stretch. Travel: Delta
+              County Airport is just a 10-minute drive away, offering easy
+              access for those flying in for your event.
             </p>
           </div>
         </div>
       </div>
- 
     </div>
   );
 };

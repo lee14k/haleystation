@@ -16,6 +16,14 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "SourceCodePro";
+  src: url("/fonts/SourceCodePro-VariableFont_wght.ttf") format("tff"),
+    url("/fonts/SourceCodePro-VariableFont_wght.ttf") format("tff");
+  font-weight: normal;
+  font-style: normal;
+}
 .outside {
   background-image: url("/hslighthouse.jpg");
   background-position: center;
@@ -65,13 +73,17 @@
 }
 
 .ctabutton {
-  -webkit-box-shadow: 10px 10px 41px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 41px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 41px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 21px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 21px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 21px 0px rgba(0, 0, 0, 0.75);
 }
 
 .fancy-font {
   font-family: "PlayFair";
+}
+
+.other-font {
+  font-family: "SourceCodePro";
 }
 
 .big-text {
@@ -138,6 +150,13 @@
 
 .pink-box {
   background-color:	#dfcdca;
+  
+}
+
+.special-list {
+  padding: 10px;
+  list-style-type: circle !important;
+
 }
 
 @media (max-width: 768px) {
