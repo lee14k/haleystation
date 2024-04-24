@@ -53,8 +53,7 @@ const Events = () => {
                 space is perfect for hosting your friends and family as you
                 celebrate the upcoming arrival of your little one. We can help
                 you plan a memorable event that will be cherished for years to
-                come. Contact us today to learn more about hosting your baby
-                shower at Haley Station.
+                come. Contact us today to learn more about hosting your shower at Haley Station
               </p>
             </div>
           </div>

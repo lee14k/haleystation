@@ -48,13 +48,13 @@ const PVFill = ()=>{
           </div>
         </div>
         <div>
-          <div className="grid lg:grid-cols-2 text-yellow-950 bridal-one  py-12 px-4">
+          <div className="grid lg:grid-cols-3 text-yellow-950 bridal-one  py-12 px-4">
             <div className="flex justify-center items-center flex-col">
               <div className="text-6xl  ">
                 <h1 className={playfair.className}>Floral
   </h1>
               </div>
-              <div className="text-2xl">
+              <div className="text-2xl ml-48">
               <ul className="my-6">
                   <li className="text-4xl"> CountrySide Acres Floral</li>
                   <li>Suzanna Inman 630-253-8125</li>
@@ -70,8 +70,8 @@ const PVFill = ()=>{
                 </ul>
               </div>
             </div>
-            <div>
-              <Image src="/floral.jpeg" width={500} height={500}  className/>
+            <div className="lg:col-span-2 flex justify-center items-center">
+              <Image src="/newflora.png" width={800} height={600}  className/>
             </div>
           </div>
         </div>

@@ -24,7 +24,7 @@ const NewLocationComponent = () => {
       </div>
       <div className="grid lg:grid-cols-2 text-yellow-950 bridal-one py-12 ">
         <div>
-          <Image src="/hslighthouse.jpg" width={800} height={600} />
+          <Image src="/eskylh2.jpeg" width={800} height={600} />
         </div>
         <div className="flex justify-center items-center flex-col px-10">
           <div className="text-6xl ">
@@ -71,13 +71,13 @@ const NewLocationComponent = () => {
             </div>
           </div>
           <div>
-            <Image src="/sunsrise.jpg" width={800} height={600} />
+            <Image src="/oh.jpeg" width={800} height={600} />
           </div>
         </div>
       </div>
       <div className="grid lg:grid-cols-2 text-yellow-950 py-12 bridal-one px-4">
         <div>
-          <Image src="/hswf.jpg" width={800} height={600} />
+          <Image src="/Sandpoint-Lighthouse-4742-4742.jpg" width={800} height={600} />
         </div>
         <div className="flex justify-center items-center flex-col">
           <div className="text-6xl ">
@@ -85,12 +85,11 @@ const NewLocationComponent = () => {
           </div>
           <div className={lora.className}>
             <p className="px-10 text-2xl">
-              Traveling on US-2/US-41, take the exit toward Ludington Street in
-              downtown Escanaba. Continue on Ludington Street to explore the
-              heart of Escanaba. Event venues and local attractions are
-              conveniently situated along this historic stretch. Travel: Delta
-              County Airport is just a 10-minute drive away, offering easy
-              access for those flying in for your event.
+            Take the exit for M-35 North towards Gladstone/North Escanaba.
+Continue on M-35 North. As you enter the city, M-35 will become North Lincoln Road.
+Follow North Lincoln Road and proceed through the residential areas.
+Turn right onto 14th Avenue North.
+Turn left onto North Avenue and continue until you reach 1837 North Avenue on your right. Parking for Haley Station is located at 319 Stephenson Avenue. just a block away.
             </p>
           </div>
         </div>

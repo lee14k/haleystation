@@ -27,7 +27,7 @@ const Space = () => {
             </h2>
 
             <div className="pink-box  grid lg:grid-cols-2 py-12 px-4 ">
-              <ul className="text-2xl list-disc	ml-10">
+              <ul className="text-2xl list-disc	ml-10 other-font">
                 <li>A white interior with lots of natural light</li>
                 <li>Large modern black windows with black grids</li>
                 <li>Expansive front windows</li>
@@ -44,7 +44,7 @@ const Space = () => {
 
               <p></p>
             </div>
-            <p className="my-10 text-2xl">
+            <p className="my-10 text-2xl other-font">
               For weddings, the main room is intended as a ceremony space that
               can smoothly transition to the dinner reception and dancing and
               entertainment space. The guests can enjoy a smooth transition to
@@ -65,7 +65,7 @@ const Space = () => {
               <div className="flex flex-col justify-center items-center">
                 {" "}
                 <h2 className="text-4xl fancy-font">Capacity</h2>
-                <p className="text-2xl px-4">
+                <p className="text-2xl px-4 other-font">
                   Haley Station is ideal for intimate weddings of 125 and less;
                   hosting both ceremony & reception - 125 sit comfortably
                   dinner-style and ceremony-style in the main open area - 225
