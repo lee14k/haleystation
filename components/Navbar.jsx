@@ -69,7 +69,7 @@ export default function Navbar() {
     ) : (
       // Render as a link if there are no children
       <Link href={item.href}>
-        <div className={classNames(item.current ? "text-gray-900" : "text-gray-500", "hover:text-gray-900")}>
+        <div className>
           {item.name}
         </div>
       </Link>

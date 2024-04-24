@@ -21,7 +21,7 @@ const Rates = () => {
             <h1 className="text-8xl fancy-font text-white">Rates</h1>
           </div>
           <div className="">
-            <div className="grid lg:grid-cols-2 gap-24">
+            <div className="grid lg:grid-cols-2 gap-24 mt-6 mb-6">
               <div className="tracking-widest ">
                 <h2 className="text-4xl fancy-font">
                   Wedding Packages 
@@ -58,29 +58,31 @@ const Rates = () => {
               <div>
                 <Image src="/newhsphoto3.jpg" width={800} height={600} />
               </div>
-              <div className="tracking-widest ">
+              <div className="tracking-widest flex justify-center items-center flex-col">
                 <h2 className="text-4xl fancy-font">
-                  6 Hour Packages - $595 (Includes set up and clean up)
-                  Additional Hours available $100/per hour
+                  6 Hour Packages
+                  
                 </h2>
-                Our one-of-a-kind venue was designed to be a flexible and
-                transformable space for guest counts of up to 125 seated, 225
-                cocktail setting.
+                <h4 className="text-2xl">$595 | additional hours $100 per hour
+          </h4>
+          Includes set up and clean up
               
               </div>
             </div>
           </div>
           <div className="flex flex-col justify-center items-center ">
             <div className="grid lg:grid-cols-2 gap-24">
-              <div className="tracking-widest  ">
-                <h2 className="text-4xl ">
-                  Hourly Rate $100.00, Minimum of 3 hours
+              <div className="tracking-widest flex justify-center items-center flex-col ">
+                <h2 className="text-4xl fancy-font ">
+                  Hourly Rate
                 </h2>
+                <h4 className="text-2xl">$100 per hour | minimum of 3 hours
+          </h4>
                 Ideal for corporate events and meet-ups, Please contact us for
                 details
               </div>
               <div>
-                <Image src="/newhsphoto5.jpg" width={600} height={200} />
+                <Image src="/buffet.jpg" width={600} height={200} />
               </div>
             </div>
           </div>

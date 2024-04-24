@@ -46,21 +46,21 @@ const Space = () => {
                   outdoor courtyard space through the back door for cocktail
                   hour and later during the reception.
                 </p>
+                <div className="grid">
+                <Image src="/hsmock.jpg" width={1500} height={600} />
+              </div>
+                
                 <p>
-                  The outdoor courtyard features thoughtful year-round
+                The outdoor courtyard features thoughtful year-round
                   landscaping, charming festoon string lights, and outdoor space
                   heaters if necessary.
-                </p>
-                <p>
                   As a year-round venue, clients always have the peace of mind
                   of knowing that inclement weather will not impact their
                   special day as an outdoor location would – there is no need
                   for a rain plan at Haley Station.
                 </p>
               </div>
-              <div className="grid">
-                <Image src="/hsmock.jpg" width={1500} height={600} />
-              </div>
+            
             </div>
 
             <div className="grid lg:grid-cols-2 py-12 bridalone">
