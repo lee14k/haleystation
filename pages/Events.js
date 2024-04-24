@@ -7,7 +7,7 @@ import Topbar from "@/components/Topbar";
 import Footer from "@/components/Footer";
 import { StarIcon } from "@heroicons/react/24/outline";
 import Navbar from "@/components/Navbar";
-
+import Link from "next/link";
 const Events = () => {
   return (
     <div className="bridalone">
@@ -21,8 +21,8 @@ const Events = () => {
         </div>
       </div>
       <div className="grid lg:grid-cols-2 text-yellow-950 pink-box py-12 ">
-        <div>
-          <Image src="/stok1.jpg" width={800} height={600} />
+        <div className="ml-10">
+          <Image src="/newhsphoto3.jpg" width={800} height={600} />
         </div>
         <div className="flex justify-center items-center flex-col px-10">
           <div className="text-6xl ">
@@ -58,13 +58,13 @@ const Events = () => {
             </div>
           </div>
           <div>
-            <Image src="/stok1.jpg" width={800} height={600} />
+            <Image src="/newhsphoto1.jpg" width={800} height={600} />
           </div>
         </div>
       </div>
       <div className="grid lg:grid-cols-2 text-yellow-950 pink-box py-12 px-4">
         <div>
-          <Image src="/stok1.jpg" width={800} height={600} />
+          <Image src="/newhsphoto5sq.png" width={800} height={600} />
         </div>
         <div className="flex justify-center items-center flex-col">
           <div className="text-6xl ">
@@ -98,23 +98,27 @@ const Events = () => {
           </div>
         </div>
       </div>
-      <div className="grid lg:grid-cols-2 text-yellow-950 bridal-one py-12 px-4">
+      <div className="grid lg:grid-cols-2 text-yellow-950 bridal-one py-12 px-10">
         <div className="flex justify-center items-center flex-col">
           <div className="text-6xl ">
             <h1 className={playfair.className}>Photoshoots</h1>
           </div>
-          <div className={lora.className}>
+          <div className="other-font">
             <p className="text-2xl px-10">
-              For any event you're organizing, choose Haley Station as the top
-              destination in Escanaba. Our recently designed venue features a
-              fireplace, hardwood flooring, a bar, and more amenities.
-              Accommodating up to 60 guests, your event can be both
-              sophisticated and cozy.
+            Our venue is perfect for photoshoots, film & more. With tons of natural light, white walls and tall ceilings, we are perfectly suited for product photography, bridal shoots and more. 
+We'd love to hear from you!  Contact us today to learn about how you can book our space. 
             </p>
+            <div className="ml-10">
+            <Link href="/Contact">
+                <button className="ctabutton pink-box px-8 py-6 text-3xl my-4">
+                  Contact Us{" "}
+                </button>
+              </Link>
+              </div>
           </div>
         </div>
         <div>
-          <Image src="/stok1.jpg" width={800} height={600} />
+          <Image src="/hsone.jpg" width={800} height={600} />
         </div>
       </div>
       <Footer />
