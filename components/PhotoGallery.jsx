@@ -39,7 +39,7 @@ export default function PhotoGallery() {
       </div>
       <p className="text-xl mx-24">
         Did you celebrate at Haley Station? Tag us on Facebook and Instagram
-        @HaleyStationVenue-- we’d love to see photos of your special day!
+        @haley_station- we’d love to see photos of your special day!
       </p>
     </div>
   );

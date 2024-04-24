@@ -66,7 +66,6 @@ const Rates = () => {
                 <h4 className="text-2xl">
                   $595 | additional hours $100 per hour
                 </h4>
-                <span className="text-xl"> Includes set up and clean up</span>
               </div>
             </div>
           </div>

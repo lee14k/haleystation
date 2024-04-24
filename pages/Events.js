@@ -75,10 +75,7 @@ const Events = () => {
             <p className="px-10 text-2xl">
               If you've been looking for a private party or corporate event
               venue in Delta County and surrounding areas of the Upper Peninsula
-              of Michigan, you've come to the right place. One Eleven East hosts
-              all types of private events, from baby showers to business
-              meetings. Our historic event space is a great backdrop for
-              whatever you have planned. We often host:
+              of Michigan, you've come to the right place. Haley Station provides a unique, versatile, and timeless space for your next corporate event. Our venue is perfect for:
               <ul className="list-disc ">
                 <li className="flex gap-4">
                   <StarIcon className="h-6 w-6" />
