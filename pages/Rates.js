@@ -15,7 +15,7 @@ const Rates = () => {
   return (
     <div>
       <Navbar />
-      <div className="pink-box ">
+      <div className=" ">
         <div className="">
           <div className=" spacebg text-6xl flex justify-center items-center">
             <h1 className="text-8xl fancy-font text-white">Rates</h1>
@@ -53,9 +53,9 @@ const Rates = () => {
               </div>
             </div>
           </div>
-          <div className="">
+          <div className="pink-box">
             <div className="grid lg:grid-cols-2 gap-24">
-              <div>
+              <div className="my-8">
                 <Image src="/newhsphoto3.jpg" width={800} height={600} />
               </div>
               <div className="tracking-widest flex justify-center items-center flex-col">
@@ -70,7 +70,7 @@ const Rates = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center ">
+          <div className="flex flex-col justify-center items-center bridal-one">
             <div className="grid lg:grid-cols-2 gap-24">
               <div className="tracking-widest flex justify-center items-center flex-col ">
                 <h2 className="text-4xl fancy-font ">
@@ -81,7 +81,7 @@ const Rates = () => {
                 Ideal for corporate events and meet-ups, Please contact us for
                 details
               </div>
-              <div>
+              <div className="my-8">
                 <Image src="/buffet.jpg" width={600} height={200} />
               </div>
             </div>
