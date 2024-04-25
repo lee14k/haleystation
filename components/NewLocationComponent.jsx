@@ -85,11 +85,7 @@ const NewLocationComponent = () => {
           </div>
           <div className={lora.className}>
             <p className="px-10 text-2xl">
-            Take the exit for M-35 North towards Gladstone/North Escanaba.
-Continue on M-35 North. As you enter the city, M-35 will become North Lincoln Road.
-Follow North Lincoln Road and proceed through the residential areas.
-Turn right onto 14th Avenue North.
-Turn left onto North Avenue and continue until you reach 1837 North Avenue on your right. Parking for Haley Station is located at 319 Stephenson Avenue. just a block away.
+            Take the exit for M-35 North towards Gladstone/North Escanaba. Continue on M-35 North. As you enter the city, M-35 will become Lincoln Road. Follow Lincoln Road until you reach 3rd Avenue.  Turn North on 3rd Avenue.  Continue on 3rd Avenue until you reach 1837 3rd Avenue North on your right. Parking for Haley Station is located at 319 Stephenson Avenue, just a block further.
             </p>
           </div>
         </div>
