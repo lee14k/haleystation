@@ -11,7 +11,7 @@ export const routes = [
       { title: "Preferred Vendors", href: "/PreferredVendors" },
     ],
   },
-  { title: "Events", href: "/Events" },
-  { title: "Gallery", href: "/Gallery" },
+  { title: "Events", href: "/events" },
+  { title: "Gallery", href: "/gallery" },
   { title: "Contact", href: "/contact" },
 ];
