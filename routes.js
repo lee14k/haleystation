@@ -6,8 +6,8 @@ export const routes = [
     submenu: [
       { title: "About", href: "/about" },
       { title: "Space", href: "/Space" },
-      { title: "Location", href: "/Rates" },
-      { title: "Rates", href: "/Location" },
+      { title: "Location", href: "/Location" },
+      { title: "Rates", href: "/Rates" },
       { title: "Preferred Vendors", href: "/PreferredVendors" },
     ],
   },
