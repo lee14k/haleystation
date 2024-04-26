@@ -10,14 +10,14 @@ const PVFill = ()=>{
         <div className="bridalone">
         <div>
           <div className=" spacebg text-6xl text-white flex justify-center items-center">
-            <div>
-              <h1 className="text-8xl text-white fancy-font">Preferred Vendors</h1>
+            <div className="lg:text-left text-center">
+              <h1 className="text-8xl text-white fancy-font ">Preferred Vendors</h1>
             </div>
             <div className={lora.className}></div>
           </div>
         </div>
         <div className="grid lg:grid-cols-2 text-yellow-950 pink-box py-12 ">
-          <div>
+          <div className="flex justify-center items-center">
             <Image src="/everafter.jpeg" width={600} height={600}  className/>
           </div>
           <div className="flex justify-center items-center flex-col px-10">
@@ -48,13 +48,13 @@ const PVFill = ()=>{
           </div>
         </div>
         <div>
-          <div className="grid lg:grid-cols-3 text-yellow-950 bridal-one  py-12 px-4">
+          <div className="grid lg:grid-cols-3 text-yellow-950 bridal-one gap-12 py-12 px-4">
             <div className="flex justify-center items-center flex-col">
-              <div className="text-6xl  ">
+              <div className="text-6xl text-center lg:ml-16 ">
                 <h1 className={playfair.className}>Floral
   </h1>
               </div>
-              <div className="text-2xl ml-48">
+              <div className="text-2xl lg:text-left text-center lg:ml-24">
               <ul className="my-6">
                   <li className="text-4xl"> CountrySide Acres Floral</li>
                   <li>Suzanna Inman 630-253-8125</li>
@@ -149,7 +149,7 @@ const PVFill = ()=>{
         <div className="grid lg:grid-cols-2 text-yellow-950 bridal-one  py-12 px-4">
             <div className="flex justify-center items-center flex-col">
               <div className="text-6xl  ">
-                <h1 className={playfair.className}>DJ
+                <h1 className={playfair.className}>DJ & Entertainment
   </h1>
               </div>
               <div className="text-2xl">
