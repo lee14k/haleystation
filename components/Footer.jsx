@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="flex flex-col items-center justify-center py-12">
         <h1 className="text-6xl fancy-font">Haley Station</h1>
       </div>
-      <div className="lg:grid lg:grid-cols-3 gap-24">
+      <div className="flex flex-col justify-center items-center lg:grid lg:grid-cols-3 gap-10 lg:gap-24">
         <div className="flex flex-col justify-center items-center">
           <h2 className="text-4xl fancy-font"> Visit Us</h2>
           <ul className="flex flex-col gap-2">

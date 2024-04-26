@@ -57,14 +57,14 @@ export default function Home() {
           <div className="flex flex-col">
             <Image src="/archhs.jpeg" width={800} height={600} />
           </div>
-          <div className="flex justify-center items-center flex-col mx-12">
+          <div className="flex justify-center items-center flex-col text-center lg:mx-12">
             <div className="text-6xl brown-text ">
               <h1 className="fancy-font">
                 Charm Guests in the Heart of Michigan’s U.P.{" "}
               </h1>
             </div>
             <div className={lora.className}>
-              <p className="tracking-widest my-2 mr-24 brown-text text-xl other-font">
+              <p className="tracking-widest my-2  brown-text text-xl other-font">
                 Nestled in the heart of Escanaba, Michigan, our venue offers the
                 ideal setting for your special event. Whether you're planning a
                 wedding, corporate retreat, or a family reunion, we provide a
