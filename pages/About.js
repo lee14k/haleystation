@@ -21,7 +21,7 @@ const About = () => {
         <div className={lora.className}></div>
       </div>
       <FeaturesSpace />
-      <div className="grid grid-cols-2 text-yellow-950 bridalone py-12 px-4">
+      <div className="grid lg:grid-cols-2 text-yellow-950 bridalone py-12 px-4">
         <div className="flex justify-center items-center flex-col gap-10">
           <div className="text-6xl ">
             <h1 className={playfair.className}>Our Rates</h1>

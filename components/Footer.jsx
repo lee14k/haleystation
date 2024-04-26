@@ -26,14 +26,14 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="flex flex-col justify-center items-center">
           <h2 className="text-4xl fancy-font">Hours</h2>
           <ul>
             <li>By Appointment Only</li>
           </ul>
         </div>
 
-        <div className="flex flex-col justify-center items-centeraz">
+        <div className="flex flex-col justify-center items-center">
           <h2 className="text-4xl fancy-font">Get Social</h2>
           <ul className="flex">
             <li className="flex">

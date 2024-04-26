@@ -28,7 +28,7 @@ const NewLocationComponent = () => {
         </div>
         <div className="flex justify-center items-center flex-col px-10">
           <div className="text-6xl ">
-            <h1 className={playfair.className}>Escanaba, MI</h1>
+            <h1 className="fancy-font py-6">Escanaba, MI</h1>
           </div>
           <div className={lora.className}>
             <p className=" text-2xl">
@@ -45,8 +45,8 @@ const NewLocationComponent = () => {
       <div>
         <div className="grid lg:grid-cols-2 text-yellow-950 pink-box  py-12 px-4">
           <div className="flex justify-center items-center flex-col">
-            <div className="text-6xl  ">
-              <h1 className={playfair.className}>Nearby hotels</h1>
+            <div className="text-6xl ">
+              <h1 className="fancy-font py-6">Nearby hotels</h1>
             </div>
             <div className={lora.className}>
               <ul className="flex flex-col gap-10 text-2xl">
@@ -81,7 +81,7 @@ const NewLocationComponent = () => {
         </div>
         <div className="flex justify-center items-center flex-col">
           <div className="text-6xl ">
-            <h1 className={playfair.className}>Directions</h1>
+            <h1 className="fancy-font py-6">Directions</h1>
           </div>
           <div className={lora.className}>
             <p className="px-10 text-2xl">

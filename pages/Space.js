@@ -22,7 +22,7 @@ const Space = () => {
         </div>
         <div className=" text-yellow-950 ">
           <div className="pink-box">
-            <h2 className="text-6xl fancy-font flex justify-center items-center">
+            <h2 className="text-6xl fancy-font flex justify-center items-center pt-6">
               Features
             </h2>
 

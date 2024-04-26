@@ -23,16 +23,16 @@ const Rates = () => {
           <div className="">
             <div className="grid lg:grid-cols-2 gap-24 mt-6 mb-6">
               <div className="tracking-widest ml-6 ">
-                <h2 className="text-4xl fancy-font">Wedding Packages</h2>
-                <h4 className="text-2xl">$1,795 (weekend) | $1,295</h4>
-                <span className="other-font text-2xl">
+                <h2 className="text-4xl fancy-font text-center lg:text-left ">Wedding Packages</h2>
+                <h4 className="text-2xl lg:text-left text-center">$1,795 (weekend) | $1,295</h4>
+                <span className="other-font text-2xl mx-12 lg:mx-0">
                   {" "}
                   Our one-of-a-kind venue was designed to be a flexible and
                   transformable space for guest counts of up to 125 seated, 225
                   cocktail setting.
                 </span>
 
-                <ul className="other-font my-4">
+                <ul className="other-font my-4 mx-12 lg:mx-0 text-center lg:text-left ">
                   <li className="text-2xl"> INCLUDES:</li>
                   <li className="text-xl">(12) 60-inch round wood tables</li>
                   <li className="text-xl">(4) 72-inch round wood tables</li>
@@ -61,7 +61,7 @@ const Rates = () => {
               <div className="my-8">
                 <Image src="/newhsphoto3.jpg" width={800} height={600} />
               </div>
-              <div className="tracking-widest flex justify-center items-center flex-col">
+              <div className="tracking-widest flex justify-center items-center flex-col py-12">
                 <h2 className="text-4xl fancy-font">6 Hour Packages</h2>
                 <h4 className="text-2xl">
                   $595 | additional hours $100 per hour
@@ -71,8 +71,8 @@ const Rates = () => {
           </div>
           <div className="flex flex-col justify-center items-center bridal-one ml-6">
             <div className="grid lg:grid-cols-2 gap-24">
-              <div className="tracking-widest flex justify-center items-center flex-col ">
-                <h2 className="text-4xl fancy-font ">Hourly Rate</h2>
+              <div className="tracking-widest flex justify-center items-center flex-col py-12 ">
+                <h2 className="text-4xl fancy-font">Hourly Rate</h2>
                 <h4 className="text-2xl">$100 per hour | minimum of 3 hours</h4>
                 <span className="text-xl">
                   Ideal for corporate events and meet-ups, please contact us for
