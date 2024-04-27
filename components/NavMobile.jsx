@@ -38,7 +38,7 @@ const NavMobile = () => {
           >
             <ul className="grid gap-2 bg-gradient-to-tr from-neutral-400 via-neutral-150 to-neutral-100 rounded-xl py-2 px-2">
               {routes.map((route, idx) => {
-                const { title, submenu } = route;
+                const { title, submenu, href } = route;
                 return (
                   <motion.li
                     initial={{ scale: 0, opacity: 0 }}
@@ -49,17 +49,23 @@ const NavMobile = () => {
                       damping: 20,
                       delay: 0.1 + idx / 10,
                     }}
-                    key={route.title}
+                    key={title}
                     className="w-full py-2.5 rounded-xl bg-white"
                   >
-                    <div
-                      onClick={() => handleSubmenuToggle(title)}
-                      className={
-                        "flex items-center justify-center w-full rounded-xl cursor-pointer"
-                      }
-                    >
-                      <span className="flex gap-1 text-2xl">{route.title}</span>
-                    </div>
+                    {submenu ? (
+                      <div
+                        onClick={() => handleSubmenuToggle(title)}
+                        className="flex items-center justify-center w-full rounded-xl cursor-pointer"
+                      >
+                        <span className="flex gap-1 text-2xl">{title}</span>
+                      </div>
+                    ) : (
+                      <Link href={href}>
+                        <span className="flex items-center justify-center w-full rounded-xl text-2xl">
+                          {title}
+                        </span>
+                      </Link>
+                    )}
                     {submenu && activeSubmenu === title && (
                       <ul className="grid gap-2 py-2">
                         {submenu.map((subItem, subIdx) => (
@@ -75,13 +81,8 @@ const NavMobile = () => {
                             key={subItem.title}
                             className="w-full py-1.5 rounded-xl bg-white"
                           >
-                            <Link
-                              href={subItem.href}
-                              className={
-                                "flex items-center justify-center w-full rounded-xl"
-                              }
-                            >
-                              <span className="flex gap-1 text-lg">
+                            <Link href={subItem.href}>
+                              <span className="flex items-center justify-center w-full rounded-xl text-lg">
                                 {subItem.title}
                               </span>
                             </Link>

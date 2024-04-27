@@ -2,16 +2,16 @@ export const routes = [
   { title: "Home", href: "/" },
   {
     title: "About",
-    href: "/about",
+    href: "/About",
     submenu: [
-      { title: "About", href: "/about" },
+      { title: "About", href: "/About" },
       { title: "Space", href: "/Space" },
       { title: "Location", href: "/Location" },
       { title: "Rates", href: "/Rates" },
       { title: "Preferred Vendors", href: "/PreferredVendors" },
     ],
   },
-  { title: "Events", href: "/events" },
-  { title: "Gallery", href: "/gallery" },
-  { title: "Contact", href: "/contact" },
+  { title: "Events", href: "/Events" },
+  { title: "Gallery", href: "/Gallery" },
+  { title: "Contact", href: "/Contact" },
 ];

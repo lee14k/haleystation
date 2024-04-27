@@ -27,7 +27,7 @@ export default function Home() {
         <Image src="/newhs.png" width={200} height={200} />
 
         <div className="tracking-widest text-4xl mt-6">
-          <p className={lora.className}>WELCOME TO</p>
+          <p className="fancy-font">WELCOME TO</p>
         </div>
         <div className="text-center ">
           <div className="big-text">
@@ -38,8 +38,8 @@ export default function Home() {
           </div>
         </div>
         <div className="tracking-widest text-4xl text-center mx-16	">
-          <p className={lora.className}>ESCANABA, MI</p>
-          <div className={lora.className}></div>
+          <p className="fancy-font">ESCANABA, MI</p>
+          <div className="fancy-font"></div>
         </div>
       </div>
       <BridalSectionOne />
@@ -63,7 +63,7 @@ export default function Home() {
                 Charm Guests in the Heart of Michigan’s U.P.{" "}
               </h1>
             </div>
-            <div className={lora.className}>
+            <div className="fancy-font">
               <p className="tracking-widest my-2  brown-text text-xl other-font">
                 Nestled in the heart of Escanaba, Michigan, our venue offers the
                 ideal setting for your special event. Whether you're planning a

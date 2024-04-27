@@ -4,7 +4,46 @@ import {
   PhoneIcon,
 } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import { useState } from "react";
+
 export default function ContactForm() {
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+
+  const handleSubmit = async (event) => {
+     event.preventDefault();
+ 
+     const formData = {
+       firstName: event.target["first-name"].value,
+       lastName: event.target["last-name"].value,
+       email: event.target.email.value,
+       phoneNumber: event.target["phone-number"].value,
+       message: event.target.message.value,
+     };
+ 
+     try {
+       const response = await fetch('/api/createEmail', {
+         method: "POST",
+         headers: {
+           "Content-Type": "application/json",
+         },
+         body: JSON.stringify(formData),
+       });
+ 
+       if (response.ok) {
+                 setIsModalOpen(true);
+ 
+         // Handle success - show a message to the user, clear the form, etc.
+         console.log("Form submitted successfully");
+       } else {
+         throw new Error("Form submission failed");
+       }
+     } catch (error) {
+       console.error("There was an error submitting the form:", error);
+     }
+   };
+      const closeModal = () => {
+     setIsModalOpen(false);
+   };
   return (
     <div className="relative isolate bridal-one fancy-font pb-12">
       <div className="mx-auto grid grid-cols-1 lg:grid-cols-2">
@@ -73,7 +112,8 @@ export default function ContactForm() {
             </dl>
           </div>
         </div>
-        <form action="#" method="POST" className=" pt-12 ">
+        <form onSubmit={handleSubmit}
+        method="POST" className=" pt-12 ">
           <div className="px-16">
             <div className="flex flex-col gap-x-8 gap-y-6">
               <div>
@@ -170,6 +210,21 @@ export default function ContactForm() {
                 Send message
               </button>
             </div>
+            {isModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center">
+          <div className="modal-bg fixed inset-0 bg-black opacity-50"></div>
+          <div className="modal-content bg-white p-4 rounded-lg shadow-lg z-50">
+            <p className="text-lg font-semibold text-green-600">Submission Successful!</p>
+            <p>Your submission was successful. Thank you!</p>
+            <button
+              onClick={closeModal}
+              className="mt-4 bg-red-600 text-white py-2 px-4 rounded hover:bg-red-500"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
           </div>
         </form>
       </div>
