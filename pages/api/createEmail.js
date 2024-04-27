@@ -1,7 +1,7 @@
-import nodemailer from 'nodemailer';
+import nodemailer from "nodemailer";
 
 export default async (req, res) => {
-  if (req.method !== 'POST') {
+  if (req.method !== "POST") {
     return res.status(405).end();
   }
 
@@ -19,8 +19,8 @@ export default async (req, res) => {
 
   const mailData = {
     from: email,
-    to:process.env.RECIPIENT_EMAIL, // you can change this to where you want to receive the emails
-    subject: 'New Contact Form Submission',
+    to: process.env.RECIPIENT_EMAIL, // you can change this to where you want to receive the emails
+    subject: "New Contact Form Submission",
     text: `
       Name: ${firstName} ${lastName}
       Email: ${email}
@@ -31,9 +31,9 @@ export default async (req, res) => {
 
   try {
     await transporter.sendMail(mailData);
-    res.status(200).send('Email sent successfully');
+    res.status(200).send("Email sent successfully");
   } catch (error) {
     console.error(`Email sending error: ${error}`);
-    res.status(500).send('Internal Server Error');
+    res.status(500).send("Internal Server Error");
   }
 };

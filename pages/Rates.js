@@ -23,8 +23,12 @@ const Rates = () => {
           <div className="">
             <div className="grid lg:grid-cols-2 gap-24 mt-6 mb-6">
               <div className="tracking-widest ml-6 ">
-                <h2 className="text-4xl fancy-font text-center lg:text-left ">Wedding Packages</h2>
-                <h4 className="text-2xl lg:text-left text-center">$1,795 (weekend) | $1,295</h4>
+                <h2 className="text-4xl fancy-font text-center lg:text-left ">
+                  Wedding Packages
+                </h2>
+                <h4 className="text-2xl lg:text-left text-center">
+                  $1,795 (weekend) | $1,295
+                </h4>
                 <span className="other-font text-2xl mx-12 lg:mx-0">
                   {" "}
                   Our one-of-a-kind venue was designed to be a flexible and
@@ -79,10 +83,10 @@ const Rates = () => {
                   details
                 </span>
                 <Link href="/Contact">
-                <button className="ctabutton pink-box px-8 py-6 text-3xl my-4">
-                  Contact Us{" "}
-                </button>
-              </Link>
+                  <button className="ctabutton pink-box px-8 py-6 text-3xl my-4">
+                    Contact Us{" "}
+                  </button>
+                </Link>
               </div>
               <div className="my-8">
                 <Image src="/buffet.jpg" width={600} height={200} />

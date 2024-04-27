@@ -1,15 +1,5 @@
-import Topbar from "../components/Topbar";
-import { Playfair_Display } from "next/font/google";
-import { Lora } from "next/font/google";
 import Image from "next/image";
-const lora = Lora({ subsets: ["latin"] });
-const playfair = Playfair_Display({ subsets: ["latin"] });
-import FAQ from "@/components/FAQ";
-import Location from "@/components/Locationcomponent";
-import FeaturesSpace from "@/components/FeaturesSpace";
-import Link from "next/link";
 import Footer from "@/components/Footer";
-import { StarIcon } from "@heroicons/react/24/outline";
 import Navbar from "@/components/Navbar";
 
 const Space = () => {

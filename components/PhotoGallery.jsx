@@ -1,9 +1,5 @@
 export default function PhotoGallery() {
-  const images = [
-    "/newhsphoto1.jpg",
-    "/newhsphotot2.jpg",
-    "/newhsphoto3.jpg",
-  ];
+  const images = ["/newhsphoto1.jpg", "/newhsphotot2.jpg", "/newhsphoto3.jpg"];
   const photoRow = [
     "/newhsphoto4.jpg",
     "/newhsphoto5.jpg",

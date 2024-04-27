@@ -40,7 +40,7 @@ const NavMobile = () => {
               {routes.map((route, idx) => {
                 const { title, submenu, href } = route;
                 return (
-                  <motion.li 
+                  <motion.li
                     initial={{ scale: 0, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{
