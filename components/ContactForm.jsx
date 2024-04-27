@@ -7,28 +7,40 @@ import Image from "next/image";
 import { useState } from "react";
 
 export default function ContactForm() {
-  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+  const [isModalOpen, setIsModalOpen] = useState(false); 
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
-    const formData = {
-      firstName: event.target["firstName"].value,
-      lastName: event.target["lastName"].value,
-      email: event.target.email.value,
-      phoneNumber: event.target["phoneNumber"].value,
-      message: event.target.message.value,
+  
+    // Create a FormData object, passing in the form event target
+    const form = event.target;
+    const formData = new FormData(form);
+  
+    // Retrieve form data using FormData methods
+    const data = {
+      firstName: formData.get('firstName'),
+      lastName: formData.get('lastName'),
+      email: formData.get('email'),
+      phoneNumber: formData.get('phoneNumber'),
+      message: formData.get('message'),
     };
-
+    console.log({
+      firstName: formData.get('firstName'),
+      lastName: formData.get('lastName'),
+      email: formData.get('email'),
+      phoneNumber: formData.get('phoneNumber'),
+      message: formData.get('message'),
+    });
+    
     try {
       const response = await fetch("/api/sendEmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(data),
       });
-
+  
       if (response.ok) {
         setIsModalOpen(true);
         console.log("Form submitted successfully");
@@ -39,7 +51,6 @@ export default function ContactForm() {
       console.error("There was an error submitting the form:", error);
     }
   };
-  
       const closeModal = () => {
      setIsModalOpen(false);
    };
