@@ -30,7 +30,7 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
-  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const isMobile = useMediaQuery({ maxWidth: 800 });
   const [activeDropdown, setActiveDropdown] = useState(null);
 
   const toggleDropdown = (itemName) => {
