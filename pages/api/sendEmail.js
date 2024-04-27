@@ -5,7 +5,7 @@ export default async (req, res) => {
     return res.status(405).end();
   }
 
-  const { firstName, lastName, email, phoneNumber, message } = req.body;
+  const { firstName, phoneNumber, message } = req.body;
 
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
@@ -16,14 +16,15 @@ export default async (req, res) => {
       pass: process.env.SMTP_PASSWORD,
     },
   });
-
+  const recipients = [
+    process.env.RECIPIENT1,
+  ];
   const mailData = {
-    from: email,
-    to: process.env.RECIPIENT_EMAIL, // you can change this to where you want to receive the emails
+    from: process.env.SMTP_USER,
+    to: recipients, // you can change this to where you want to receive the emails
     subject: "New Contact Form Submission",
     text: `
-      Name: ${firstName} ${lastName}
-      Email: ${email}
+      Name: ${firstName}
       Phone Number: ${phoneNumber}
       Message: ${message}
     `,
