@@ -2,10 +2,10 @@ import nodemailer from 'nodemailer';
 
 export default async (req, res) => {
   if (req.method !== 'POST') {
-    return res.status(405).end('Method Not Allowed');
+    return res.status(405).end();
   }
 
-  const { firstName, lastName, email, phoneNumber, workHistories, driversLicense, over18, shiftPreference } = req.body;
+  const { firstName, lastName, email, phoneNumber, message } = req.body;
 
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
@@ -17,21 +17,16 @@ export default async (req, res) => {
     },
   });
 
-  let workHistoriesText = workHistories.map((history, index) => 
-    `History ${index + 1}:\nCompany: ${history.company}\nPosition: ${history.position}\nDuration: ${history.duration}\n`).join('\n');
-
   const mailData = {
-    from: process.env.SMTP_USER, // sender address
-    to: process.env.SMTP_USER, // list of receivers
-    subject: 'New Employment Form Submission',
-    text: `New employment form submission:
-      \nName: ${firstName} ${lastName}
-      \nEmail: ${email}
-      \nPhone: ${phoneNumber}
-      \nShift Preference: ${shiftPreference}
-      \nOver 18: ${over18 ? 'Yes' : 'No'}
-      \nDriver's License: ${driversLicense ? 'Yes' : 'No'}
-      \n\nWork Histories:\n${workHistoriesText}`
+    from: email,
+    to:process.env.SMTP_USER, // you can change this to where you want to receive the emails
+    subject: 'New Contact Form Submission',
+    text: `
+      Name: ${firstName} ${lastName}
+      Email: ${email}
+      Phone Number: ${phoneNumber}
+      Message: ${message}
+    `,
   };
 
   try {
@@ -41,4 +36,4 @@ export default async (req, res) => {
     console.error(`Email sending error: ${error}`);
     res.status(500).send('Internal Server Error');
   }
-}
+};
