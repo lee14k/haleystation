@@ -10,37 +10,36 @@ export default function ContactForm() {
   const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
 
   const handleSubmit = async (event) => {
-     event.preventDefault();
- 
-     const formData = {
-       firstName: event.target["first-name"].value,
-       lastName: event.target["last-name"].value,
-       email: event.target.email.value,
-       phoneNumber: event.target["phone-number"].value,
-       message: event.target.message.value,
-     };
- 
-     try {
-       const response = await fetch('/api/createEmail', {
-         method: "POST",
-         headers: {
-           "Content-Type": "application/json",
-         },
-         body: JSON.stringify(formData),
-       });
- 
-       if (response.ok) {
-                 setIsModalOpen(true);
- 
-         // Handle success - show a message to the user, clear the form, etc.
-         console.log("Form submitted successfully");
-       } else {
-         throw new Error("Form submission failed");
-       }
-     } catch (error) {
-       console.error("There was an error submitting the form:", error);
-     }
-   };
+    event.preventDefault();
+    const formData = {
+      firstName: event.target["first-name"].value,
+      lastName: event.target["last-name"].value,
+      email: event.target.email.value,
+      phoneNumber: event.target["phone-number"].value,
+      message: event.target.message.value,
+    };
+  
+    try {
+      const response = await fetch('/api/createEmail', {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (!response.ok) {
+        throw new Error(await response.text()); // Getting the text of the response which contains the error message
+      }
+  
+      setIsModalOpen(true);
+      console.log("Form submitted successfully");
+    } catch (error) {
+      console.error("There was an error submitting the form:", error);
+      alert(`Error submitting form: ${error.message}`);
+    }
+  };
+  
       const closeModal = () => {
      setIsModalOpen(false);
    };
