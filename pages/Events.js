@@ -26,9 +26,9 @@ const Events = () => {
         </div>
         <div className="flex justify-center items-center flex-col px-10">
           <div className="text-6xl ">
-            <h1 className={playfair.className}>Weddings</h1>
+            <h1 className="fancy-font">Weddings</h1>
           </div>
-          <div className={lora.className}>
+          <div className="other-font">
             <p className=" text-2xl">
               We would be honored to help make your special day perfect. Our
               venue is perfect for weddings and wedding receptions. We can
@@ -44,9 +44,9 @@ const Events = () => {
         <div className="grid lg:grid-cols-2 text-yellow-950 bridal-one py-12 px-4">
           <div className="flex justify-center items-center flex-col">
             <div className="text-6xl  ">
-              <h1 className={playfair.className}>Showers & Sprinkles</h1>
+              <h1 className="fancy-font">Showers & Sprinkles</h1>
             </div>
-            <div className={lora.className}>
+            <div className="other-font">
               <p className="text-2xl px-10">
                 From bridal showers to baby showers and baby sprinkles, we can
                 help provide a beautiful venue for your intimate gathering. Our
@@ -68,9 +68,9 @@ const Events = () => {
         </div>
         <div className="flex justify-center items-center flex-col">
           <div className="text-6xl ">
-            <h1 className={playfair.className}>Corporate Gatherings</h1>
+            <h1 className="fancy-font">Corporate Gatherings</h1>
           </div>
-          <div className={lora.className}>
+          <div className="other-font">
             <p className="px-10 text-2xl">
               If you've been looking for a private party or corporate event
               venue in Delta County and surrounding areas of the Upper Peninsula
@@ -101,7 +101,7 @@ const Events = () => {
       <div className="grid lg:grid-cols-2 text-yellow-950 bridal-one py-12 px-10">
         <div className="flex justify-center items-center flex-col">
           <div className="text-6xl ">
-            <h1 className={playfair.className}>Photoshoots</h1>
+            <h1 className="fancy-font">Photoshoots</h1>
           </div>
           <div className="other-font">
             <p className="text-2xl px-10">

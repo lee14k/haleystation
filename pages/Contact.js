@@ -13,7 +13,7 @@ const Contact = () => {
         <div>
           <h1 className="text-8xl text-white fancy-font">Contact Us</h1>
         </div>
-        <div className={lora.className}></div>
+        <div className="other-font"></div>
       </div>
       <ContactForm/>
       <Footer/>

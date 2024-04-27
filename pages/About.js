@@ -24,7 +24,7 @@ const About = () => {
       <div className="grid lg:grid-cols-2 text-yellow-950 bridalone py-12 px-4">
         <div className="flex justify-center items-center flex-col gap-10">
           <div className="text-6xl ">
-            <h1 className={playfair.className}>Our Rates</h1>
+            <h1 className="fancy-font">Our Rates</h1>
           </div>
           <Link href="/Rates">
             <button className="ctabutton pink-box  px-8 py-6 text-3xl">
