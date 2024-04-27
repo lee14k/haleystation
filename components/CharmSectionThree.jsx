@@ -12,7 +12,7 @@ Ready to book? Get in touch with us today or view our rates.
         </p>
       </div>
       <div>
-        <Image src="/stok1.jpg" height={300} width={300} className="rounded" />
+        <Image src="/newhsphoto1.jpg" height={300} width={300} className="rounded" />
         <caption>Photo by Stokpic</caption>
       </div>
     </div>

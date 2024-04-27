@@ -11,7 +11,7 @@ const BridalSectionOne = () => {
         <div className="text-6xl brown-text ">
           <h1 className="fancy-font">Weddings, showers, graduations & more</h1>
         </div>
-        <div className={lora.className}>
+        <div className="other-font">
           <p className="tracking-widest text-xl my-4">
             For any event you're organizing, choose Haley Station as the top
             destination in Escanaba. Our recently designed venue features a
