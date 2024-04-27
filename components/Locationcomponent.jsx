@@ -14,9 +14,9 @@ export default function Location() {
         </div>
         <div className="flex justify-center items-center flex-col gap-10">
           <div className="text-6xl">
-            <h1 className={playfair.className}>Location</h1>
+            <h1 className="fancy-font">Location</h1>
           </div>
-          <div className={lora.className}>
+          <div className="other-font">
             <p className="text-2xl">
               Nestled in the picturesque Upper Peninsula of Michigan, Escanaba
               emerges as a hidden gem for events and gatherings. This quaint

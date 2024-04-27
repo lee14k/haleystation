@@ -37,7 +37,7 @@ export default function PhotoGallery() {
           </div>
         ))}
       </div>
-      <p className="text-xl mx-24">
+      <p className="text-xl mx-24 other-font">
         Did you celebrate at Haley Station? Tag us on Facebook and Instagram
         @haley_station- we’d love to see photos of your special day!
       </p>

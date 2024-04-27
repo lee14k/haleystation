@@ -13,7 +13,7 @@ const PVFill = ()=>{
             <div className="lg:text-left text-center">
               <h1 className="text-8xl text-white fancy-font ">Preferred Vendors</h1>
             </div>
-            <div className={lora.className}></div>
+            <div className="other-font"></div>
           </div>
         </div>
         <div className="grid lg:grid-cols-2 text-yellow-950 pink-box py-12 ">
@@ -22,7 +22,7 @@ const PVFill = ()=>{
           </div>
           <div className="flex justify-center items-center flex-col px-10">
             <div className="text-6xl ">
-              <h1 className={playfair.className}>Decorating</h1>
+              <h1 className="fancy-font">Decorating</h1>
             </div>
             <div className="text-2xl">
             <ul className="my-6">
@@ -51,7 +51,7 @@ const PVFill = ()=>{
           <div className="grid lg:grid-cols-3 text-yellow-950 bridal-one gap-12 py-12 px-4">
             <div className="flex justify-center items-center flex-col">
               <div className="text-6xl text-center lg:ml-16 ">
-                <h1 className={playfair.className}>Floral
+                <h1 className="fancy-font">Floral
   </h1>
               </div>
               <div className="text-2xl lg:text-left text-center lg:ml-24">
@@ -81,7 +81,7 @@ const PVFill = ()=>{
           </div>
           <div className="flex justify-center items-center flex-col">
             <div className="text-6xl ">
-              <h1 className={playfair.className}>Event Rental</h1>
+              <h1 className="fancy-font">Event Rental</h1>
             </div>
             <div className="text-2xl">
             <ul className="my-6">
@@ -96,7 +96,7 @@ const PVFill = ()=>{
         <div className="grid lg:grid-cols-2 text-yellow-950 bridal-one py-12 px-4">
             <div className="flex justify-center items-center flex-col">
               <div className="text-6xl  ">
-                <h1 className={playfair.className}>Photography
+                <h1 className="fancy-font">Photography
   </h1>
               </div>
               <div className="text-2xl">
@@ -134,7 +134,7 @@ const PVFill = ()=>{
           </div>
           <div className="flex justify-center items-center flex-col">
             <div className="text-6xl ">
-              <h1 className={playfair.className}>Beauty</h1>
+              <h1 className="fancy-font">Beauty</h1>
             </div>
             <div className="text-2xl">
             <ul className="my-6">
@@ -149,7 +149,7 @@ const PVFill = ()=>{
         <div className="grid lg:grid-cols-2 text-yellow-950 bridal-one  py-12 px-4">
             <div className="flex justify-center items-center flex-col">
               <div className="text-6xl  ">
-                <h1 className={playfair.className}>DJ & Entertainment
+                <h1 className="fancy-font">DJ & Entertainment
   </h1>
               </div>
               <div className="text-2xl">
@@ -176,9 +176,9 @@ const PVFill = ()=>{
           </div>
           <div className="flex justify-center items-center flex-col text-2xl">
             <div className="text-6xl ">
-              <h1 className={playfair.className}>Men's Attire</h1>
+              <h1 className="fancy-font">Men's Attire</h1>
             </div>
-            <div className={lora.className}>
+            <div className="fancy-font">
             <ul className="my-6">
                   <li className="text-4xl"> Youngs </li>
                   <li>1119 Ludington Street</li>
@@ -192,7 +192,7 @@ const PVFill = ()=>{
         <div className="grid lg:grid-cols-2 text-yellow-950 bridal-one py-12 px-4">
             <div className="flex justify-center items-center flex-col">
               <div className="text-6xl  ">
-                <h1 className={playfair.className}>Catering
+                <h1 className="fancy-font">Catering
   </h1>
               </div>
               <div className="text-2xl">

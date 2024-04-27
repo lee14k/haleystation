@@ -59,7 +59,7 @@ const FAQ = () => {
       <div className="grid lg:grid-cols-2 text-yellow-950 py-12 px-4">
         <div className="flex justify-center items-center flex-col">
           <div className="text-6xl">
-            <h1 className={playfair.className}>FAQs</h1>
+            <h1 className="fancy-font">FAQs</h1>
           </div>
           {questions.map((item, index) => (
             <div key={item.question} className="my-4">

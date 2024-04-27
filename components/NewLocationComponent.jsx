@@ -19,7 +19,7 @@ const NewLocationComponent = () => {
           <div>
             <h1 className="text-8xl text-white fancy-font">Location</h1>
           </div>
-          <div className={lora.className}></div>
+          <div className="other-font"></div>
         </div>
       </div>
       <div className="grid lg:grid-cols-2 text-yellow-950 bridal-one py-12 ">
@@ -30,7 +30,7 @@ const NewLocationComponent = () => {
           <div className="text-6xl ">
             <h1 className="fancy-font py-6">Escanaba, MI</h1>
           </div>
-          <div className={lora.className}>
+          <div className="other-font">
             <p className=" text-2xl">
               Nestled in the picturesque Upper Peninsula of Michigan, Escanaba
               emerges as a hidden gem for events and gatherings. This quaint
@@ -48,7 +48,7 @@ const NewLocationComponent = () => {
             <div className="text-6xl ">
               <h1 className="fancy-font py-6">Nearby hotels</h1>
             </div>
-            <div className={lora.className}>
+            <div className="other-font">
               <ul className="flex flex-col gap-10 text-2xl">
                 <li>
                   The House of Ludington | 223 Ludington St, Escanaba, MI 49829
@@ -83,7 +83,7 @@ const NewLocationComponent = () => {
           <div className="text-6xl ">
             <h1 className="fancy-font py-6">Directions</h1>
           </div>
-          <div className={lora.className}>
+          <div className="other-font">
             <p className="px-10 text-2xl">
             Take the exit for M-35 North towards Gladstone/North Escanaba. Continue on M-35 North. As you enter the city, M-35 will become Lincoln Road. Follow Lincoln Road until you reach 3rd Avenue.  Turn North on 3rd Avenue.  Continue on 3rd Avenue until you reach 1837 3rd Avenue North on your right. Parking for Haley Station is located at 319 Stephenson Avenue, just a block further.
             </p>

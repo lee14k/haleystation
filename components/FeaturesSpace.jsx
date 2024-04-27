@@ -14,9 +14,9 @@ export default function FeaturesSpace() {
         </div>
         <div className="flex justify-center items-center flex-col gap-10">
           <div className="text-6xl font-thin">
-            <h1 className={playfair.className}>The Space</h1>
+            <h1 className="fancy-font">The Space</h1>
           </div>
-          <div className={lora.className}>
+          <div className="other-font">
             <p className="font-thin text-2xl">
               Haley Station is one of the few venues in the Delta County area to
               host beautiful indoor ceremonies in our spacious venue, filled
