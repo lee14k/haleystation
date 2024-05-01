@@ -113,7 +113,7 @@ export default function ContactForm() {
                 <dd className="text-2xl">
                   <a
                     className="hover:text-gray-900"
-                    href="mailto:hello@example.com"
+                    href="mailto:haleystationevents@gmail.com"
                   >
                     haleystationevents@gmail.com
                   </a>
