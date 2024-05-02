@@ -76,7 +76,7 @@ const FAQ = () => {
           ))}
         </div>
         <div className="ml-4">
-          <Image src="/newhsphoto1.jpg" width={800} height={600} />
+          <Image src="/newhsphoto1-min.jpg" width={800} height={600} />
         </div>
       </div>
     </div>

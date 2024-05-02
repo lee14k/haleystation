@@ -29,7 +29,7 @@ const Space = () => {
               </ul>
 
               <div className="">
-                <Image src="/hstwo.jpg" width={800} height={600} />
+                <Image src="/hstwo-min.jpg" width={800} height={600} />
               </div>
 
               <p></p>
@@ -50,7 +50,7 @@ const Space = () => {
             <div className="grid lg:grid-cols-2 py-12 bridalone px-8">
               <div>
                 {" "}
-                <Image src="/hstwo.jpg" width={800} height={600} />
+                <Image src="/hstwo-min.jpg" width={800} height={600} />
               </div>
               <div className="flex flex-col justify-center items-center">
                 {" "}

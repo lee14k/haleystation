@@ -13,9 +13,9 @@ import Navbar from "@/components/Navbar";
 
 export default function Home() {
   const homeImages = [
-    { link: "/hsone.jpg", header: "Our Space", page: "/Space" },
-    { link: "/newhsphoto3.jpg", header: "Events", page: "/Events" },
-    { link: "/newhsphoto4.jpg", header: "Gallery", page: "/Gallery" },
+    { link: "/hsone-min.jpg", header: "Our Space", page: "/Space" },
+    { link: "/newhsphoto3-min.jpg", header: "Events", page: "/Events" },
+    { link: "/newhsphoto4-min.jpg", header: "Gallery", page: "/Gallery" },
   ];
   return (
     <div>

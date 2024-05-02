@@ -56,14 +56,14 @@ const Rates = () => {
                 </ul>
               </div>
               <div>
-                <Image src="/newhsphoto1.jpg" width={800} height={600} />
+                <Image src="/newhsphoto1-min.jpg" width={800} height={600} />
               </div>
             </div>
           </div>
           <div className="pink-box">
             <div className="grid lg:grid-cols-2 gap-24">
               <div className="my-8">
-                <Image src="/newhsphoto3.jpg" width={800} height={600} />
+                <Image src="/newhsphoto3-min.jpg" width={800} height={600} />
               </div>
               <div className="tracking-widest flex justify-center items-center flex-col py-12">
                 <h2 className="text-4xl fancy-font">6 Hour Packages</h2>
@@ -89,7 +89,7 @@ const Rates = () => {
                 </Link>
               </div>
               <div className="my-8">
-                <Image src="/buffet.jpg" width={600} height={200} />
+                <Image src="/buffet-min.jpg" width={600} height={200} />
               </div>
             </div>
           </div>

@@ -13,7 +13,7 @@ const NewLocationComponent = () => {
       </div>
       <div className="grid lg:grid-cols-2 text-yellow-950 bridal-one py-12 ">
         <div>
-          <Image src="/eskylh2.jpeg" width={800} height={600} />
+          <Image src="/eskylh2-min.jpeg" width={800} height={600} />
         </div>
         <div className="flex justify-center items-center flex-col px-10">
           <div className="text-6xl ">
@@ -60,14 +60,14 @@ const NewLocationComponent = () => {
             </div>
           </div>
           <div>
-            <Image src="/oh.jpeg" width={800} height={600} />
+            <Image src="/oh-min.jpeg" width={800} height={600} />
           </div>
         </div>
       </div>
       <div className="grid lg:grid-cols-2 text-yellow-950 py-12 bridal-one px-4">
         <div>
           <Image
-            src="/Sandpoint-Lighthouse-4742-4742.jpg"
+            src="/Sandpoint-Lighthouse-4742-4742-min.jpg"
             width={800}
             height={600}
           />

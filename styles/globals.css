@@ -25,7 +25,7 @@
   font-style: normal;
 }
 .outside {
-  background-image: url("/hslighthouse.jpg");
+  background-image: url("/hslighthouse-min.jpg");
   background-position: center;
   background-size: cover;
   height:75%;
@@ -36,7 +36,7 @@
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("/hsone.jpg");
+    url("/hsone-min.jpg");
   background-size: cover;
   height: 55rem;
 }
@@ -63,7 +63,7 @@
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("/archhs.jpeg");
+    url("/archhs-min.jpeg");
   background-size: cover;
   background-position: center top;
 }
@@ -95,7 +95,7 @@
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("/hsone.jpg");
+    url("/hsone-min.jpg");
   background-size: cover;
   height: 35rem;
 }

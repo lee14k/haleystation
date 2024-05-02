@@ -23,7 +23,7 @@ const BridalSectionOne = () => {
         </div>
       </div>
       <div>
-        <Image src="/hstwo.jpg" width={900} height={900} />
+        <Image src="/hstwo-min.jpg" width={900} height={900} />
       </div>
     </div>
   );
