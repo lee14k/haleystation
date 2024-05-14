@@ -13,7 +13,7 @@ const FAQ = () => {
     {
       question: "Who sets up for my event?",
       answer:
-        "Your event coordinator will handle all the setup. You just need to show up and enjoy your day!",
+        "Your event coordinator will set up tables, chairs, and linens. Your booking time includes time for you to add your personalized decor or you may upgrade your booking to include a decor package.",
     },
     {
       question:
