@@ -96,7 +96,7 @@ export default function ContactForm() {
                 <dd className="text-2xl">
                   <a
                     className="hover:text-gray-900"
-                    href="tel:+1 (555) 234-5678"
+                    href="tel:+1 (906) 261-9159"
                   >
                     (906) 261-9159
                   </a>
