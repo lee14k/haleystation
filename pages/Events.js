@@ -22,7 +22,7 @@ const Events = () => {
       </div>
       <div className="grid lg:grid-cols-2 text-yellow-950 pink-box py-12 ">
         <div className="ml-10">
-          <Image src="/newhsphoto3-min.jpg" width={800} height={600} />
+          <Image src="/brida.jpeg" width={800} height={600} />
         </div>
         <div className="flex justify-center items-center flex-col px-10">
           <div className="text-6xl ">
@@ -58,13 +58,13 @@ const Events = () => {
             </div>
           </div>
           <div>
-            <Image src="/newhsphoto1-min.jpg" width={800} height={600} />
+            <Image src="/bebe.jpeg" width={800} height={600} />
           </div>
         </div>
       </div>
       <div className="grid lg:grid-cols-2 text-yellow-950 pink-box py-12 px-4">
         <div>
-          <Image src="/newhsphoto5sq-min.png" width={800} height={600} />
+          <Image src="/grover-9356.jpg" width={800} height={600} />
         </div>
         <div className="flex justify-center items-center flex-col">
           <div className="text-6xl ">
@@ -118,7 +118,7 @@ We'd love to hear from you!  Contact us today to learn about how you can book ou
           </div>
         </div>
         <div>
-          <Image src="/hsone-min.jpg" width={800} height={600} />
+          <Image src="/shoots.jpeg" width={800} height={600} />
         </div>
       </div>
       <Footer />
