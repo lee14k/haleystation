@@ -52,16 +52,6 @@ const Space = () => {
                 {" "}
                 <Image src="/hstwo-min.jpg" width={800} height={600} />
               </div>
-              <div className="flex flex-col justify-center items-center">
-                {" "}
-                <h2 className="text-4xl fancy-font">Capacity</h2>
-                <p className="text-2xl px-4 other-font">
-                  Haley Station is ideal for intimate weddings of 125 and less;
-                  hosting both ceremony & reception - 125 sit comfortably
-                  dinner-style and ceremony-style in the main open area - 225
-                  max capacity, cocktail-style
-                </p>
-              </div>
             </div>
           </div>
         </div>
