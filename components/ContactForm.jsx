@@ -24,13 +24,6 @@ export default function ContactForm() {
       phoneNumber: formData.get('phoneNumber'),
       message: formData.get('message'),
     };
-    console.log({
-      firstName: formData.get('firstName'),
-      lastName: formData.get('lastName'),
-      email: formData.get('email'),
-      phoneNumber: formData.get('phoneNumber'),
-      message: formData.get('message'),
-    });
     
     try {
       const response = await fetch("/api/sendEmail", {
