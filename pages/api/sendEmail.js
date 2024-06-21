@@ -5,7 +5,7 @@ export default async (req, res) => {
     return res.status(405).end();
   }
 
-  const { firstName, phoneNumber, message } = req.body;
+  const { firstName, phoneNumber, message, email } = req.body;
 
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
@@ -25,8 +25,10 @@ export default async (req, res) => {
     subject: "New Contact Form Submission",
     text: `
       Name: ${firstName}
+      email: ${email}
       Phone Number: ${phoneNumber}
       Message: ${message}
+
     `,
   };
 

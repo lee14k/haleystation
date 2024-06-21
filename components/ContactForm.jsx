@@ -44,9 +44,11 @@ export default function ContactForm() {
       console.error("There was an error submitting the form:", error);
     }
   };
-      const closeModal = () => {
-     setIsModalOpen(false);
-   };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="relative isolate bridal-one fancy-font pb-12">
       <div className="mx-auto grid grid-cols-1 lg:grid-cols-2">
@@ -167,6 +169,8 @@ export default function ContactForm() {
                     id="email"
                     autoComplete="email"
                     required
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                    title="Please enter a valid email address (e.g., user@example.com)."
                     className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
@@ -183,7 +187,10 @@ export default function ContactForm() {
                     type="tel"
                     name="phoneNumber"
                     id="phoneNumber"
+                    required
                     autoComplete="tel"
+                    pattern="^\d{10}$"
+                    title="Please enter a 10-digit phone number."
                     className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
