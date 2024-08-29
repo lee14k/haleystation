@@ -12,7 +12,7 @@ export const routes = [
     ],
   },
   { title: "Special Occasions", href: "/Special-Occasions" },
-  { name: "Upcoming Events", href: "/Upcoming-Events", current: false },
+  { title: "Upcoming Events", href: "/Upcoming-Events", },
   { title: "Gallery", href: "/Gallery" },
   { title: "Contact", href: "/Contact" },
 ];
