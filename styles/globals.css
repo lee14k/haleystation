@@ -30,6 +30,18 @@
   background-size: cover;
   height:75%;
 }
+
+.new-space-bg{
+  background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+  ),
+  url("../public/hs-drinks.jpg");
+  background-size: cover;
+  height: 35rem;
+}
+
 .firsttextheader {
   background-image: linear-gradient(
       to right,
