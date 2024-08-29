@@ -14,7 +14,7 @@ import Navbar from "@/components/Navbar";
 export default function Home() {
   const homeImages = [
     { link: "/hsone-min.jpg", header: "Our Space", page: "/Space" },
-    { link: "/newhsphoto3-min.jpg", header: "Events", page: "/Events" },
+    { link: "/hs-drinks.jpg", header: "Special Occasions", page: "/Special-Occasions" },
     { link: "/newhsphoto4-min.jpg", header: "Gallery", page: "/Gallery" },
   ];
   return (
@@ -55,7 +55,7 @@ export default function Home() {
       <div>
         <div className="grid lg:grid-cols-2 text-yellow-950 bridalone py-12 px-4">
           <div className="flex flex-col">
-            <Image src="/archhs.jpeg" width={800} height={600} />
+            <Image src="/fun-couch.jpg" width={800} height={600} />
           </div>
           <div className="flex justify-center items-center flex-col text-center lg:mx-12">
             <div className="text-6xl brown-text ">

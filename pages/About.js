@@ -33,8 +33,8 @@ const About = () => {
             </button>
           </Link>
         </div>
-        <div>
-          <Image src="/newhsphoto4-min.jpg" width={800} height={600} />
+        <div className=" flex justify-end items-end">
+          <Image src="/new-rates.jpg" width={700} height={500} />
         </div>
       </div>
       <Locationcomponent />

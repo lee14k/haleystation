@@ -20,7 +20,8 @@ const navigation = [
       { name: "Preferred Vendors", href: "/PreferredVendors" },
     ],
   },
-  { name: "Events", href: "/Events", current: false },
+  { name: "Special Occasions", href: "/Special-Occasions", current: false },
+  { name: "Upcoming Events", href: "/Upcoming-Events", current: false },
   { name: "Gallery", href: "/Gallery", current: false },
   { name: "Contact", href: "/Contact", current: false },
 ];
