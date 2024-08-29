@@ -24,24 +24,30 @@ export default function UpcomingEvents () {
             <div className=" new-space-bg text-white flex justify-center items-center">
                 <div className="flex flex-col justify-center items-center gap-6">
                     <h1 className="text-8xl fancy-font">Upcoming Events</h1>
-                <p className={`text-xl mx-24 text-center ${lora.className}`}>When we aren't helping local families celebrate their special events, we love hosting our own special events! From evening markets with local artisans and artists, to themed holiday parties and incredible galas benefitting local charities, we love throwing incredible events for our community.</p>
-                    <p className={`text-xl mx-24 text-center ${lora.className}`}> Check out what we have coming up below and come see how we like to throw a party!</p>
+                    <p className={`text-xl mx-24 text-center ${lora.className}`}>When we aren't helping local families
+                        celebrate their special events, we love hosting our own special events! From evening markets
+                        with local artisans and artists, to themed holiday parties and incredible galas benefitting
+                        local charities, we love throwing incredible events for our community.</p>
+                    <p className={`text-xl mx-24 text-center ${lora.className}`}> Check out what we have coming up below
+                        and come see how we like to throw a party!</p>
                 </div>
             </div>
             <div className="grid grid-rows-3 fancy-font gap-2 py-24">
                 {eventFlyers.map((flyer, index) => (
-                    <div  className="grid lg:grid-cols-2" key={index}>
+                    <div
+                        className={`grid lg:grid-cols-2 ${index === 1 ? 'pink-box' : ''}`}
+                        key={index}
+                    >
                         <div
-                             className="flex justify-end bg-no-repeat items-center gap-12 bg-contain bg-center w-full lg:h-full h-[50rem] "
-                             style={{backgroundImage: `url(${flyer.url})`}}>
+                            className="flex justify-end bg-no-repeat items-center gap-12 bg-contain bg-center w-full lg:h-full h-[50rem]"
+                            style={{backgroundImage: `url(${flyer.url})`}}>
                         </div>
                         <div
-                            className="bg-white py-10 justify-center items-center flex flex-col text-center gap-12 ">
+                            className={`bg-white py-10 justify-center items-center flex flex-col text-center gap-12  ${index === 1 ? 'pink-box' : ''}`}>
                             <h1 className="text-7xl font-bold">{flyer.title}</h1>
                             <p className="text-2xl font-bold">{flyer.date} at {flyer.time}</p>
                             <a target='_blank' href={`${flyer.learnMoreLink}`}>
-                                <button className="ctabutton pink-box brown-text px-8 py-2 text-xl">Learn More
-                                </button>
+                                <button className="ctabutton pink-box brown-text px-8 py-2 text-xl">Learn More</button>
                             </a>
                             <a target='_blank' href={`${flyer.buttonLink}`}>
                                 <button className="ctabutton pink-box brown-text px-8 py-2 text-xl">Buy your Tickets!
