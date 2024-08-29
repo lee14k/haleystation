@@ -1,12 +1,22 @@
 export default function PhotoGallery() {
-  const images = ["/newhsphoto1.jpg", "/newhsphotot2.jpg", "/newhsphoto3.jpg"];
+  const images = [    "new-faq.jpg","/newhsphotot2.jpg", "/newhsphoto3.jpg"];
   const photoRow = [
     "/newhsphoto4-min.jpg",
-    "/newhsphoto5-min.jpg",
+    "/new-long-line.jpg",
+      "/newhsphoto1.jpg",
     "/newhsphoto6-min.jpg",
     "/hsone-min.jpg",
     "/hstwo-min.jpg",
     "/buffet-min.jpg",
+      "new-rates.jpg",
+      "new-hs-wed.jpg",
+      "/newhsphoto5-min.jpg",
+      "/new-bar.jpg",
+      "/new-gal-hs.jpg",
+      "/new-gal-hs2.jpg",
+        "/new-gal-hs-3.jpg",
+        "/new-gal-hs-4.jpg",
+
   ];
 
   return (
@@ -22,7 +32,7 @@ export default function PhotoGallery() {
           </div>
         ))}
       </div>
-      <div className="flex my-10">
+      <div className="grid grid-cols-5 my-10">
         {photoRow.map((image, index) => (
           <div key={index} className="w-full h-72 overflow-hidden">
             <img
@@ -33,10 +43,7 @@ export default function PhotoGallery() {
           </div>
         ))}
       </div>
-      <p className="text-xl mx-24 other-font">
-        Did you celebrate at Haley Station? Tag us on Facebook and Instagram
-        @haley_station- we’d love to see photos of your special day!
-      </p>
+
     </div>
   );
 }
