@@ -150,21 +150,16 @@ const PVFill = () => {
               <li>Gladstone, MI 49837</li>
               <li>Noah 248-727-3457</li>
             </ul>
-            <ul className="my-6">
-              <li className="text-4xl"> Amp'd UP Entertainment</li>
-              <li>Escanaba, MI</li>
-              <li>Justin Wyckoff 906-280-8017</li>
-              <li>ampdupentertainment.net</li>
-            </ul>
+
           </div>
         </div>
         <div>
-          <Image src="/ampd.jpeg" width={800} height={600} />
+          <Image src="/dj-hs.jpg" width={800} height={600}/>
         </div>
       </div>
       <div className="grid lg:grid-cols-2 text-yellow-950 py-12 pink-box px-4">
         <div>
-          <Image src="/youngs.png" width={800} height={600} />
+          <Image src="/youngs.png" width={800} height={600}/>
         </div>
         <div className="flex justify-center items-center flex-col text-2xl">
           <div className="text-6xl ">
@@ -172,13 +167,14 @@ const PVFill = () => {
           </div>
           <div className="fancy-font">
             <ul className="my-6">
-              <li className="text-4xl"> Youngs </li>
+              <li className="text-4xl"> Youngs</li>
               <li>1119 Ludington Street</li>
               <li>Escanaba, MI 49829</li>
               <li>906-786-2526</li>
             </ul>
           </div>
         </div>
+
       </div>
       <div className="grid lg:grid-cols-2 text-yellow-950 bridal-one py-12 px-4">
         <div className="flex justify-center items-center flex-col">
@@ -210,10 +206,16 @@ const PVFill = () => {
               <li>906-786-6477</li>
               <li>applewoodeatery@gmail.com</li>
             </ul>
+            <ul className="my-6">
+              <li className="text-4xl">Gladstone Deli</li>
+              <li>824 Delta Avenue </li>
+              <li>Gladstone, MI</li>
+              <li>906-786-6477</li>
+            </ul>
           </div>
         </div>
         <div>
-          <Image src="/wiles.jpeg" width={800} height={600} />
+          <Image src="/hs-catering.jpg" width={800} height={600}/>
         </div>
       </div>
     </div>
