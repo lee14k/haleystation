@@ -27,7 +27,7 @@ const Rates = () => {
                   Wedding Packages
                 </h2>
                 <h4 className="text-2xl lg:text-left text-center">
-                  $1,795 (weekend rental)
+                  $1,795 (one day rental)
                 </h4>
                 <span className="other-font text-2xl mx-12 lg:mx-0">
                   {" "}
